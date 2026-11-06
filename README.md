@@ -1,16 +1,39 @@
-# Erdős–Mahler — Lean 4 verification
+# A counterexample to the Erdős–Mahler conjecture
+### Lean 4 formalization of Proposition 2.1
 
 [![Lean verification](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml/badge.svg?branch=main)](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml)
 
-A formal verification companion to Diego Marques's manuscript **_A counterexample to the Erdős–Mahler conjecture_**.
+**Diego Marques** · Departamento de Matemática, Universidade de Brasília
 
-**Status:** the proof of **Proposition 2.1** is machine-checked in Lean 4, **conditional on four precisely stated published theorems**. The final theorem and Cantor-set construction of the manuscript are **not** formalized here.
+This repository accompanies the manuscript *A counterexample to the Erdős–Mahler conjecture*. It contains a machine-checked formalization of **Proposition 2.1 (Admissible returns)**, conditional on four explicitly identified published theorems, together with an independent adversarial audit. The formalized proposition is the central counting input to the manuscript's main theorem.
 
-[Formal theorem](ErdosMahlerLean/Proposition21.lean) · [Independent audit](AUDIT_REPORT.md) · [External sources](EXTERNAL_THEOREM_RECONCILIATION.md) · [Reproduce](docs/REPRODUCIBILITY.md) · [Citation](#citation)
+**Verification scope.** All deductions leading to Proposition 2.1 are proved in Lean 4 under the stated external inputs. Neither those four published theorems themselves nor the subsequent Cantor-set construction are formalized here.
 
-## Mathematical statement
+[Verified statement](VERIFIED_STATEMENT.md) · [Proof source](ErdosMahlerLean/Proposition21.lean) · [Independent audit](AUDIT_REPORT.md) · [Reproducibility](docs/REPRODUCIBILITY.md)
 
-Let
+## 1. Mathematical context
+
+Erdős and Mahler conjectured in 1939 that an irrational real number with infinitely many regular continued-fraction convergents whose numerators and denominators have bounded prime factors must be a Liouville number.
+
+The accompanying paper disproves this conjecture in a particularly restricted form:
+
+**Main theorem of the manuscript (not formalized in this repository).** There exists a Cantor set $K\subset(1,2)$ such that every $\xi\in K$ satisfies
+
+$$
+4\le \mu(\xi)\le 11
+$$
+
+and has infinitely many regular continued-fraction convergents of the form
+
+$$
+\frac{p_n}{q_n}=\frac{2^a}{3^b}.
+$$
+
+The formal verification concerns the arithmetic counting proposition used to select these convergents.
+
+## 2. Proposition 2.1 — admissible returns
+
+Set
 
 $$
 \alpha=\frac{\log 3}{\log 2},
@@ -18,36 +41,34 @@ $$
 R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b}.
 $$
 
-For a positive integer $t$, set $Q=3^t$, $N=Q^{18}$, $B=Q^{14}$, and
+For an integer $t\ge1$, put $Q=3^t$, $N=Q^{18}$, $B=Q^{14}$, and
 
 $$
-J_t=\bigl(R(t)+Q^{-4},\,R(t)+2Q^{-4}\bigr).
+J_t=(R(t)+Q^{-4},\,R(t)+2Q^{-4}).
 $$
 
-A **return** is an integer $b\in[Q,Q+N)$ with $R(b)\in J_t$. A return is **inadmissible** if there exists a reduced rational $u/v\in[1,2]$, distinct from $R(b)$, with
+Let $\mathcal R_t$ be the set of integers $b\in[Q,Q+N)$ for which $R(b)\in J_t$. A return $b$ is **inadmissible** if there is a reduced rational $u/v\in[1,2]$, distinct from $R(b)$, with
 
 $$
-v>Q^3/6,
-\qquad
-\left|R(b)-\frac uv\right|<\frac{1}{16v^{11}}.
+v>Q^3/6,\qquad
+\left|R(b)-\frac uv\right|<\frac1{16v^{11}}.
 $$
 
-Write $\mathcal R_t$ for the return set, $\mathcal R_t^{\mathrm{bad}}$ for its inadmissible subset, and $\mathcal R_t^{\mathrm{adm}}$ for the complement. Proposition 2.1 asserts
+Write $\mathcal R_t^{\mathrm{inad}}$ for the inadmissible returns and $\mathcal R_t^{\mathrm{adm}}=\mathcal R_t\setminus\mathcal R_t^{\mathrm{inad}}$. The proposition asserts, as $t\to\infty$,
 
 $$
-|\mathcal R_t|\asymp B,
-\qquad
-|\mathcal R_t^{\mathrm{bad}}|=o(B),
-\qquad
-|\mathcal R_t^{\mathrm{adm}}|\asymp B
-\quad (t\to\infty).
+\boxed{\quad
+|\mathcal R_t|\asymp B,\qquad
+|\mathcal R_t^{\mathrm{inad}}|=o(B),\qquad
+|\mathcal R_t^{\mathrm{adm}}|\asymp B.
+\quad}
 $$
 
-In particular, admissible returns exist for all sufficiently large $t$. The Lean statement preserves the eventual thresholds, constants, strict inequalities, and reduced-denominator conventions of the frozen manuscript.
+In particular, admissible returns exist for every sufficiently large $t$. The formal statement retains the exact constants, strict inequalities, reduced-denominator conditions and order of asymptotic quantifiers.
 
-## What Lean proves
+## 3. Formal theorem and dependency boundary
 
-The final declaration is [`ErdosMahlerLean.proposition21`](ErdosMahlerLean/Proposition21.lean):
+The final declaration, in [`Proposition21.lean`](ErdosMahlerLean/Proposition21.lean), is:
 
 ```lean
 theorem proposition21
@@ -57,60 +78,80 @@ theorem proposition21
     (hMat : External.MatveevRational) : Proposition21
 ```
 
-These **four explicit hypotheses** represent external mathematical results; they are not asserted as global Lean axioms and are not proved in this repository:
+The four hypotheses are **ordinary explicit arguments**, not concealed axioms or unproved intermediate conclusions from the manuscript. They represent the following published results:
 
-| Input | Published mathematical source |
+| External mathematical input | Source |
 | --- | --- |
-| Wu–Wang | Quantitative lower bound for linear forms in $\log2,\log3$; [J. Number Theory 142 (2014)](https://doi.org/10.1016/j.jnt.2014.03.007) |
-| Matolcsi–Ruzsa | Sumset growth, Theorem 1.5; [*Additive Number Theory* (Springer, 2010), pp. 221–227](https://doi.org/10.1007/978-0-387-68361-4_16) |
-| Schlickewei | A two-dimensional $p$-adic Subspace Theorem specialization; [Compositio Mathematica 82 (1992)](https://www.numdam.org/article/CM_1992__82_3_245_0.pdf) |
-| Matveev | Rational real-logarithm specialization of Corollary 2.3; [Izvestiya: Mathematics 64 (2000)](https://doi.org/10.1070/IM2000v064n06ABEH000314) |
+| Wu–Wang | Linear forms in $\log 2,\log 3$, *J. Number Theory* **142** (2014), Theorem 1 |
+| Matolcsi–Ruzsa | Sumset inequality, *Additive Number Theory* (Springer, 2010), Theorem 1.5, p. 222 |
+| Schlickewei | $p$-adic Subspace Theorem, *Compositio Math.* **82** (1992) |
+| Matveev | Linear forms in logarithms, *Izv. Math.* **64** (2000), Corollary 2.3 |
 
-Every deduction from these inputs to Proposition 2.1 is formalized. No intermediate counting result from the manuscript is taken as an additional hypothesis. For the exact types, source comparisons, and limits of this claim, consult [the independent source reconciliation](EXTERNAL_THEOREM_RECONCILIATION.md) and [the precise verified statement](VERIFIED_STATEMENT.md).
+Each external interface has been compared with its published source. The original Springer 2010 chapter of Matolcsi–Ruzsa was inspected directly, including its proof. See [the exact hypothesis types](VERIFIED_STATEMENT.md) and [source reconciliation](EXTERNAL_THEOREM_RECONCILIATION.md).
 
-## Verification and audit
+Consequently, the result certified by Lean is the implication
 
-- **Frozen proof:** [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06), commit [`7bae31b5`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc).
-- **Formal audit:** 358 public proof declarations reviewed with `#print axioms`; the reported foundational axioms are `propext`, `Classical.choice`, and `Quot.sound`. The four mathematical inputs remain visible in the final theorem's type.
-- **Independent adversarial audit:** [report](AUDIT_REPORT.md), [source comparison](EXTERNAL_THEOREM_RECONCILIATION.md), and [evidence](audit-evidence/). The original Springer 2010 Matolcsi–Ruzsa chapter was checked against the corresponding Lean interface.
-- **CI:** the proof build and proof-hygiene workflow run on pushes and pull requests. A green build checks the *conditional implication*; it does not establish its four external premises.
+$$
+\text{four published-theorem hypotheses}
+\quad\Longrightarrow\quad
+\text{Proposition 2.1}.
+$$
 
-The independent audit is recorded in [PR #1](https://github.com/DiegoMarquesMath/ErdosMahlerLean/pull/1). The manuscript snapshot in `paper/` and the verified proof tag are unchanged.
+It is **not** a formal proof of the four external theorems.
 
-## Repository guide
+## 4. Structure of the proof
 
-| Location | Purpose |
+The formal development follows the counting argument of the manuscript:
+
+| Stage | Principal mechanism |
 | --- | --- |
-| [`ErdosMahlerLean/Proposition21.lean`](ErdosMahlerLean/Proposition21.lean) | Final implication and asymptotic counting conclusions |
-| [`ErdosMahlerLean/External/`](ErdosMahlerLean/External) | Explicit interfaces for the four published theorems |
-| [`ErdosMahlerLean/Audit.lean`](ErdosMahlerLean/Audit.lean) | Machine-readable axiom inventory |
-| [Proof architecture](docs/PROOF_ARCHITECTURE.md) | Route from discrepancy and smooth products to the final counting estimate |
-| [Proof obligations](docs/PROOF_OBLIGATIONS.md) | Lemma-by-lemma correspondence with the manuscript |
-| [Source map](docs/SOURCE_MAP.md) | Exact constants, quantifiers, and notation |
-| [Reproducibility](docs/REPRODUCIBILITY.md) | Locked toolchain, build instructions, and checks |
-| [`paper/`](paper/) | Frozen manuscript files and checksums |
-| [`audit-evidence/`](audit-evidence/) | Independent audit scripts, machine logs, and hash manifests |
+| Returns of an irrational rotation | Uniform discrepancy and short-arc estimates give $|\mathcal R_t|\asymp B$. |
+| Additive relations | Threefold index sums control products of the smooth rationals $R(b)$. |
+| Product correspondence | Sufficiently accurate rational approximations inherit the smooth-product identities. |
+| Small denominators | Rational separation, congruences and short-arc counts yield a negligible contribution. |
+| Large denominators | The Subspace Theorem controls heights; Matolcsi–Ruzsa bounds high rank, while rational-power classes and Matveev handle low rank. |
+| Completion | The denominator blocks are summed to obtain $|\mathcal R_t^{\mathrm{inad}}|=o(B)$. |
 
-## Reproduce
+The Lean development also contains an alternative rational-approximation proof of the triple-sum bound $|3\mathcal R_t|\le76B$; see [`ReturnSumBound.lean`](ErdosMahlerLean/ReturnSumBound.lean). The full module-by-module correspondence is in [Proof architecture](docs/PROOF_ARCHITECTURE.md) and [Proof obligations](docs/PROOF_OBLIGATIONS.md).
 
-With [Lean 4 / Elan](https://lean-lang.org/) installed:
+## 5. Verification and independent audit
+
+The source of the verified implication is fixed at:
+
+- **Commit:** [`7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc)
+- **Tag:** [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06)
+- **Toolchain:** Lean 4.36.0-rc2, with mathlib pinned in `lake-manifest.json`
+
+The recorded verification includes a successful full project build, an audit of **358 public proof declarations**, and a separate theorem-body kernel recheck. The reported foundational Lean axioms are `propext`, `Classical.choice` and `Quot.sound`. These are distinct from the four external mathematical hypotheses visible in the final theorem's type.
+
+An independent adversarial audit checked the source-to-Lean correspondence, published results, dependencies, compiler output and proof integrity, with no material discrepancy found in the conditional implication. Its findings and reproducibility limits are recorded in [AUDIT_REPORT.md](AUDIT_REPORT.md), [VERIFIED_STATEMENT.md](VERIFIED_STATEMENT.md), and [audit-evidence/](audit-evidence/).
+
+The frozen manuscript and verified proof commit have not been modified by the documentation or audit revisions.
+
+## 6. Reproduce the formal proof
+
+With [Lean / Elan](https://lean-lang.org/) and Git installed:
 
 ```bash
 git clone https://github.com/DiegoMarquesMath/ErdosMahlerLean.git
 cd ErdosMahlerLean
-git checkout prop21-conditional-2026-11-06
+git checkout --detach 7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc
 lake exe cache get
 lake build
 bash scripts/audit.sh
 lake env lean ErdosMahlerLean/Audit.lean
 ```
 
-See [reproducibility notes](docs/REPRODUCIBILITY.md) for the pinned versions and interpretation of the audit output.
+The proof tag gives the exact code snapshot. The independent audit reports are on the repository's `main` branch. More detail is available in [Reproducibility](docs/REPRODUCIBILITY.md).
 
-## Citation
+## 7. Citation
 
-Cite the **immutable verified proof tag**, rather than an unspecified moving `main` branch. [`CITATION.cff`](CITATION.cff) provides software citation metadata. A DOI has **not yet been assigned**; do not cite a placeholder DOI.
+**D. Marques**, *ErdosMahlerLean: Lean 4 formalization of Proposition 2.1 in “A counterexample to the Erdős–Mahler conjecture”*, GitHub repository, verified source commit `7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`, 2026.
 
-Suggested description: *A Lean 4 formalization of Proposition 2.1, conditional on four explicitly sourced published theorems, with an independent source and kernel audit.*
+Repository: https://github.com/DiegoMarquesMath/ErdosMahlerLean
 
-The code is distributed under the [MIT license](LICENSE). The formalization is maintained by [Diego Marques](https://github.com/DiegoMarquesMath).
+When citing the proof, identify it as **conditional on four published theorems**; the independent audit and the exact statement are linked above. [`CITATION.cff`](CITATION.cff) provides machine-readable citation metadata. No DOI is claimed.
+
+---
+
+Maintained by [Diego Marques](https://github.com/DiegoMarquesMath). Source code is available under the [MIT License](LICENSE).
