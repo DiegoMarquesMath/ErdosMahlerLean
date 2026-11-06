@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-11-06",
+  "frozen_sources_unchanged": true,
+  "locked_dependency_sources_unchanged": true,
+  "manuscript_hashes_pass": true,
+  "hygiene_pass": true,
+  "bss_counterexample_exact_rational_pass": true,
+  "bss_lean_probe_pass": true,
+  "bss_lean_probe_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "bss_lean_probe_scope": [
+    "Universal binomial coefficient identity",
+    "Abstract finite disjoint-union lower bound with containment and disjointness as explicit premises"
+  ],
+  "not_formalized_in_probe": [
+    "Triangulations",
+    "Geometric containment and disjointness",
+    "Full external sumset theorem"
+  ],
+  "initial_probe_attempt": "Broad unused Mathlib.Tactic import failed because a Batteries cache object was absent. Replaced only the audit probe import by the already built ErdosMahlerLean.Proposition21; final probe passed. No frozen or dependency source change.",
+  "fresh_project_build_and_kernel_recheck": "Earlier successful logs retained; not rerun because no frozen proof or dependency source changed."
+}

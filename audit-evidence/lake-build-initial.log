@@ -1,0 +1,8 @@
+info: mathlib: materializing new dependency
+info: mathlib: fetching revision '9d581dfff2e41de989072ea63abf3daf69311520' from https://github.com/leanprover-community/mathlib4
+info: stderr:
+fatal: unable to access 'https://github.com/leanprover-community/mathlib4/': Could not resolve host: github.com
+error: mathlib: failed to fetch the package revision
+  9d581dfff2e41de989072ea63abf3daf69311520
+from the Git repository at
+  https://github.com/leanprover-community/mathlib4

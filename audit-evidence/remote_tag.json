@@ -1,0 +1,22 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "{\"node_id\":\"TA_kwDOVkqJ3NoAKDgwZWFmZTMyYmZjZmQzZDg3ZjhlNDE4ZjkzNWE2OThmNzUzYTExYzI\",\"sha\":\"80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"tagger\":{\"name\":\"Diego Marques\",\"email\":\"dyhegu2@gmail.com\",\"date\":\"2026-11-06T15:23:43Z\"},\"object\":{\"sha\":\"7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc\",\"type\":\"commit\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/commits/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc\"},\"tag\":\"prop21-conditional-2026-11-06\",\"message\":\"Conditional verification of frozen Proposition 2.1\\n\\nSource commit 7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc.\\nAll EM-00 through EM-18 obligations are proved from four explicitly sourced\\npublished-theorem hypotheses. Local lake build passes and all 358 public proof\\naxiom audits contain only propext, Classical.choice and Quot.sound.\\nGitHub proof-verification CI run 42241610620 passed on this exact commit.\\nFrozen manuscript and pinned build files are unchanged.\\n\",\"verification\":{\"verified\":false,\"reason\":\"unsigned\",\"signature\":null,\"payload\":null,\"verified_at\":null}}",
+    "title": "80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+    "modified_date": null,
+    "url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+    "display_url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+    "display_title": "80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+    "structuredContent": {
+      "title": "80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+      "content": "{\"node_id\":\"TA_kwDOVkqJ3NoAKDgwZWFmZTMyYmZjZmQzZDg3ZjhlNDE4ZjkzNWE2OThmNzUzYTExYzI\",\"sha\":\"80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"tagger\":{\"name\":\"Diego Marques\",\"email\":\"dyhegu2@gmail.com\",\"date\":\"2026-11-06T15:23:43Z\"},\"object\":{\"sha\":\"7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc\",\"type\":\"commit\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/commits/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc\"},\"tag\":\"prop21-conditional-2026-11-06\",\"message\":\"Conditional verification of frozen Proposition 2.1\\n\\nSource commit 7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc.\\nAll EM-00 through EM-18 obligations are proved from four explicitly sourced\\npublished-theorem hypotheses. Local lake build passes and all 358 public proof\\naxiom audits contain only propext, Classical.choice and Quot.sound.\\nGitHub proof-verification CI run 42241610620 passed on this exact commit.\\nFrozen manuscript and pinned build files are unchanged.\\n\",\"verification\":{\"verified\":false,\"reason\":\"unsigned\",\"signature\":null,\"payload\":null,\"verified_at\":null}}",
+      "display_url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2"
+    }
+  },
+  "isError": false
+}

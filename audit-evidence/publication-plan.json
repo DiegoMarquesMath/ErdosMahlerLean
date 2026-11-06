@@ -1,0 +1,22 @@
+{
+  "branch": "audit/prop21-independent-2026-11-06",
+  "repository": "DiegoMarquesMath/ErdosMahlerLean",
+  "base_commit": "7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc",
+  "base_tree": "adc78ba405129cac1153df9440ca2d6a14af28dd",
+  "frozen_tag_object": "80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+  "pr_target": "main",
+  "main_observed_before_publication": "618ad243e5bf4809adc8f822c4464d8e6cb470df",
+  "main_delta_from_frozen": [
+    "docs/STATUS.md"
+  ],
+  "scope": "Only AUDIT_REPORT.md, EXTERNAL_THEOREM_RECONCILIATION.md, VERIFIED_STATEMENT.md and audit-evidence/ additions. No existing blob changes.",
+  "force_push": false,
+  "hash_manifest": "audit-evidence/artifact-hashes.json",
+  "manifest_excludes_itself": true,
+  "publication_note": "The eventual commit ID and pull request URL are external identifiers; including the commit ID in its own hashed tree would be circular.",
+  "status": "REMOTE PUBLICATION BLOCKED; local bundle prepared separately",
+  "attempted_tool": "GitHub create_blob",
+  "tool_response": "MCP tool call requires approval, but approval policy is never",
+  "remote_writes_completed": false,
+  "pull_request_opened": false
+}
