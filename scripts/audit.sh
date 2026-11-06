@@ -2,13 +2,13 @@
 set -euo pipefail
 
 echo '[AUDIT] Scanning all local Lean sources, including newly created files.'
-if find . -type f -name '*.lean' -not -path './.lake/*' -print0 | \
+if find . -path './.lake' -prune -o -path './.git' -prune -o -type f -name '*.lean' -print0 | \
    xargs -0 grep -nE '(^|[^[:alnum:]_])(sorry|admit)([^[:alnum:]_]|$)'; then
   echo '[FAIL] Found sorry/admit marker. Resolve before claiming verification.' >&2
   exit 1
 fi
 
-found="$(find . -type f -name '*.lean' -not -path './.lake/*' -print0 | \
+found="$(find . -path './.lake' -prune -o -path './.git' -prune -o -type f -name '*.lean' -print0 | \
   xargs -0 grep -nE '^[[:space:]]*(axiom|constant)[[:space:]]' | \
   grep -v '^\./ErdosMahlerLean/External/' || true)"
 if [[ -n "$found" ]]; then

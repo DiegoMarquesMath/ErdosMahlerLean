@@ -4,7 +4,7 @@
 
 | ID | Target | Formal verification obligation | Status |
 | --- | --- | --- | --- |
-| EM-00 | Definitions | `alpha`, `a(b)`, `R(b)`, `Q`, `N`, `B`, return set, exceptional rational, admissibility; positive denominators, reduced forms | OPEN |
+| EM-00 | Definitions | `alpha`, `a(b)`, `R(b)`, `Q`, `N`, `B`, return set, exceptional rational, admissibility; positive denominators, reduced forms | PARTIAL: exact definitions; canonical `Rat` conventions; smooth denominator and range proofs OPEN |
 | EM-01 | Rotation/discrepancy (Prop. 3.1) | Derive uniform interval count from Wu–Wang Diophantine hypothesis and continued fraction bounds | OPEN |
 | EM-02 | Lemma 3.2 | Return count `|R| ≍ B`; triple sumset `|3R| ≪ B` | OPEN |
 | EM-03 | Lemma 3.3 | Uniform short-arc estimate with exponent `1/(κ+1)` | OPEN |
@@ -22,7 +22,7 @@
 | EM-15 | Lemma 3.14 | Localize proportional pairs using valuations and rotation discrepancy | OPEN |
 | EM-16 | Lemma 3.15 | Logarithmic grid and summability | OPEN |
 | EM-17 | Proposition 3.16 | Rank dichotomy with `d_j ≤ x_j^(2/3)` and complementary case, uniform `o(B)` | OPEN |
-| EM-18 | Proposition 2.1 | Combine small/large denominator bounds; exact eventual quantifiers; `|Ra| ≍ B` | OPEN |
+| EM-18 | Proposition 2.1 | Combine small/large denominator bounds; exact eventual quantifiers; `|Ra| ≍ B` | OPEN: exact target type written; no asymptotic estimate proved |
 
 ## Critical path
 

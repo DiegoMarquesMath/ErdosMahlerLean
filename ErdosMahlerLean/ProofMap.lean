@@ -1,17 +1,13 @@
-import ErdosMahlerLean.Arithmetic
+import ErdosMahlerLean.Elementary
+import ErdosMahlerLean.External.Inputs
 
 /-!
-# Proposition 2.1 proof map — OPEN
+# Proposition 2.1 — OPEN
 
-The mathematical target is the exact manuscript Proposition 2.1:
-  |R| ≍ B, |Ri| = o(B), |Ra| ≍ B as t → ∞.
-
-This file intentionally contains NO claim that the main theorem has been checked.
-See `docs/PROOF_OBLIGATIONS.md` for the complete dependency graph.
+`ErdosMahlerLean.Proposition21` is the exact unconditional target type.
+The elementary theorems import no external mathematical hypotheses.
+External theorem types are defined in `External.Inputs`; no witnesses are supplied.
+Matveev and the Subspace Theorem still need source-checked interfaces before the
+full conditional target can be stated with its intended external inputs.
+See docs/SOURCE_MAP.md and docs/STATUS.md for the remaining proof obligations.
 -/
-
-namespace ErdosMahlerLean
-
--- EM-00 .. EM-18: awaiting exact formal statements and proof implementations.
-
-end ErdosMahlerLean

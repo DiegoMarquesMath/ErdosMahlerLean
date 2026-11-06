@@ -1,10 +1,18 @@
-import Mathlib
+import Mathlib.Analysis.SpecialFunctions.Log.Basic
+import Mathlib.Data.Rat.Cast.Order
+import Mathlib.Data.Finset.Card
+import Mathlib.Order.Interval.Finset.Nat
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Tauto
 
 /-!
-# Erdős–Mahler: initial arithmetic definitions
+# Erdős–Mahler: stage parameters
 
-This module is an **initial scaffold**, not a formal proof of Proposition 2.1.
-The exact returns and admissibility predicates must be audited against the frozen manuscript.
+The return and admissibility definitions are in `Definitions.lean`.
+The asymptotic counting proposition remains open.
 -/
 
 namespace ErdosMahlerLean
