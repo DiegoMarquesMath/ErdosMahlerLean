@@ -1,20 +1,20 @@
 cff-version: 1.2.0
-message: "Please cite the immutable proof tag; the formal verification is conditional on four published mathematical theorems."
-title: "ErdosMahlerLean: Conditional Lean 4 Verification of Proposition 2.1"
+message: "Please cite the fixed proof commit. This Lean 4 formalization is conditional on four published mathematical theorems."
+title: "ErdosMahlerLean: Lean 4 formalization of Proposition 2.1 in A counterexample to the Erdős–Mahler conjecture"
 type: software
 authors:
   - family-names: Marques
     given-names: Diego
 repository-code: "https://github.com/DiegoMarquesMath/ErdosMahlerLean"
-url: "https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06"
+url: "https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc"
 version: "prop21-conditional-2026-11-06"
 license: MIT
 abstract: >-
-  Lean 4 formalization of Proposition 2.1 in A counterexample to the
-  Erdos-Mahler conjecture, conditional on explicitly stated results of
-  Wu-Wang, Matolcsi-Ruzsa, Schlickewei and Matveev. Includes independent
-  source reconciliation and a theorem-body audit. The manuscript's final
-  Cantor construction is not formalized.
+  A Lean 4 formalization of Proposition 2.1 (Admissible returns) in
+  A counterexample to the Erdős–Mahler conjecture, conditional on precisely
+  stated published results of Wu–Wang, Matolcsi–Ruzsa, Schlickewei, and
+  Matveev. Includes an independent proof and primary-source audit.
+  The final counterexample and Cantor construction are not formalized.
 keywords:
   - Lean 4
   - mathlib
