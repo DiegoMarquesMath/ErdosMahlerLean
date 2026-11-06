@@ -78,8 +78,10 @@ with their full hypotheses, not completed manuscript lemmas 3.5 or 3.7.
 - The frozen manuscript was not edited. Its SHA-256 matches the fresh clone:
   `eb1c356128177a3780b4853d6cbc93449d2f80e2f7536406a15665ec5dce8726`.
 
-Verified source commit: SOURCE_COMMIT_PENDING.
-This field is filled by a documentation-only follow-up commit.
+Verified source commit: cc646545cfa28e0ad443764115d131ceaaf527b2.
+Recorded by a documentation-only follow-up commit; all Lean sources are unchanged.
+The final formatted source snapshot also passed `lake build` (4200 jobs) in
+the fresh checkout. All 15 axiom-output lines were checked against this report.
 
 ## Verbatim theorem axiom output
 
