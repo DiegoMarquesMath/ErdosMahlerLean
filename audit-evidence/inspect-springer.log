@@ -1,0 +1,123 @@
+ErdosMahlerLean.proposition21 (hWW : ErdosMahlerLean.External.WuWang)
+  (hMR : ErdosMahlerLean.External.MatolcsiRuzsaThree) (hST : ErdosMahlerLean.External.SubspaceTwoThree)
+  (hMat : ErdosMahlerLean.External.MatveevRational) : ErdosMahlerLean.Proposition21
+theorem ErdosMahlerLean.proposition21 : ErdosMahlerLean.External.WuWang →
+  ErdosMahlerLean.External.MatolcsiRuzsaThree →
+    ErdosMahlerLean.External.SubspaceTwoThree →
+      ErdosMahlerLean.External.MatveevRational → ErdosMahlerLean.Proposition21 :=
+fun (hWW : ErdosMahlerLean.External.WuWang) (hMR : ErdosMahlerLean.External.MatolcsiRuzsaThree)
+    (hST : ErdosMahlerLean.External.SubspaceTwoThree) (hMat : ErdosMahlerLean.External.MatveevRational) =>
+  ⟨ErdosMahlerLean.returns_comparable hWW,
+    ⟨ErdosMahlerLean.inadmissible_negligible hWW hMR hST hMat,
+      ⟨ErdosMahlerLean.admissible_comparable hWW hMR hST hMat,
+        ErdosMahlerLean.admissible_eventually_nonempty hWW hMR hST hMat⟩⟩⟩
+'ErdosMahlerLean.proposition21' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def ErdosMahlerLean.Proposition21 : Prop :=
+(ErdosMahlerLean.ComparableToB fun (t : ℕ) => ↑(Finset.card.{0} (ErdosMahlerLean.returns t))) ∧
+  (ErdosMahlerLean.NegligibleToB fun (t : ℕ) => ↑(Finset.card.{0} (ErdosMahlerLean.inadmissibleReturns t))) ∧
+    (ErdosMahlerLean.ComparableToB fun (t : ℕ) => ↑(Finset.card.{0} (ErdosMahlerLean.admissibleReturns t))) ∧
+      ∃ (T : ℕ), LE.le.{0} 1 T ∧ ∀ (t : ℕ), LE.le.{0} T t → Finset.Nonempty.{0} (ErdosMahlerLean.admissibleReturns t)
+def ErdosMahlerLean.ComparableToB : (ℕ → ℝ) → Prop :=
+fun (f : ℕ → ℝ) =>
+  ∃ (c : ℝ) (C : ℝ),
+    LT.lt.{0} 0 c ∧
+      LT.lt.{0} 0 C ∧
+        ∃ (T : ℕ),
+          LE.le.{0} 1 T ∧
+            ∀ (t : ℕ),
+              LE.le.{0} T t →
+                LE.le.{0} (HMul.hMul.{0, 0, 0} c ↑(ErdosMahlerLean.B t)) (f t) ∧
+                  LE.le.{0} (f t) (HMul.hMul.{0, 0, 0} C ↑(ErdosMahlerLean.B t))
+def ErdosMahlerLean.NegligibleToB : (ℕ → ℝ) → Prop :=
+fun (f : ℕ → ℝ) =>
+  ∀ (ε : ℝ),
+    LT.lt.{0} 0 ε →
+      ∃ (T : ℕ),
+        LE.le.{0} 1 T ∧
+          ∀ (t : ℕ), LE.le.{0} T t → LE.le.{0} (abs.{0} (f t)) (HMul.hMul.{0, 0, 0} ε ↑(ErdosMahlerLean.B t))
+def ErdosMahlerLean.External.WuWang : Prop :=
+∀ (ε : ℝ),
+  LT.lt.{0} 0 ε →
+    ∃ (H₀ : ℕ),
+      LT.lt.{0} 0 H₀ ∧
+        ∀ (p q₁ q₂ : ℤ),
+          LE.le.{0} (↑H₀) (Max.max.{0} (abs.{0} ↑q₁) (abs.{0} ↑q₂)) →
+            LE.le.{0}
+              (HPow.hPow.{0, 0, 0} (Max.max.{0} (abs.{0} ↑q₁) (abs.{0} ↑q₂))
+                (HSub.hSub.{0, 0, 0} (Neg.neg.{0} (41163051 / 10000000)) ε))
+              (abs.{0}
+                (HAdd.hAdd.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (↑p) (HMul.hMul.{0, 0, 0} (↑q₁) (Real.log 2)))
+                  (HMul.hMul.{0, 0, 0} (↑q₂) (Real.log 3))))
+def ErdosMahlerLean.External.MatolcsiRuzsaThree : Prop :=
+∀ (d : ℕ),
+  LE.le.{0} 1 d →
+    ∀ (E : Finset.{0} (Fin d → ℝ)),
+      Finset.Nonempty.{0} E →
+        Eq.{1} (affineSpan.{0, 0, 0} ℝ ↑E) Top.top.{0} →
+          LE.le.{0}
+            (HMul.hMul.{0, 0, 0} (↑((HAdd.hAdd.{0, 0, 0} d 2).choose 2))
+              (HSub.hSub.{0, 0, 0} (↑(Finset.card.{0} E)) (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 ↑d) 3)))
+            ↑(Finset.card.{0} (ErdosMahlerLean.External.tripleSum E))
+def ErdosMahlerLean.External.SubspaceTwoThree : Prop :=
+∀ (δ : ℝ),
+  LT.lt.{0} 0 δ →
+    LT.lt.{0} δ 1 →
+      ∃ (H₀ : ℝ),
+        LT.lt.{0} 0 H₀ ∧
+          ∃ (S : Finset.{0} (Submodule.{0, 0} ℚ (Fin 2 → ℚ))),
+            (∀ (L : Submodule.{0, 0} ℚ (Fin 2 → ℚ)), Membership.mem.{0, 0} S L → Ne.{1} L Top.top.{0}) ∧
+              ∀ (u v : ℤ),
+                Ne.{1} u 0 ∨ Ne.{1} v 0 →
+                  LT.lt.{0} (ErdosMahlerLean.subspaceProduct u v)
+                      (HPow.hPow.{0, 0, 0} (ErdosMahlerLean.subspaceEuclideanHeight u v) (Neg.neg.{0} δ)) →
+                    LT.lt.{0} (ErdosMahlerLean.subspaceEuclideanHeight u v) H₀ ∨
+                      ∃ (L : Submodule.{0, 0} ℚ (Fin 2 → ℚ)),
+                        Membership.mem.{0, 0} S L ∧
+                          Membership.mem.{0, 0} L
+                            (Matrix.vecCons.{0} (↑u) (Matrix.vecCons.{0} (↑v) Matrix.vecEmpty.{0}))
+def ErdosMahlerLean.External.MatveevRational : Prop :=
+∀ (n : ℕ),
+  LE.le.{0} 2 n →
+    ∀ (α : Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℚ),
+      (∀ (j : Fin (HAdd.hAdd.{0, 0, 0} n 1)), LT.lt.{0} 0 (α j) ∧ Ne.{1} (α j) 1) →
+        ∀ (A : Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℝ),
+          (∀ (j : Fin (HAdd.hAdd.{0, 0, 0} n 1)),
+              LE.le.{0}
+                (Max.max.{0} (ErdosMahlerLean.rationalLogHeight (α j))
+                  (Max.max.{0} (abs.{0} (Real.log ↑(α j))) (16 / 100)))
+                (A j)) →
+            ∀ (b : Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℤ),
+              Ne.{1} (∑ j : Fin (HAdd.hAdd.{0, 0, 0} n 1), HMul.hMul.{0, 0, 0} (↑(b j)) (Real.log ↑(α j))) 0 →
+                LT.lt.{0}
+                  (HMul.hMul.{0, 0, 0}
+                    (HMul.hMul.{0, 0, 0}
+                      (Neg.neg.{0} (ErdosMahlerLean.External.matveevRealConstant (HAdd.hAdd.{0, 0, 0} n 1)))
+                      (∏ j : Fin (HAdd.hAdd.{0, 0, 0} n 1), A j))
+                    (HAdd.hAdd.{0, 0, 0} 1 (Real.log (ErdosMahlerLean.External.matveevWeightedCoefficient n A b))))
+                  (Real.log
+                    (abs.{0} (∑ j : Fin (HAdd.hAdd.{0, 0, 0} n 1), HMul.hMul.{0, 0, 0} (↑(b j)) (Real.log ↑(α j)))))
+def ErdosMahlerLean.External.matveevRealConstant : ℕ → ℝ :=
+fun (n : ℕ) =>
+  Min.min.{0}
+    (HMul.hMul.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} (Real.exp 1) ↑n) 2)
+        (HPow.hPow.{0, 0, 0} 30 (HAdd.hAdd.{0, 0, 0} n 3)))
+      (HPow.hPow.{0, 0, 0} (↑n) (7 / 2)))
+    (HPow.hPow.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} 6 n) 20))
+def ErdosMahlerLean.External.matveevWeightedCoefficient : (n : ℕ) →
+  (Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℝ) → (Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℤ) → ℝ :=
+fun (n : ℕ) (A : Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℝ) (b : Fin (HAdd.hAdd.{0, 0, 0} n 1) → ℤ) =>
+  Max.max.{0} 1
+    (Finset.sup'.{0, 0} Finset.univ.{0} (ErdosMahlerLean.External.matveevWeightedCoefficient._proof_1 n)
+      fun (j : Fin (HAdd.hAdd.{0, 0, 0} n 1)) =>
+      HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} (abs.{0} ↑(b j)) (A j)) (A (Fin.last n)))
+def ErdosMahlerLean.rationalLogHeight : ℚ → ℝ :=
+fun (g : ℚ) => Real.log (Max.max.{0} ↑g.num.natAbs ↑g.den)
+def ErdosMahlerLean.subspaceProduct : ℤ → ℤ → ℝ :=
+fun (u v : ℤ) =>
+  HMul.hMul.{0, 0, 0}
+    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (abs.{0} (HSub.hSub.{0, 0, 0} ↑u ↑v)) (abs.{0} ↑v))
+      ↑(padicNorm 2 (HMul.hMul.{0, 0, 0} ↑u ↑v)))
+    ↑(padicNorm 3 (HMul.hMul.{0, 0, 0} ↑u ↑v))
+def ErdosMahlerLean.subspaceEuclideanHeight : ℤ → ℤ → ℝ :=
+fun (u v : ℤ) => √(HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (↑u) 2) (HPow.hPow.{0, 0, 0} (↑v) 2))

@@ -21,5 +21,6 @@
     "Full external sumset theorem"
   ],
   "initial_probe_attempt": "Broad unused Mathlib.Tactic import failed because a Batteries cache object was absent. Replaced only the audit probe import by the already built ErdosMahlerLean.Proposition21; final probe passed. No frozen or dependency source change.",
-  "fresh_project_build_and_kernel_recheck": "Earlier successful logs retained; not rerun because no frozen proof or dependency source changed."
+  "fresh_project_build_and_kernel_recheck": "At the BSS continuation, earlier logs were retained. The later Springer continuation reran the incremental build and full theorem-body recheck; see springer-checks.json.",
+  "scope": "Historical BSS continuation; later original-Springer continuation is recorded in springer-checks.json."
 }

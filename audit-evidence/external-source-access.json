@@ -9,7 +9,7 @@
     {
       "name": "Matolcsi-Ruzsa, Theorem 1.5",
       "url": "https://math.bme.hu/~matolcsi/hullarxiv.pdf",
-      "access": "Original author arXiv v1 PDF; theorem inspected; final publisher chapter unavailable"
+      "access": "Author arXiv v1 inspected in preceding audit; original Springer chapter now directly inspected separately."
     },
     {
       "name": "Matolcsi publication list, entry 33",
@@ -19,7 +19,14 @@
     {
       "name": "Final Springer chapter",
       "url": "https://link.springer.com/chapter/10.1007/978-0-387-68361-4_16",
-      "access": "Not retrieved; original-version text still unavailable. Mathematical input now independently supported by BSS (2014)."
+      "access": "Original published Springer 2010 book supplied locally; chapter pp. 221-227 directly inspected as text and page images, including theorem p.222 and proof pp.223-227.",
+      "local_path": ".local-sources/additive-number-theory-2010.pdf",
+      "sha256": "dad80340415877806676e6421573cfc847d6bdc19efe09045903005ca0a82062",
+      "evidence": "audit-evidence/springer-source-inspection.json",
+      "original_2010_publisher_chapter_accessed": true,
+      "distribution": "Local only; PDF, extraction and images excluded from Git and publication",
+      "previous_access_status": "Publisher retrieval unsuccessful in earlier audit; superseded by direct local inspection",
+      "provenance_limit": "User-supplied binary; no authenticated publisher download claimed"
     },
     {
       "name": "Schlickewei, pp.245-246",

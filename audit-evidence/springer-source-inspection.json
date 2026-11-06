@@ -1,0 +1,131 @@
+{
+  "checked_on": "2026-11-06",
+  "source": "M. Matolcsi and I. Z. Ruzsa, Sumsets and the Convex Hull, Springer 2010, pp.221-227",
+  "chapter_doi": "10.1007/978-0-387-68361-4_16",
+  "book_eisbn": "978-0-387-68361-4",
+  "local_pdf": ".local-sources/additive-number-theory-2010.pdf",
+  "pdf_sha256": "dad80340415877806676e6421573cfc847d6bdc19efe09045903005ca0a82062",
+  "pdf_size_bytes": 3753245,
+  "pdf_page_count": 361,
+  "provenance": "User-supplied original published book; imprint and chapter images inspected. No independently authenticated publisher download claimed.",
+  "original_2010_publisher_chapter_accessed": true,
+  "chapter_page_map": [
+    {
+      "printed": 221,
+      "pdf_one_based": 226
+    },
+    {
+      "printed": 222,
+      "pdf_one_based": 227
+    },
+    {
+      "printed": 223,
+      "pdf_one_based": 228
+    },
+    {
+      "printed": 224,
+      "pdf_one_based": 229
+    },
+    {
+      "printed": 225,
+      "pdf_one_based": 230
+    },
+    {
+      "printed": 226,
+      "pdf_one_based": 231
+    },
+    {
+      "printed": 227,
+      "pdf_one_based": 232
+    }
+  ],
+  "imprint_pdf_page_one_based": 4,
+  "theorem": "Theorem 1.5, printed p.222, equation (1.1)",
+  "proof": "Lemma 2.2 pp.223-224; Lemma 3.1 pp.224-226; final proof pp.226-227",
+  "manually_inspected_images": [
+    4,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232
+  ],
+  "reading": "Ghostscript and PDFKit text extraction, checked against all rendered chapter pages.",
+  "warning": "PDFKit issued a generic CoreGraphics PDF warning; requested text and images were generated successfully and inspected.",
+  "commands": [
+    "gs -q -dNOPAUSE -dBATCH -sDEVICE=txtwrite -sOutputFile=.local-sources/additive-number-theory-2010.txt .local-sources/additive-number-theory-2010.pdf",
+    "swift -module-cache-path .local-sources/swift-cache audit-evidence/inspect_springer.swift 4 226 227 228 229 230 231 232",
+    "python3 audit-evidence/verify_springer_evidence.py --local-source"
+  ],
+  "tool_versions": {
+    "ghostscript": "10.08.0"
+  },
+  "source_hypotheses": {
+    "sets": "finite A,B subset R^d",
+    "m": "m=|A|",
+    "dimension": "B not contained in any affine hyperplane; p.221 definition. Theorem does not print separate lower bound for d; following paragraph includes d=1. Only d>=1 used here.",
+    "containment": "A subset conv(B), equality allowed",
+    "k": "every positive integer",
+    "not_required": [
+      "A full dimensional",
+      "B subset A",
+      "|A| >= d+1",
+      "lattice or integrality",
+      "asymptotic threshold"
+    ]
+  },
+  "inequality": "|A+kB| >= m*choose(d+k,k) - k*choose(d+k,k+1) = (m-k*d/(k+1))*choose(d+k,k)",
+  "specialization": "A=B=E, k=2: |3E| >= choose(d+2,2)*(|E|-2*d/3)",
+  "lean_interface_no_stronger": true,
+  "full_affine_dimension_matches": true,
+  "proof_review": "Pass with local typographical corrections described in D16; no unresolved substantive gap identified.",
+  "relies_on_bss_2014_equation_18": false,
+  "bss_discrepancy": "Retained independently as D14; not a defect in the 2010 theorem required here.",
+  "distribution": "No PDF, substantial extracted text, page image, or module cache may enter Git or the publication package. Only metadata, short theorem transcription, original audit analysis and reproduction scripts are publishable.",
+  "git_ignore_rule": ".git/info/exclude:8:.local-sources/\t.local-sources/additive-number-theory-2010.pdf",
+  "local_only_artifacts": [
+    {
+      "path": ".local-sources/additive-number-theory-2010.txt",
+      "sha256": "4ef6c71afadb90f9ed2c54d6d94aefc3cedf64f9e8e7f2694407f4f2e8772b38"
+    },
+    {
+      "path": ".local-sources/springer-pdfkit.txt",
+      "sha256": "7e4b55894b498031ccf54031e12e6b3e1bef1db86f894bed9af74ead904893da"
+    },
+    {
+      "path": ".local-sources/springer-page-4.png",
+      "sha256": "6bb85c0e20d3cc767600462b83b64e78580afbe8853c6e094c5393677502d5bf"
+    },
+    {
+      "path": ".local-sources/springer-page-226.png",
+      "sha256": "fc51b8490699f326f218b7b9c1139573b23d6976d95969d9fac8cf90e3fe0eff"
+    },
+    {
+      "path": ".local-sources/springer-page-227.png",
+      "sha256": "77313d7c12c9d98d7c8caff6d05bd9bf04e7415865bcceff798c7452dc0119ce"
+    },
+    {
+      "path": ".local-sources/springer-page-228.png",
+      "sha256": "46324b4c142aa9c8c67e6d99b142a40545887d033ce7a4c29fbe5dcfacc252eb"
+    },
+    {
+      "path": ".local-sources/springer-page-229.png",
+      "sha256": "3e4b6505354b64b92050a8e2e2977dbc4635488418fb1300c5bd320e2af1fb2d"
+    },
+    {
+      "path": ".local-sources/springer-page-230.png",
+      "sha256": "6f52b2dd0a23388075e412a373388d030eb45181cd26585a6be9edc89c29e1dc"
+    },
+    {
+      "path": ".local-sources/springer-page-231.png",
+      "sha256": "19dbc188643a93658c162254083e8639f5d5c7fa332edbcb4d6662a9714c4b7e"
+    },
+    {
+      "path": ".local-sources/springer-page-232.png",
+      "sha256": "3fa2480b88ad9b2a0c04234ee9e87569d8460f3ac561c32bfb073d32d223baf0"
+    }
+  ],
+  "fresh_checkout_prerequisite": "Before supplying the PDF in any new clone, add .local-sources/ to that clone’s .git/info/exclude. The frozen tracked .gitignore is intentionally unchanged; the original worktree already has this local exclusion."
+}

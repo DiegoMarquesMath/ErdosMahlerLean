@@ -13,10 +13,14 @@
   "force_push": false,
   "hash_manifest": "audit-evidence/artifact-hashes.json",
   "manifest_excludes_itself": true,
-  "publication_note": "The eventual commit ID and pull request URL are external identifiers; including the commit ID in its own hashed tree would be circular.",
-  "status": "REMOTE PUBLICATION BLOCKED; local bundle prepared separately",
-  "attempted_tool": "GitHub create_blob",
-  "tool_response": "MCP tool call requires approval, but approval policy is never",
+  "publication_note": "Commit ID and bundle hash are outside the committed tree in audit-publication/publication-receipt.json to avoid circular hashing.",
+  "status": "UPDATED LOCAL COMMIT AND BUNDLE PREPARATION; no remote write requested in this continuation",
   "remote_writes_completed": false,
-  "pull_request_opened": false
+  "pull_request_opened": false,
+  "previous_local_audit_commit": "a62fbd08ba89cd9d403de597816fe8bd823474e8",
+  "original_2010_publisher_chapter_accessed": true,
+  "source_pdf_distribution": "Forbidden: PDF and all substantial extracts/images stay ignored in .local-sources/",
+  "previous_attempted_tool": "GitHub create_blob",
+  "previous_tool_response": "MCP tool call requires approval, but approval policy is never",
+  "bundle_includes_unchanged_frozen_tag": true
 }

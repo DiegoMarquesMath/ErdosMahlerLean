@@ -1,0 +1,18 @@
+{
+  "exact_exponents": {
+    "18-4*kappa": "383/250",
+    "88-18*kappa": "6947/500",
+    "11-6*theta": "47/10",
+    "beta-1/4": "8351/16468",
+    "2-9/(kappa+1)": "1234/5117",
+    "small_middle_numerator_exponent": "85212/5117",
+    "small_middle_after_Q4": "64744/5117",
+    "18/4-14": "-19/2"
+  },
+  "block_endpoint_cases": 3339,
+  "rank_and_power_pair_cases": 2286,
+  "weighted_log_numeric_cases": 320,
+  "counterexample_to_unused_converse": "X={1,4}, q=2, lattice=2Z",
+  "failures": 0,
+  "limitation": "Finite diagnostics do not establish infinite or eventual statements."
+}

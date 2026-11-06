@@ -1,0 +1,88 @@
+{
+  "checked_on": "2026-11-06",
+  "frozen_commit": "7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc",
+  "commands": [
+    {
+      "command": "lake build",
+      "log": "audit-evidence/lake-build-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env lean -t0 audit-evidence/Inspect.lean",
+      "log": "audit-evidence/inspect-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env lean -t0 audit-evidence/Recheck.lean",
+      "log": "audit-evidence/kernel-recheck-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env lean -t0 ErdosMahlerLean/Audit.lean",
+      "log": "audit-evidence/consolidated-axioms-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env lean -t0 audit-evidence/BSSSpecialization.lean",
+      "log": "audit-evidence/springer-specialization.log",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 audit-evidence/check_sources.py",
+      "log": "audit-evidence/source-check-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "bash scripts/audit.sh",
+      "log": "audit-evidence/hygiene-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "shasum -a 256 -c paper/SHA256SUMS",
+      "log": "audit-evidence/paper-hashes-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "git fsck --full",
+      "log": "audit-evidence/git-fsck-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 audit-evidence/bss_counterexample.py",
+      "log": "audit-evidence/bss-counterexample-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 audit-evidence/counterchecks.py",
+      "log": "audit-evidence/counterchecks-springer.log",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 audit-evidence/verify_springer_evidence.py --local-source",
+      "log": "audit-evidence/evidence-verification-springer.log",
+      "exit_code": 0
+    }
+  ],
+  "build": "PASS; incremental (5884 jobs), prior fresh 58-module project build retained",
+  "kernel": {
+    "checked_bodies": 42703,
+    "checked_project_bodies": 579,
+    "transitive_constants": 44807,
+    "bodyless_declarations": 2104,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "limits": "Installed kernel and imported environment; not independently implemented kernel or reconstruction of all inductives from empty environment."
+  },
+  "consolidated_axiom_results": 358,
+  "frozen_files_unchanged": 86,
+  "clean_pinned_dependencies": 9,
+  "four_mathematical_inputs": "Remain explicit unproved Lean hypotheses",
+  "source_review": "Original Springer inspected; exact specialization and proof checked; D16 local typos documented",
+  "bss_equation_18": "Exact rational counterexample rerun; independent bibliographic observation, not required source theorem defect",
+  "git_fsck_note": "Exit 0; reports dangling preceding audit commit a62fbd08ba89cd9d403de597816fe8bd823474e8 in frozen worktree. This is an unreferenced object, not a corruption.",
+  "reproduction": "Run each command from repository root, redirecting stdout/stderr to its listed log. Recheck/Inspect/countercheck/source scripts also regenerate their JSON outputs. Verify retained outputs with verify_springer_evidence.py; refresh artifact-hashes.json only after intentional audit updates. PDF inspection requires the separately supplied local PDF and macOS PDFKit/AppKit for the Swift script.",
+  "verdict": "PASS — source-reconciled conditional verification; no unconditional formalization claimed"
+}
