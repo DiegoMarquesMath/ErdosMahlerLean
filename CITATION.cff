@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "Cite a tagged verified release only; initial scaffold does not certify Proposition 2.1."
+title: "ErdosMahlerLean: a Lean 4 verification companion"
+type: software
+authors:
+  - family-names: Marques
+    given-names: Diego

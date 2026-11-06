@@ -1,0 +1,17 @@
+name: Lean verification audit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true
+      - name: Proof hygiene audit
+        run: bash scripts/audit.sh

@@ -1,0 +1,1704 @@
+
+\documentclass[11pt,reqno]{amsart}
+%\usepackage[textwidth=5.85in,textheight=8.55in,centering]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amssymb,microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}
+\hypersetup{pdftitle={A counterexample to the Erdos--Mahler conjecture},
+ pdfsubject={Smooth convergents and a finite irrationality exponent},
+ pdfauthor={Diego Marques}}
+\newtheorem*{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem*{conjecture}{Conjecture}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}[lemma]{Proposition}
+\newtheorem{corollary}[lemma]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[lemma]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[lemma]{Remark}
+\newcommand{\RR}{\mathcal R}
+\newcommand{\Bad}{\mathcal A}
+\newcommand{\htq}{\operatorname{ht}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\PP}{\mathrm P}
+\setlength{\emergencystretch}{1em}
+
+
+\title{A counterexample to the Erd\H{o}s--Mahler conjecture}
+\author[D. Marques]{Diego Marques}
+\address{Departamento de Matem\'atica, Universidade de Bras\'ilia,
+Bras\'ilia, DF, Brazil}
+\email{diego@mat.unb.br}
+
+\subjclass[2020]{Primary 11J70; Secondary 11J82, 11J86, 11J87}
+
+\keywords{Erd\H{o}s--Mahler conjecture, continued fractions,
+smooth convergents, irrationality exponent, Subspace Theorem,
+linear forms in logarithms}
+
+\begin{document}
+
+\begin{abstract}
+We disprove a 1939 conjecture of Erd\H{o}s and Mahler by
+constructing a Cantor set of irrational numbers $\xi$ with
+$4\le\mu(\xi)\le11$, each having infinitely many regular
+continued-fraction convergents of the form $2^a/3^b$.
+\end{abstract}
+
+\maketitle
+
+
+\section{Introduction}\label{sec:intro}
+
+
+For an irrational real number $\xi$, its \emph{irrationality
+exponent} $\mu(\xi)$ is the supremum of the real numbers
+$\nu>0$ for which $0<|\xi-u/v|<v^{-\nu}$ holds for
+infinitely many reduced fractions $u/v$. Thus $\xi$ is a
+Liouville number precisely when $\mu(\xi)=\infty$.
+Write $p_n/q_n$ for the regular continued-fraction
+convergents of $\xi$, and $\PP(m)$ for the largest
+prime factor of $|m|$, with $\PP(\pm1)=1$.
+
+In 1939, Erd\H{o}s and Mahler \cite[p.~18]{EM}
+proposed the following conjecture.
+
+\begin{conjecture}[Erd\H{o}s--Mahler]
+If $\PP(p_nq_n)$ is bounded for infinitely many $n$,
+then $\xi$ is a Liouville number.
+\end{conjecture}
+
+We disprove the conjecture even when the prime factors
+of the selected convergents are restricted to $2$ and $3$.
+
+\begin{theorem}\label{thm:main}
+There exists a Cantor set $K\subset\mathbb R$ such that
+every $\xi\in K$ has infinitely many regular
+continued-fraction convergents of the form $2^a/3^b$,
+yet satisfies $4\le\mu(\xi)\le11$.
+\end{theorem}
+
+The hypothesis of the Erd\H{o}s--Mahler conjecture already
+implies transcendence by Ridout's theorem \cite{Ridout};
+see also \cite[Theorem~2.3, p.~29]{Bugeaud}.
+Our result shows that it does not force an infinite
+irrationality exponent.
+
+Erd\H{o}s and Mahler also proved that $\xi$ is a Liouville number
+if $\PP(q_{n-1}q_nq_{n+1})$ is bounded for infinitely many $n$
+\cite[Theorem~2, p.~17]{EM}. Shorey~\cite{Shorey} obtained effective
+refinements. The recurrence $q_{n+1}=a_{n+1}q_n+q_{n-1}$ links the
+three denominators in their theorem. In the conjecture, successive
+indices for which $\PP(p_nq_n)$ is bounded may be arbitrarily far apart.
+
+Fraenkel~\cite{Fraenkel62,Fraenkel} studied rational approximation
+with prescribed prime factors. Fraenkel and Borosh subsequently
+obtained non-Liouville numbers by allowing the numerator and
+denominator of the approximating fractions to have cofactors outside
+the prescribed sets of primes. When both cofactors are bounded, their
+Hausdorff dimension formula gives zero, and they explicitly left open
+whether non-Liouville numbers exist in this case
+\cite[p.~459]{FraenkelBorosh}. Bugeaud recorded the Erd\H{o}s--Mahler
+conjecture as Problem~43 in his book~\cite[p.~215]{Bugeaud}.
+More recently, Bugeaud and Nguyen~\cite[Question~4.1, p.~32]{BN}
+restated it and constructed further examples of numbers with
+infinitely many smooth convergents.\\
+
+\noindent\emph{Idea of the proof.}
+We choose the successive convergents from the fractions
+$R(b)=2^{\lceil b\alpha\rceil}/3^b$, where $\alpha=\log 3/\log 2$.
+To bound the irrationality exponent of the limit, we must control
+approximation at the intervening denominators. At each stage, the
+indices for which $R(b)$ lies in the prescribed interval form a set
+of returns of an irrational rotation. Its threefold sumset has
+cardinality comparable to that of the return set itself. Two triples
+of indices with the same sum give the same product of fractions
+$R(b)$. Within a suitable denominator range, sufficiently close
+rational approximations inherit these identities.
+
+For small denominators, a congruence bounds the number of possible
+approximations. For large denominators, we use the inherited product
+identities. At high multiplicative rank, a sumset estimate gives a
+quadratic saving in the rank. At low rank, many quotients of triple
+products are rational powers. A uniform height bound from the
+$p$-adic Subspace Theorem allows us to choose the power exponent
+separately in each denominator range. Matveev's theorem then forces
+these quotients to equal the corresponding quotients of products of
+the $R(b)$, and rotation discrepancy bounds their number. Summing
+over the denominator ranges shows that a proportion tending to one
+of the returns is admissible.
+
+The main theorem is deduced from a counting proposition in
+Section~\ref{sec:prelim}, whose proof occupies
+Section~\ref{sec:rotation}. The construction is ineffective
+owing to its reliance on the Subspace Theorem.
+
+\section{The counting proposition and the main theorem}
+\label{sec:prelim}
+
+Throughout, all logarithms are natural, and
+$\mathbb N=\{1,2,\ldots\}$. Rational fractions have
+positive denominators. The notation $|I|$ denotes
+length when $I$ is an interval and cardinality when
+$I$ is a finite set. We write $F=O(G)$ or $F\ll G$
+if $|F|\le CG$ for some constant $C>0$,
+$F\asymp G$ if $F\ll G\ll F$, and $F=o(G)$
+if $F/G\to0$. Unless otherwise stated, all
+implicit constants are uniform in the varying parameters.
+
+Set
+\[
+ \alpha=\frac{\log3}{\log2},\qquad
+ a(b)=\lceil b\alpha\rceil,\qquad
+ R(b)=\frac{2^{a(b)}}{3^b}
+ \quad(b\in\mathbb N).
+\]
+Since $\alpha$ is irrational,
+$b\alpha<a(b)<b\alpha+1$. Thus each $R(b)$ is
+a reduced rational in $(1,2)$. For $t\in\mathbb N$, put
+\[
+ Q=3^t,\qquad A=18,\qquad N=Q^A,\qquad B=NQ^{-4},
+\]
+and define
+\[
+ \begin{gathered}
+ \zeta=R(t)+Q^{-4},\qquad J=(\zeta,\zeta+Q^{-4}),\\
+ \RR=\{b\in[Q,Q+N)\cap\Z:R(b)\in J\}.
+ \end{gathered}
+\]
+Thus $|J|=Q^{-4}$ and $B=N|J|=Q^{14}$.
+Since $R(t)\le2-Q^{-1}$ and $2Q^{-4}<Q^{-1}$
+for $Q\ge3$, we have $J\subset(1,2)$.
+
+A reduced rational $u/v\in[1,2]$ is
+\emph{exceptional for $b$} if $u/v\ne R(b)$ and
+\begin{equation}\label{eq:exceptional}
+ \left|R(b)-\frac uv\right|<\frac1{16v^{11}}.
+\end{equation}
+Write $\RR_i$ for the returns $b\in\RR$ admitting
+an exceptional fraction with $v>Q^3/6$, and put
+$\RR_a=\RR\setminus\RR_i$. These returns are called
+\emph{inadmissible} and \emph{admissible}, respectively.
+Their dependence on $t$ is suppressed except when needed.
+
+\begin{proposition}[Admissible returns]\label{prop:count}
+As $t\to\infty$ through the positive integers,
+\[
+ |\RR|\asymp B,\qquad
+ |\RR_i|=o(B),\qquad
+ |\RR_a|\asymp B.
+\]
+In particular, $\RR_a$ is nonempty for every
+sufficiently large $t$.
+\end{proposition}
+
+Before proving Proposition~\ref{prop:count} in
+Section~\ref{sec:rotation}, we deduce the main theorem.
+We first construct a single counterexample, then use
+the abundance of admissible choices to obtain a Cantor set.
+
+\begin{proof}[Proof of the theorem]
+By Proposition~\ref{prop:count}, choose an integer
+$t_0\ge4$ sufficiently large that $\RR_a(t)\ne\varnothing$
+for every $t\ge t_0$. Recursively select
+$t_{j+1}\in\RR_a(t_j)$, and put
+\[
+ r_j=R(t_j),\qquad Q_j=3^{t_j}\qquad(j\ge0).
+\]
+
+Since $t_{j+1}\in\RR_a(t_j)\subseteq\RR(t_j)$,
+the definition of $\RR(t_j)$ gives
+\begin{equation}\label{eq:successive-centers}
+ Q_j^{-4}<r_{j+1}-r_j<2Q_j^{-4},
+ \qquad Q_{j+1}\ge3^{Q_j}\ge2Q_j.
+\end{equation}
+
+Consider the closed intervals
+\[
+ K_j=[r_j+Q_j^{-4},\,r_j+3Q_j^{-4}].
+\]
+They lie in $(1,2)$, since $r_j\le2-Q_j^{-1}$ and
+$3Q_j^{-4}<Q_j^{-1}$. Their left endpoints strictly
+increase, while \eqref{eq:successive-centers} gives
+\[
+ r_{j+1}+3Q_{j+1}^{-4}
+ <r_j+\left(2+\frac3{16}\right)Q_j^{-4}
+ <r_j+3Q_j^{-4}.
+\]
+Hence $K_{j+1}\subset\operatorname{int}K_j$.
+Moreover, $Q_j\ge2^jQ_0$, so
+$|K_j|\le2Q_0^{-4}16^{-j}$. Their intersection
+therefore consists of a single point $\xi\in(1,2)$,
+satisfying
+\begin{equation}\label{eq:limit-displacement}
+ Q_j^{-4}<\xi-r_j<3Q_j^{-4}\qquad(j\ge0).
+\end{equation}
+
+If $\xi=u/v$ were rational, choose $j$ with
+$Q_j^3>3v$. Since $\xi\ne r_j$, rational separation
+would give
+\[
+ |\xi-r_j|\ge\frac1{vQ_j}>3Q_j^{-4},
+\]
+contrary to \eqref{eq:limit-displacement}.
+Thus $\xi$ is irrational. For every $j$, $Q_j\ge3$
+also gives
+\[
+ |\xi-r_j|<\frac3{Q_j^4}<\frac1{2Q_j^2}.
+\]
+Legendre's criterion
+\cite[Theorem~1.8, p.~10]{Bugeaud}
+therefore shows that every $r_j$ is a regular
+continued-fraction convergent of $\xi$.
+Their denominators are strictly increasing powers of $3$,
+and their numerators are powers of $2$.
+For each $0<\nu<4$, \eqref{eq:limit-displacement}
+gives $0<|\xi-r_j|<Q_j^{-\nu}$ whenever
+$Q_j^{4-\nu}\ge3$. Since $Q_j\ge2^jQ_0$, this holds
+for infinitely many $j$, proving $\mu(\xi)\ge4$.
+
+For the upper bound, let $u/v\in[1,2]$ be reduced,
+with $v\ge Q_0$, and choose $j$ such that
+\[
+ Q:=Q_j\le v<Q_{j+1}=:S.
+\]
+Since $t_j\ge4$, we have $3^{t_j}>12t_j$, and hence
+$Q^3<3^{Q/4}\le S^{1/4}$. We distinguish three ranges.
+
+\smallskip
+\noindent\emph{(i) $Q\le v\le Q^3/6$.}
+If $u/v=r_j$, then $v=Q$ and
+$|\xi-u/v|>v^{-4}$. Otherwise, rational separation
+and \eqref{eq:limit-displacement} give
+\[
+ |\xi-u/v|
+ \ge\frac1{vQ}-\frac3{Q^4}
+ \ge\frac1{2vQ}\ge\frac1{2v^2},
+\]
+because $6v\le Q^3$.
+
+\smallskip
+\noindent\emph{(ii) $Q^3/6<v<S^{1/4}$.}
+The reduced denominator of $r_{j+1}$ is $S>v$,
+so $u/v\ne r_{j+1}$. Since
+$t_{j+1}\in\RR_a(t_j)$, admissibility gives
+\[
+ |r_{j+1}-u/v|\ge\frac1{16v^{11}}.
+\]
+As $S>v^4$ and $v\ge3$,
+\[
+ \frac3{S^4}<\frac3{v^{16}}
+ \le\frac1{32v^{11}},
+\]
+where the last inequality follows from
+$v^5\ge3^5>96$. Applying
+\eqref{eq:limit-displacement} at $j+1$, we obtain
+\[
+ |\xi-u/v|
+ \ge\frac1{16v^{11}}-\frac3{S^4}
+ \ge\frac1{32v^{11}}.
+\]
+
+\smallskip
+\noindent\emph{(iii) $S^{1/4}\le v<S$.}
+Again $u/v\ne r_{j+1}$. Since $S\ge3$ and $v<S$,
+we have $S^3\ge9S>6v$. Rational separation yields
+\[
+ |\xi-u/v|
+ \ge\frac1{Sv}-\frac3{S^4}
+ \ge\frac1{2Sv}\ge\frac1{2v^5},
+\]
+using $S\le v^4$.
+
+\smallskip
+These estimates show that
+\[
+ |\xi-u/v|\ge\frac1{32v^{11}}
+ \qquad(u/v\in[1,2],\ v\ge Q_0).
+\]
+For $1\le v<Q_0$, the reduced fraction $u/v$
+differs from $r_0$, and $6v<Q_0^3$ gives
+\[
+ |\xi-u/v|
+ \ge\frac1{vQ_0}-\frac3{Q_0^4}
+ \ge\frac1{2vQ_0}.
+\]
+Also, $1+Q_0^{-1}\le r_0\le2-Q_0^{-1}$, so
+\[
+ K_0\subset
+ \left[1+\frac1{2Q_0},\,2-\frac1{2Q_0}\right].
+\]
+Rationals outside $[1,2]$ consequently have distance
+at least $1/(2Q_0)$ from $\xi$.
+Since $Q_0\ge81$, these bounds imply
+\[
+ \left|\xi-\frac uv\right|
+ \ge\frac1{2Q_0v^{11}}
+\]
+for every reduced rational $u/v$ with $v\ge1$.
+In particular, $4\le\mu(\xi)\le11$.
+
+
+\smallskip
+\noindent\emph{A Cantor set of counterexamples.}
+The preceding argument applies to every sequence of admissible
+indices. For $t\in\mathbb N$, put
+\[
+ K(t)=[R(t)+3^{-4t},\,R(t)+3^{1-4t}].
+\]
+As shown above, $K(b)\subset\operatorname{int}K(t)$ whenever
+$b\in\RR_a(t)$.
+
+We claim that every sufficiently large $t$ admits two admissible
+indices $b<c$ for which $K(b)$ and $K(c)$ are disjoint.
+Indeed, $|\RR_a(t)|\asymp Q^{14}$, while $[Q,Q+N)$ can be
+covered by $O(\log Q)$ dyadic intervals. Thus two admissible
+indices satisfy $b<c<2b$. Since $R(b)$ and $R(c)$ are distinct
+reduced fractions with denominators $3^b$ and $3^c$,
+\[
+ |R(b)-R(c)|\ge3^{-c}>3^{-2b}
+ >2\cdot3^{1-4b}.
+\]
+As $K(b)\subset[R(b),R(b)+3^{1-4b}]$ and likewise for
+$K(c)$, these intervals are disjoint.
+
+Starting from a sufficiently large $t_0$, iterate this
+selection. At level $m$ we obtain $2^m$ pairwise disjoint
+closed intervals, each containing two intervals at the
+next level. Their lengths are bounded by
+$2Q_0^{-4}16^{-m}$, where $Q_0=3^{t_0}$.
+The intersection of the resulting nested unions is
+therefore a Cantor set $K$. Every $\xi\in K$ arises
+from an infinite sequence of admissible indices and
+hence satisfies the conclusions established above.
+\end{proof}
+
+
+\section{Proof of Proposition~\ref{prop:count}}
+\label{sec:rotation}
+
+The proof rests on a contrast between the size of the return
+set $\RR$ and that of its threefold sumset. We shall show that
+$|\RR|\asymp B$, whereas $|3\RR|\ll B$. Thus many distinct triples of return indices have
+the same sum. The special
+arithmetic form of $R(b)$ turns these additive relations into
+exact multiplicative identities, which persist under sufficiently
+close rational approximation.
+
+Consequently, exceptional approximations in a fixed denominator
+range give rise to a set of rational numbers whose threefold
+product set has cardinality $O(B)$. This restriction is the
+basis of the counting argument: large multiplicative rank
+forces the exceptional set to be small, while small rank
+will be treated through rational power classes. We first
+establish the additive and multiplicative relations, then
+exclude exceptional approximations in the remaining
+denominator ranges.
+
+\subsection{Many returns, few sums}
+
+For $x\in\mathbb R$, write $\{x\}=x-\lfloor x\rfloor$ and
+\[
+ \norm{x}=\min_{m\in\Z}|x-m|.
+\]
+Thus $\norm{x}$ denotes distance to the nearest integer,
+not a vector norm. For a subset $E$ of an additive group
+and an integer $k\ge1$, let
+\[
+ kE=\{e_1+\cdots+e_k:e_i\in E\},
+\]
+where repetitions are allowed.
+
+The set $\RR$ is described by an irrational rotation. Put
+\[
+ \Phi(y)=1-\frac{\log y}{\log2},\qquad
+ I=\Phi(J),\qquad \rho=|I|.
+\]
+Since $\Phi(R(b))=\{b\alpha\}$, the set $\RR$ consists
+precisely of the indices $b\in[Q,Q+N)\cap\Z$ for which
+$\{b\alpha\}\in I$.
+
+We use the estimate of Wu and Wang
+\cite[Theorem~1]{WW}: for every $\varepsilon>0$, there
+is an effective constant $\mathfrak H_\varepsilon$
+such that
+\begin{equation}\label{eq:wu-wang}
+ |p+q_1\log2+q_2\log3|
+ \ge\mathfrak H^{-4.1163051-\varepsilon},
+ \qquad
+ \mathfrak H=\max\{|q_1|,|q_2|\}
+ \ge\mathfrak H_\varepsilon,
+\end{equation}
+for integers $p,q_1,q_2$.
+Taking $\varepsilon=10^{-4}$, $p=0$, $q_2=-n$, and
+$q_1$ nearest to $n\alpha$ in \eqref{eq:wu-wang}
+gives
+\[
+ \log2\,\norm{n\alpha}\ge(2n)^{-4.1164051}
+\]
+for sufficiently large positive integers $n$.
+By symmetry and the irrationality of $\alpha$,
+there is $c_\kappa>0$ such that
+\begin{equation}\label{eq:type}
+ \norm{n\alpha}\ge c_\kappa|n|^{-\kappa}
+ \quad(n\in\Z\setminus\{0\}),\qquad
+ \kappa=\frac{4117}{1000},\quad
+ \beta=1-\frac1\kappa=\frac{3117}{4117}.
+\end{equation}
+
+\begin{proposition}[Discrepancy]\label{lem:discrepancy}
+Uniformly for integers $u$, positive integers $T$,
+and circular intervals $\mathcal I\subset\mathbb R/\Z$,
+\begin{equation}\label{eq:discrepancy}
+ \#\{u\le n<u+T:\{n\alpha\}\in\mathcal I\}
+ =T|\mathcal I|+O(T^\beta).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Let $\widetilde p_i/\widetilde q_i$ denote the
+convergents of $\alpha$. The standard convergent
+estimate \cite[Corollary~1.4, p.~10]{Bugeaud}
+and \eqref{eq:type} give
+$\widetilde q_{i+1}\ll\widetilde q_i^\kappa$.
+
+On any $\widetilde q_i$ consecutive indices, the
+fractional parts of $n\alpha$ lie within
+$1/\widetilde q_i$ of a translate of the uniform
+grid of denominator $\widetilde q_i$. At most
+$O(1)$ grid points lie sufficiently close to the
+endpoints of $\mathcal I$ to affect the count.
+Hence each such interval of indices has discrepancy
+$O(1)$, uniformly in its initial index.
+
+Decompose $T$ greedily into convergent-denominator
+lengths. The number of blocks of length
+$\widetilde q_i$ is at most
+\[
+ \min\{C\widetilde q_i^{\kappa-1},
+          T/\widetilde q_i\}.
+\]
+Use the first bound for
+$\widetilde q_i\le T^{1/\kappa}$ and the second
+for larger denominators. Since
+$\widetilde q_{i+2}\ge2\widetilde q_i$, summation
+gives $O(T^{1-1/\kappa})=O(T^\beta)$.
+Endpoints and intervals crossing zero contribute
+only $O(1)$.
+\end{proof}
+
+The return set is large, but its threefold sumset
+remains of comparable cardinality.
+
+\begin{lemma}[Returns and their sums]\label{lem:bohr}
+For all sufficiently large $t$, there is a fixed
+constant $C_3>0$ such that
+\begin{equation}\label{eq:return-bohr}
+ |\RR|\asymp B,\qquad |3\RR|\le C_3B.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Since
+\[
+ \frac1{2\log2}\le|\Phi'(y)|\le\frac1{\log2}
+ \qquad(1\le y\le2),
+\]
+we have
+\[
+ \frac{Q^{-4}}{2\log2}\le\rho
+ \le\frac{Q^{-4}}{\log2}.
+\]
+By \eqref{eq:discrepancy},
+$|\RR|=N\rho+O(N^\beta)$.
+
+Every $\ell\in3\RR$ lies in $[3Q,3Q+3N)$
+and satisfies $\{\ell\alpha\}\in3I\pmod1$.
+Since $3\rho<1$ for sufficiently large $t$,
+another application of \eqref{eq:discrepancy}
+gives
+\[
+ |3\RR|\le9N\rho+O(N^\beta).
+\]
+Finally,
+\[
+ \frac{N^\beta}{B}=Q^{4-A/\kappa}\longrightarrow0,
+\]
+because $A=18>4\kappa$. Since $N\rho\asymp B$,
+both assertions follow.
+\end{proof}
+
+For shorter arcs, the discrepancy error may exceed
+the expected number of visits. We shall also need
+an estimate that retains the arc length.
+
+\begin{lemma}[Short-arc estimate]\label{lem:short-arc}
+For a circular interval $\mathcal I$ of length
+$0<\lambda\le1$, any integer $u$, and any
+positive integer $T$,
+\begin{equation}\label{eq:short-arc}
+ \#\{u\le n<u+T:\{n\alpha\}\in\mathcal I\}
+ \ll T\lambda+(T^\kappa\lambda)^{1/(\kappa+1)}+1.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Suppose first that $\mathcal I$ does not cross
+zero. The number of visits is bounded by the
+number of points of the lattice
+\[
+ \Lambda=
+ \left\{\left(\frac nT,\frac{n\alpha-r}{\lambda}\right):
+ n,r\in\Z\right\}
+\]
+in a translate of the closed unit square.
+Its covolume is $\Delta=(T\lambda)^{-1}$.
+
+Let $\lambda_1$ be the Euclidean length of a
+shortest nonzero lattice vector. It is primitive
+and extends to a lattice basis. The parallel
+lattice lines are separated by $\Delta/\lambda_1$,
+and their lattice points by $\lambda_1$.
+Thus the square contains
+\[
+ O\bigl((1+\lambda_1/\Delta)
+        (1+\lambda_1^{-1})\bigr)
+\]
+lattice points. If it contains more than one
+point, then $\lambda_1\le\sqrt2$, and this
+bound is $O(1+\Delta^{-1}+\lambda_1^{-1})$.
+
+For a shortest vector with nonzero first
+coordinate, \eqref{eq:type} gives
+\[
+ \lambda_1
+ \ge\max\left\{
+ \frac{|n|}{T},\frac{c_\kappa}{\lambda|n|^\kappa}
+ \right\}
+ \ge\left(\frac{c_\kappa}
+ {T^\kappa\lambda}\right)^{1/(\kappa+1)}.
+\]
+For a vertical vector,
+$\lambda_1\ge1/\lambda$, hence
+$\lambda_1^{-1}\le1$.
+Substituting these bounds proves
+\eqref{eq:short-arc}. An interval crossing
+zero is split into two intervals.
+\end{proof}
+
+\subsection{From additive relations to multiplicative identities}
+
+We now use the arithmetic form of the fractions
+$R(b)$. If two threefold sums of return indices
+coincide, the corresponding products have the
+same denominator, while their proximity forces
+their numerators to coincide. The resulting
+identities will also hold for sufficiently close
+rational approximations.
+
+For $X\subset\Q_{>0}$ and $k\ge1$, write
+\[
+ X^{[k]}=\{x_1\cdots x_k:x_i\in X\},
+\]
+again allowing repetitions.
+
+\begin{lemma}[Products determined by index sums]
+\label{lem:smooth-products}
+For sufficiently large $t$, each $\ell\in3\RR$
+determines a unique integer $h(\ell)$ such that
+\begin{equation}\label{eq:smooth-product}
+ Y(\ell):=\prod_{i=1}^3R(b_i)
+ =\frac{2^{h(\ell)}}{3^\ell}
+ \quad\text{whenever }\ell=b_1+\cdots+b_3,
+ \quad b_i\in\RR.
+\end{equation}
+All the numbers $h(\ell)-\alpha\ell$ belong to
+a common interval of length $3\rho$ contained
+in $(0,3)$. Moreover, for $\ell\ne\ell'$,
+\begin{equation}\label{eq:product-separation}
+ |Y(\ell)-Y(\ell')|
+ \ge c_\kappa\log2\,(3N)^{-\kappa}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Two products corresponding to representations
+of the same $\ell$ have quotient an integral
+power of $2$, and both lie in
+$(\zeta^3,(\zeta+Q^{-4})^3)$. Since
+\[
+ \left(\frac{\zeta+Q^{-4}}{\zeta}\right)^3<2
+\]
+for sufficiently large $t$, their quotient
+must equal one. Thus \eqref{eq:smooth-product}
+defines $h(\ell)$ uniquely.
+
+Since $a(b)-\alpha b=1-\{b\alpha\}$ and
+$\{b\alpha\}\in I$, the quantities
+$h(\ell)-\alpha\ell$ lie in a common
+interval of length $3\rho$ contained in
+$(0,3)$. For distinct $\ell,\ell'\in3\RR$,
+\[
+ \begin{aligned}
+ |\log Y(\ell)-\log Y(\ell')|
+ &=\log2\,|h(\ell)-h(\ell')
+       -\alpha(\ell-\ell')|\\
+ &\ge\log2\,\norm{(\ell-\ell')\alpha}\\
+ &\ge c_\kappa\log2\,(3N)^{-\kappa}.
+ \end{aligned}
+\]
+Both products exceed one, so their difference
+is at least the difference of their logarithms.
+This proves \eqref{eq:product-separation}.
+\end{proof}
+
+We next transfer these identities to the rational
+approximations whose number must be estimated.
+Fix a nonempty set $\Bad\subseteq\RR$ and a
+denominator interval $(V,H]$. For each $b\in\Bad$,
+choose a reduced rational $s_b\in[1,2]$, with
+denominator $v_b$, satisfying
+\begin{equation}\label{eq:assignment}
+ V<v_b\le H,\qquad s_b\ne R(b),\qquad
+ |R(b)-s_b|<(16v_b^{11})^{-1}.
+\end{equation}
+Put $X=\{s_b:b\in\Bad\}$ and $Z=X^{[3]}$.
+
+\begin{lemma}[Product correspondence]\label{lem:transfer}
+There exists a fixed constant $C_2>0$ such
+that, for sufficiently large $t$, the conditions
+\begin{equation}\label{eq:transfer-conditions}
+ V^{11}>C_2N^\kappa,\qquad V^{11}>2H^6
+\end{equation}
+make $b\mapsto s_b$ injective and induce
+a bijection
+\begin{equation}\label{eq:bijection}
+ \psi:3\Bad\longrightarrow Z,\qquad
+ \psi(b_1+\cdots+b_3)=s_{b_1}\cdots s_{b_3}.
+\end{equation}
+In particular,
+\begin{equation}\label{eq:product-cap-size}
+ |\Bad|\le|Z|=|3\Bad|\le C_3B.
+\end{equation}
+If $z=U/W=\psi(\ell)$ is reduced, then
+\begin{equation}\label{eq:product-accuracy}
+ 1\le z,Y(\ell)\le8,\qquad
+ U\le8H^3,\quad W\le H^3,\qquad
+ 0<|Y(\ell)-z|<V^{-11}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+If $s_b=s_{b'}$ for distinct $b,b'\in\Bad$,
+then \eqref{eq:assignment} gives
+$|R(b)-R(b')|<(8V^{11})^{-1}$.
+Applying $\Phi$, we obtain
+\[
+ \norm{(b-b')\alpha}
+ <(8\log2\,V^{11})^{-1},
+\]
+contrary to \eqref{eq:type}, since
+$0<|b-b'|<N$ and $C_2$ is sufficiently
+large. Thus $b\mapsto s_b$ is injective.
+
+For any $b_1,\ldots,b_3\in\Bad$,
+telescoping products of numbers in $[1,2]$
+gives
+\[
+ \left|\prod_{i=1}^3R(b_i)
+ -\prod_{i=1}^3s_{b_i}\right|
+ \le4\sum_{i=1}^3|R(b_i)-s_{b_i}|
+ <\frac34V^{-11}<V^{-11}.
+\]
+Equal index sums give equal smooth products
+by Lemma~\ref{lem:smooth-products}.
+The corresponding rational products therefore
+differ by less than $2V^{-11}$.
+As their reduced denominators are at most
+$H^3$, rational separation and the second
+condition in \eqref{eq:transfer-conditions}
+force them to coincide. Hence $\psi$ is
+well defined and surjective.
+
+Conversely, if two rational products coincide,
+their smooth products differ by less than
+$2V^{-11}$. For distinct index sums, this
+contradicts \eqref{eq:product-separation}
+provided
+\[
+ C_2>\frac{2\cdot3^\kappa}{c_\kappa\log2}.
+\]
+Thus $\psi$ is injective. Fixing two summands
+and applying \eqref{eq:return-bohr} proves
+\eqref{eq:product-cap-size}.
+
+The bounds on $z,U,W$ in
+\eqref{eq:product-accuracy} follow by
+multiplying three fractions in $[1,2]$
+with denominators at most $H$.
+Furthermore, rational separation gives
+\[
+ \frac1{3^bv_b}
+ \le|R(b)-s_b|
+ <\frac1{16v_b^{11}},
+ \qquad
+ 16v_b^{10}<3^b.
+\]
+Consequently, if $\ell=b_1+\cdots+b_3$,
+\[
+ W\le\prod_{i=1}^3v_{b_i}
+ <16^{-3/10}3^{\ell/10}<3^\ell.
+\]
+Since $Y(\ell)$ has reduced denominator
+$3^\ell$, we have $z\ne Y(\ell)$.
+The telescoping estimate proves the remaining
+assertion of \eqref{eq:product-accuracy}.
+\end{proof}
+
+The preceding lemma bounds the size of the
+threefold product set independently of the
+denominator height. We shall combine this
+bound with its multiplicative rank.
+
+For a finite nonempty $X\subset\Q_{>0}$,
+the \emph{affine multiplicative rank} of $X$
+is the rank of the group generated by
+$\{x/x_0:x\in X\}$, for any fixed $x_0\in X$.
+This does not depend on the choice of $x_0$.
+For a prime $p$, let $v_p(x)$ denote the
+$p$-adic valuation of a positive rational $x$.
+
+\begin{lemma}[Multiplicative rank bound]
+\label{lem:rank-height}
+Let $X\subset[1,2]\cap\Q$ be finite and
+nonempty. Put $M=|X|$, $\mathsf P=|X^{[3]}|$,
+and let $d$ be its affine multiplicative rank.
+Then $X^{[3]}$ has rank $d$ and
+\begin{equation}\label{eq:rank120}
+ Md^2\le6\mathsf P\qquad(d\ge1).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Fix $x_0\in X$ and put
+\[
+ E=\{(v_p(x/x_0))_p:x\in X\}.
+\]
+This set contains zero and spans a
+$d$-dimensional real vector space.
+By unique factorization, $X^{[3]}/x_0^3$
+corresponds to $3E$, which has the same
+rank. For $d\ge1$, the Matolcsi--Ruzsa
+sumset theorem \cite[Theorem~1.5]{MR}
+gives
+\[
+ |3E|\ge\binom{d+2}{2}
+ \left(M-\frac{2d}{3}\right)
+ \ge\frac{Md^2}{6},
+\]
+since $d\le M-1$.
+\end{proof}
+
+
+
+\subsection{Excluding small denominators}
+\label{sec:lower}
+
+We first exclude exceptional approximations with denominators
+below $V_*=Q^{A/2}/t$. The position of $J$ immediately to the
+right of $R(t)$ restricts the possible rational fractions to
+a small number of residue classes. Combined with the short-arc
+estimate, this gives a negligible contribution.
+
+For $\nu>0$ and $0<Y_1<Y_2\le\infty$, let
+$E_\nu(Y_1,Y_2)$ denote the number of indices $b\in\RR$
+for which there exists a reduced rational $u/v\in[1,2]$
+such that
+\[
+ Y_1<v\le Y_2,\qquad u/v\ne R(b),\qquad
+ |R(b)-u/v|<(16v^\nu)^{-1}.
+\]
+Thus $|\RR_i|=E_{11}(Q^3/6,\infty)$.
+
+\begin{lemma}[Localized fractions]
+\label{lem:localized-targets}
+For $V\ge Q^3/6$ and sufficiently large $Q$, at most
+$10V^2/Q^4$ reduced fractions $u/v\in[1,2]$ with
+$V<v\le2V$ have a radius-$(16v^9)^{-1}$ neighborhood
+intersecting $J$.
+\end{lemma}
+
+\begin{proof}
+Write $p=2^{a(t)}$, so that $R(t)=p/Q$ and
+$\gcd(p,Q)=1$. By the definition of $J$, every such
+fraction satisfies
+\[
+ \frac{v}{Q^3}-\frac{Q}{16v^8}
+ <\Delta:=Qu-pv
+ <\frac{2v}{Q^3}+\frac{Q}{16v^8}.
+\]
+Since $V<v\le2V$ and $V\ge Q^3/6$, these inequalities
+give, for sufficiently large $Q$,
+\[
+ 0<\Delta<\frac{5V}{Q^3}.
+\]
+For each integer $\Delta$ in this range, the congruence
+\[
+ pv\equiv-\Delta\pmod Q
+\]
+determines a unique residue class modulo $Q$.
+It contains at most $V/Q+1\le2V/Q$ integers
+$v\in(V,2V]$. Once $v$ and $\Delta$ are fixed,
+so is $u=(pv+\Delta)/Q$.
+The number of possible fractions is therefore at most
+\[
+ \frac{5V}{Q^3}\cdot\frac{2V}{Q}
+ =\frac{10V^2}{Q^4}.
+\]
+\end{proof}
+
+We apply this bound with approximation exponent $9$,
+which also controls the exceptional set defined by
+exponent $11$.
+
+\begin{proposition}[Small denominators]
+\label{prop:small-denominators}
+Put $V_*=Q^{A/2}/t$. For sufficiently large $t$,
+\begin{equation}\label{eq:small-denominators}
+ E_{11}(Q^3/6,V_*)\ll Bt^{-2}.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Fix $V\ge Q^3/6$. By
+Lemma~\ref{lem:localized-targets}, there are at most
+$O(Q^{-4}V^2)$ reduced fractions with denominators
+in $(V,2V]$ whose radius-$(16v^9)^{-1}$
+neighborhoods intersect $J$.
+
+Under $\Phi$, each such neighborhood determines an
+interval of length $O(V^{-9})$. Summing the short-arc
+estimate \eqref{eq:short-arc} over these intervals gives
+\[
+ \begin{aligned}
+ E_9(V,2V)
+ &\ll NQ^{-4}V^{-7}
+ +N^{\kappa/(\kappa+1)}Q^{-4}V^\sigma
+ +Q^{-4}V^2,\\
+ \sigma&=2-\frac9{\kappa+1}
+ =\frac{1234}{5117}>0.
+ \end{aligned}
+\]
+
+Sum over dyadic intervals from $Q^3/6$ to $V_*$,
+truncating the last interval if necessary.
+The first term decreases geometrically, while
+the other two increase. The sums of the three terms are
+\[
+ O(BQ^{-21}),\qquad
+ O(BQ^{-\vartheta A}t^{-\sigma}),\qquad
+ O(Bt^{-2}),
+\]
+respectively, where
+\[
+ \vartheta=\frac{9/2-\kappa}{\kappa+1}
+ =\frac{383}{5117}>0.
+\]
+Here we used $B=NQ^{-4}$ and
+\[
+ N^{-1/(\kappa+1)}V_*^\sigma
+ =Q^{-\vartheta A}t^{-\sigma}.
+\]
+Since $A=18$ and $Q=3^t$, the first two
+contributions are $O(Bt^{-2})$.
+As $E_{11}\le E_9$, this proves
+\eqref{eq:small-denominators}.
+\end{proof}
+
+\subsection{Exceptional heights and rational powers}
+\label{sec:subspace}
+
+It remains to control exceptional approximations with denominators
+exceeding $V_*$. The first step is to show that their logarithmic
+heights are $o(N)$, uniformly over the return set. This follows
+from the $p$-adic Subspace Theorem. We then exploit rational
+power classes among the threefold products and use Matveev's
+theorem to separate pairs whose quotients do not agree with
+those of the corresponding smooth products.
+
+For $x\in\Q^\times$ and a prime $p$, write
+$|x|_p=p^{-v_p(x)}$, where $v_p(-x)=v_p(x)$.
+For a positive integer $n$, put
+$[n]_6=2^{v_2(n)}3^{v_3(n)}$; the notation
+$|\cdot|_\infty$ denotes ordinary absolute value.
+
+We use the following two-dimensional form of the $p$-adic
+Subspace Theorem. Let $\mathcal V$ be a finite set of places
+of $\Q$ containing infinity, and for each
+$\upsilon\in\mathcal V$ let
+$L_{1,\upsilon},L_{2,\upsilon}$ be independent rational
+linear forms. For fixed $c,\eta>0$, the nonzero primitive
+integer vectors $\mathbf x=(x_1,x_2)$ satisfying
+\begin{equation}\label{eq:subspace}
+ \prod_{\upsilon\in\mathcal V}
+ |L_{1,\upsilon}(\mathbf x)
+ L_{2,\upsilon}(\mathbf x)|_\upsilon
+ \le c\max\{|x_1|,|x_2|\}^{-\eta}
+\end{equation}
+lie in finitely many proper rational subspaces of $\Q^2$;
+see \cite[p.~246, (1.3)--(1.5)]{Schlickewei} and
+\cite[Corollary~7.2.5]{BG}. The constant $c$ is absorbed
+by decreasing $\eta$ outside a bounded set.
+
+Related Subspace-Theorem estimates for rational
+approximations to quotients of power sums appear in
+Corvaja and Zannier~\cite{CorvajaZannier}.
+The following lemma is tailored to the family $R(b)$.
+
+\begin{lemma}[Fixed-exponent separation]
+\label{lem:fixed-separation}
+For every $\varepsilon>0$, there exists
+$b_0=b_0(\varepsilon)$ such that, for all integers
+$b\ge b_0$ and reduced rationals $u/v\in[1,2]$
+distinct from $R(b)$,
+\begin{equation}\label{eq:fixed-separation}
+ |R(b)-u/v|\ge3^{-\varepsilon b}v^{-2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Write $P=2^{a(b)}$, $S=3^b$, and
+$e=|Pv-Su|\ge1$. Put
+\[
+ \mathfrak g=\gcd(Pv,Su),\qquad
+ \mathsf U=\frac{Pv}{\mathfrak g},\qquad
+ \mathsf V=\frac{Su}{\mathfrak g}.
+\]
+The pair $(\mathsf U,\mathsf V)$ is positive and primitive.
+Since $\gcd(u,v)=1$, every prime divisor of $\mathfrak g$
+belongs to $\{2,3\}$. Consequently,
+\[
+ [\mathsf U\mathsf V]_6
+ =\frac{PS[uv]_6}{\mathfrak g^2},
+ \qquad
+ |(\mathsf U-\mathsf V)\mathsf V|_\infty
+ =\frac{eSu}{\mathfrak g^2}.
+\]
+It follows that
+\[
+ \begin{aligned}
+ \Pi(\mathsf U,\mathsf V)
+ &:=
+ |(\mathsf U-\mathsf V)\mathsf V|_\infty
+ |\mathsf U\mathsf V|_2|\mathsf U\mathsf V|_3\\
+ &=\frac{eu}{P[uv]_6}
+ \le2v^2|P/S-u/v|.
+ \end{aligned}
+\]
+
+Suppose that \eqref{eq:fixed-separation} fails for
+arbitrarily large $b$. Rational separation gives
+$|P/S-u/v|\ge(Sv)^{-1}$, so any such failure
+requires $v<S$. Hence, with
+$\mathcal H=\max\{\mathsf U,\mathsf V\}$,
+we have $\mathcal H\le2Sv<2S^2$ and
+\begin{equation}\label{eq:st-inequality}
+ \Pi(\mathsf U,\mathsf V)
+ <2S^{-\varepsilon}
+ \le2^{1+\varepsilon/2}\mathcal H^{-\varepsilon/2}.
+\end{equation}
+
+Apply \eqref{eq:subspace} to
+\eqref{eq:st-inequality}, taking
+$\mathcal V=\{\infty,2,3\}$, the forms
+$(X-Y,Y)$ at infinity, and $(X,Y)$ at
+each of the places $2$ and $3$.
+The primitive pairs $(\mathsf U,\mathsf V)$
+then lie on finitely many rational lines,
+each containing at most one positive primitive pair.
+
+On the other hand, along a sequence of failures
+with $b\to\infty$,
+\[
+ 0<|\mathsf U/\mathsf V-1|
+ =\frac{|P/S-u/v|}{u/v}
+ <S^{-\varepsilon}v^{-2}\longrightarrow0.
+\]
+This is impossible for a finite set of positive
+primitive pairs with $\mathsf U\ne\mathsf V$.
+\end{proof}
+
+For each $t$, let $W_t$ be the maximum of $\log v$
+over exceptional fractions associated with indices
+$b\in\RR$, taking $W_t=0$ if there are none.
+This maximum is finite: rational separation and
+\eqref{eq:exceptional} give $16v^{10}<3^b$.
+
+We claim that
+\begin{equation}\label{eq:contraction}
+ W_t/N\longrightarrow0\qquad(t\to\infty).
+\end{equation}
+Indeed, fix $\varepsilon>0$. For sufficiently large $t$,
+all $b\in\RR$ satisfy $b\ge Q\ge b_0(\varepsilon)$.
+Combining \eqref{eq:fixed-separation} with
+\eqref{eq:exceptional} gives
+$v^9<3^{\varepsilon b}/16$, and therefore
+\[
+ W_t\le\frac{\varepsilon\log3}{9}(Q+N).
+\]
+Since $Q/N\to0$, we obtain
+$\limsup_{t\to\infty}W_t/N\le\varepsilon\log3/9$.
+Letting $\varepsilon\downarrow0$ proves
+\eqref{eq:contraction}.
+
+We now partition the remaining denominator range.
+Since $16v^{10}<3^b$ and $b<Q+N$, every exceptional
+denominator is smaller than $F=3^{(Q+N)/10}$.
+With $\theta=21/20$, define consecutive intervals
+$(V_j,H_j]$ by
+\begin{equation}\label{eq:large-blocks}
+ V_0=V_*,\qquad
+ H_j=\min\{V_j^\theta,F\},\qquad
+ V_{j+1}=H_j,
+\end{equation}
+ending when $H_j=F$. There are $O(\log N)$ such
+intervals, since their logarithmic endpoints
+increase by the factor $\theta$ before truncation.
+
+Let $\Bad_j$ be the set of indices $b\in\RR$
+admitting an exceptional fraction with denominator
+in $(V_j,H_j]$. For each such index choose the
+fraction of least denominator, then least numerator.
+Write $X_j$ for the selected fractions and put
+\[
+ Z_j=X_j^{[3]},\qquad
+ \mathsf P_j=|Z_j|,
+\]
+with $d_j$ denoting the affine multiplicative rank
+of $X_j$.
+
+For every nonempty $\Bad_j$, the conditions of
+Lemma~\ref{lem:transfer} hold uniformly:
+\[
+ \frac{V_j^{11}}{N^\kappa}
+ \ge\frac{V_*^{11}}{N^\kappa}
+ =\frac{Q^{(11/2-\kappa)A}}{t^{11}}\longrightarrow\infty,
+ \qquad
+ \frac{V_j^{11}}{H_j^6}
+ \ge V_j^{47/10}\longrightarrow\infty.
+\]
+Thus the correspondence gives a bijection
+$\psi_j:3\Bad_j\to Z_j$ and
+$\mathsf P_j\le C_3B$.
+
+We next count pairs of products whose quotients
+are rational powers. For an integer $q\ge2$, put
+\[
+ \mathcal C_j(q)=
+ \#\{(z,z')\in Z_j^2:
+ z'/z\in(\Q_{>0}^{\times})^q\}.
+\]
+A pair counted by $\mathcal C_j(q)$ is
+\emph{proportional} if
+\[
+ \frac{z'}z=\frac{Y(\ell')}{Y(\ell)},
+ \qquad
+ \ell=\psi_j^{-1}(z),\quad
+ \ell'=\psi_j^{-1}(z').
+\]
+Let $\mathcal D_j(q)$ count such proportional pairs.
+Both counts concern ordered pairs and include the diagonal.
+
+\begin{lemma}[Rational power classes]\label{lem:fibers}
+For every nonempty block and integer $q\ge2$,
+\begin{equation}\label{eq:fibers}
+ \mathcal C_j(q)=\sum_\omega n_\omega^2,\qquad
+ \frac{\mathsf P_j^2}{q^{d_j}}
+ \le\mathcal C_j(q)\le\mathsf P_j^2,
+\end{equation}
+where $n_\omega$ denotes the number of elements
+of $Z_j$ in the class
+$\omega\in\Q_{>0}^{\times}/(\Q_{>0}^{\times})^q$.
+\end{lemma}
+
+\begin{proof}
+Fix $z_0\in Z_j$. By
+Lemma~\ref{lem:rank-height}, the group generated
+by the ratios $z/z_0$, $z\in Z_j$, has rank $d_j$.
+Its image modulo rational $q$th powers therefore
+has cardinality at most $q^{d_j}$.
+The identity in \eqref{eq:fibers} counts ordered
+pairs belonging to the same class. Since
+$\sum_\omega n_\omega=\mathsf P_j$, the lower
+bound follows from Cauchy--Schwarz; the upper
+bound is immediate.
+\end{proof}
+
+The lower bound in \eqref{eq:fibers} will be
+combined with an upper bound for proportional
+pairs. The essential step is to show that a
+nonproportional rational-power pair must have
+widely separated indices. For this we need
+a version of Matveev's theorem retaining the
+height of the rational base in its coefficient
+parameter.
+
+For a positive rational $g=r/s$ in lowest terms,
+write $\htq(g)=\log\max\{r,s\}$.
+
+\begin{proposition}[Matveev]\label{prop:matveev}
+Let $g\in\Q_{>0}\setminus\{1\}$,
+$\tau=\htq(g)$, and $m,n,q\in\Z$.
+If $\mathcal L=m\log2+n\log3-q\log g\ne0$, then
+\begin{equation}\label{eq:matveev}
+\log|\mathcal L|>
+-C_0\tau(1+\log\mathfrak B),
+\end{equation}
+where $C_0=10^{12}$ and
+$\mathfrak B=\max\{1,|q|,
+\tau^{-1}\max(|m|\log2,|n|\log3)\}$.
+\end{proposition}
+
+\begin{proof}
+Apply \cite[p.~1218, (1.3), and p.~1219, Corollary~2.3, (2.6)]{Matveev} over $\mathbb Q$ to the bases $2,3,g$, with height parameters $\eta_1=\log 2$, $\eta_2=\log 3$, and $\eta_3=\tau$. These parameters satisfy the requirements of \cite[(2.4)]{Matveev}, since
+$\tau\ge\log 2>0.16$ and $|\log g|\le\tau$. The coefficient parameter in~(1.3) is precisely $\mathfrak B$. Since $C_1(3)\le 2^{38}$ and $2^{38}\log 2\log 3<10^{12}$, the asserted bound follows.
+\end{proof}
+
+\begin{lemma}[Separation of nonproportional pairs]
+\label{lem:gap}
+Put $\gamma=(4C_0)^{-1}$. For all sufficiently
+large $V$, let $(V,H]=(V_j,H_j]$ be a denominator
+interval, and let $q\ge2$ be an integer satisfying
+\begin{equation}\label{eq:q-admissible}
+ \frac{C_0(1+\log q)}q<\frac14.
+\end{equation}
+Every nonproportional pair counted by
+$\mathcal C_j(q)$, with corresponding indices
+$\ell,\ell'$, then satisfies
+\begin{equation}\label{eq:gap}
+ |\ell'-\ell|>(\log V)e^{\gamma q}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Write $z'/z=g^q$, $\tau=\htq(g)$,
+$\delta=|\ell'-\ell|$, and $w=\log V$.
+Nonproportionality and the injectivity of
+$\psi_j$ imply $g\ne1$ and $\delta\ge1$.
+Consider
+\[
+ \mathcal L=
+ (h(\ell')-h(\ell))\log2
+ -(\ell'-\ell)\log3-q\log g.
+\]
+By nonproportionality, $\mathcal L\ne0$.
+Moreover, \eqref{eq:product-accuracy} and
+$|(\log)'(y)|\le1$ for $y\ge1$ give
+\[
+ 0<|\mathcal L|<2V^{-11}=2e^{-11w}.
+\]
+Since $|h(\ell')-h(\ell)|<2\delta+3\le5\delta$
+and $\tau\ge\log2$, the bound
+\eqref{eq:matveev} yields
+\[
+ \log|\mathcal L|>
+ -C_0\tau\left(
+ 1+\log\max\{q,10\delta/\tau\}\right).
+\]
+
+By \eqref{eq:product-accuracy}, the reduced
+numerator and denominator of $z'/z$ are at
+most $8H^6$. Since $H\le V^\theta$
+and $\theta=21/20$,
+\[
+ q\tau=\htq(z'/z)
+ \le3\log2+6\log H
+ \le3\log2+\frac{63}{10}w
+ \le11w
+\]
+for sufficiently large $w$.
+
+For fixed $q,\delta$, the function
+\[
+ f_\delta(y)=y\left(
+ 1+\log\max\{q,10\delta/y\}\right)
+\]
+is increasing for $y>0$: on its two
+branches the derivatives are
+$\log(10\delta/y)\ge\log q$ and
+$1+\log q$, respectively.
+
+Suppose that $\delta\le we^{\gamma q}$,
+and put $\tau_0=11w/q$. Then
+$\tau\le\tau_0$ and
+\[
+ \max\{q,10\delta/\tau_0\}
+ \le qe^{\gamma q}.
+\]
+Using the monotonicity of $f_\delta$,
+we obtain
+\[
+ \begin{aligned}
+ \log|\mathcal L|
+ &>-C_0f_\delta(\tau)
+ \ge-C_0f_\delta(\tau_0)\\
+ &\ge-11w\left(
+ \frac{C_0(1+\log q)}q+C_0\gamma\right)
+ >-\frac{11w}{2},
+ \end{aligned}
+\]
+where the last inequality follows from
+\eqref{eq:q-admissible} and $C_0\gamma=1/4$.
+This contradicts $|\mathcal L|<2e^{-11w}$
+for sufficiently large $w$, proving
+\eqref{eq:gap}.
+\end{proof}
+
+
+\subsection{The rank dichotomy and completion}
+\label{sec:adaptive}
+
+We now choose the rational power exponent according to the
+height of each denominator interval. The restriction
+\eqref{eq:contraction} ensures that the separation in
+Lemma~\ref{lem:gap} exceeds the entire range of possible
+index sums. Thus every rational-power pair is proportional,
+and the remaining count reduces to rotation discrepancy.
+
+For each $j$ with $\Bad_j\ne\varnothing$, put
+\[
+ w_j=\log H_j,\qquad x_j=\log\left(\frac{N}{w_j}\right),
+ \qquad K=16C_0,\quad K_1=K+1,\quad
+ q_j=\lceil Kx_j\rceil.
+\]
+Let $\mathcal J=\{j:\Bad_j\ne\varnothing\}$ and, when
+$\mathcal J\ne\varnothing$, set
+$\chi=\min_{j\in\mathcal J}x_j$.
+For the empty set, put $\chi=+\infty$ and interpret
+all sums over $\mathcal J$ as zero.
+
+\begin{lemma}[Proportionality at the chosen exponent]
+\label{lem:proportionality}
+As $t\to\infty$ through values for which
+$\mathcal J\ne\varnothing$, one has $\chi\to\infty$.
+For all sufficiently large $t$ and every
+$j\in\mathcal J$,
+\[
+ \mathcal C_j(q_j)=\mathcal D_j(q_j),\qquad
+ q_j\le K_1x_j,\qquad x_j<\log N.
+\]
+\end{lemma}
+
+\begin{proof}
+For $j\in\mathcal J$, some exceptional fraction
+has denominator $v\in(V_j,H_j]$. Since
+$H_j\le V_j^\theta$,
+\[
+ w_j\le\theta\log V_j
+ <\theta\log v\le\theta W_t=o(N).
+\]
+By \eqref{eq:contraction},
+\[
+ \chi\ge\log\left(\frac{N}{\theta W_t}\right)
+ \longrightarrow\infty.
+\]
+Thus $q_j\to\infty$ uniformly over $\mathcal J$,
+and \eqref{eq:q-admissible} holds for every $q_j$
+when $t$ is sufficiently large. Since
+$x_j\ge\chi\ge1$, we have $q_j\le K_1x_j$;
+also $H_j\ge V_*>e$ gives $x_j<\log N$.
+
+If a pair counted by $\mathcal C_j(q_j)$ were
+not proportional, Lemma~\ref{lem:gap} and
+$\gamma K=4$ would give
+\[
+ \begin{aligned}
+ |\ell'-\ell|
+ &>(\log V_j)e^{\gamma q_j}
+ \ge\frac{w_j}{\theta}e^{4x_j}\\
+ &=\frac{N}{\theta}e^{3x_j}
+ \ge\frac{N}{\theta}e^{3\chi}>3N.
+ \end{aligned}
+\]
+But $\ell,\ell'\in3\Bad_j\subseteq[3Q,3Q+3N)$,
+a contradiction. Hence every counted pair
+is proportional.
+\end{proof}
+
+Proportionality imposes congruences on the exponents
+of $2$ and $3$, while the rational heights bound the
+difference of the corresponding indices. Together
+with discrepancy, these restrictions give the following
+estimate.
+
+\begin{lemma}[Localization of proportional pairs]
+\label{lem:index-bound}
+For every integer $q\ge2$ and every nonempty
+denominator interval $(V_j,H_j]$,
+\begin{equation}\label{eq:rloc}
+ \frac{\mathcal D_j(q)}{\mathsf P_j}
+ \ll\frac{Q^{-4}\log(2H_j)}{q^2}
+ +\left(1+\frac{\log(2H_j)}q\right)^\beta+1.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $z=U/W$ and $z'=U'/W'$ be a proportional
+pair counted by $\mathcal C_j(q)$, written
+in lowest terms, with corresponding indices
+$\ell,\ell'$. Then
+\[
+ \frac{U'W}{UW'}
+ =\frac{Y(\ell')}{Y(\ell)}
+ =2^{h(\ell')-h(\ell)}3^{-(\ell'-\ell)}.
+\]
+If $\ell'>\ell$, taking $3$-adic valuations
+shows that $3^{\ell'-\ell}\mid UW'$.
+Since $UW'\le8H_j^6$ by
+\eqref{eq:product-accuracy}, and the
+roles of the fractions can be interchanged,
+\[
+ |\ell'-\ell|
+ \le6\log_3H_j+\log_3 8.
+\]
+
+Fix $z=\psi_j(\ell_0)$ and write
+$h_0=h(\ell_0)$. Because $z'/z$ is a
+rational $q$th power and
+\[
+ \frac{z'}z
+ =2^{h(\ell')-h_0}3^{-(\ell'-\ell_0)},
+\]
+unique factorization gives
+\[
+ \ell'=\ell_0+qn,\qquad
+ h(\ell')=h_0+qk
+ \qquad(n,k\in\Z).
+\]
+The preceding height bound restricts $n$
+to an interval of
+$O(1+\log(2H_j)/q)$ consecutive integers.
+
+By Lemma~\ref{lem:smooth-products}, all
+$h(\ell)-\alpha\ell$ belong to one real
+interval of length $3\rho$. Hence
+\[
+ h(\ell')-\alpha\ell'
+ =h_0-\alpha\ell_0+q(k-n\alpha)
+\]
+restricts $k-n\alpha$ to a fixed interval
+of length $3\rho/q<1$.
+Each $n$ therefore determines at most one
+integer $k$, while $\{n\alpha\}$ belongs
+to a circular interval of length $3\rho/q$.
+
+Applying Proposition~\ref{lem:discrepancy},
+the number of possible $n$ is
+\[
+ O\left(
+ \frac{\rho\log(2H_j)}{q^2}
+ +\left(1+\frac{\log(2H_j)}q\right)^\beta
+ +1\right).
+\]
+Each pair $(n,k)$ determines at most one
+$z'$ through the bijection $\psi_j$.
+Summing over the $\mathsf P_j$ choices
+of $z$ and using $\rho\ll Q^{-4}$
+proves \eqref{eq:rloc}.
+\end{proof}
+
+The lower bound for rational power pairs now
+meets the upper bound for proportional pairs.
+By Lemmas~\ref{lem:fibers} and
+\ref{lem:proportionality},
+\[
+ \frac{\mathsf P_j^2}{q_j^{d_j}}
+ \le\mathcal C_j(q_j)=\mathcal D_j(q_j).
+\]
+Combining this with \eqref{eq:rloc}, and using
+$\log(2H_j)\le2w_j$ and
+$(1+u)^\beta\le1+u^\beta$ for $u\ge0$, gives
+\begin{equation}\label{eq:uniform-block}
+ \mathsf P_j\ll
+ Q^{-4}w_jq_j^{d_j-2}
+ +w_j^\beta q_j^{d_j-\beta}
+ +q_j^{d_j}.
+\end{equation}
+
+For small multiplicative rank, \eqref{eq:uniform-block}
+controls $P_j$ directly. For large rank, the quadratic
+saving in \eqref{eq:rank120} makes the contribution
+summable over the logarithmic grid. This explains
+the use of threefold products: twofold products
+yield only a linear rank saving, insufficient for
+this summation.
+
+\begin{lemma}[The logarithmic grid]\label{lem:grid}
+Put $s=\log\theta>0$. The numbers $x_j$,
+$j\in\mathcal J$, belong to an arithmetic
+grid of spacing $s$, apart from at most one
+point corresponding to the final truncated
+interval. If $\chi\ge1$, then for every fixed
+$c>0$,
+\begin{align}
+ \sum_{j\in\mathcal J}e^{-cx_j}
+ &\ll_{c,\theta}e^{-c\chi},
+ \label{eq:grid-exp}\\
+ \sum_{j\in\mathcal J}x_j^{-4/3}
+ &\le2\chi^{-4/3}+\frac3s\chi^{-1/3},
+ \label{eq:grid-recip}\\
+ \sum_{j\in\mathcal J}e^{x_j/4}
+ &\ll_\theta N^{1/4}.
+ \label{eq:grid-increasing}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Before the final truncated interval,
+$\log H_{j+1}=\theta\log H_j$, hence
+$x_{j+1}=x_j-s$. The final interval
+contributes at most one additional point.
+
+The geometric series over grid points
+$x_j\ge\chi$ gives \eqref{eq:grid-exp}.
+For the powers $x^{-4/3}$, comparison
+with an integral gives
+\[
+ \sum_{\substack{x\text{ on the grid}\\x\ge\chi}}
+ x^{-4/3}
+ \le\chi^{-4/3}
+ +s^{-1}\int_\chi^\infty u^{-4/3}\,du.
+\]
+Adding at most $\chi^{-4/3}$ for the final
+point proves \eqref{eq:grid-recip}.
+Finally, $x_j<\log N$ by
+Lemma~\ref{lem:proportionality}. Summing
+the increasing exponential backwards from
+this upper endpoint gives
+\eqref{eq:grid-increasing}.
+\end{proof}
+
+We can now divide the denominator intervals
+according to whether $d_j$ is smaller or
+larger than $x_j^{2/3}$. In the first case,
+the factor $q_j^{d_j}$ grows sufficiently
+slowly for \eqref{eq:uniform-block} to be
+effective. In the second, the quadratic
+rank bound gives a summable estimate.
+
+\begin{proposition}[Large denominators]
+\label{prop:large-denominators}
+If $\mathcal J\ne\varnothing$, then for
+all sufficiently large $t$,
+\begin{equation}\label{eq:large-denominators}
+ \begin{aligned}
+ \frac1B\sum_{j\in\mathcal J}|\Bad_j|
+ \ll{}&\chi^{-1/3}+e^{-3\chi/4}\\
+ &+Q^{4-A/\kappa}e^{-(\beta-1/4)\chi}
+ +Q^4N^{-3/4}=o(1).
+ \end{aligned}
+\end{equation}
+For $\mathcal J=\varnothing$, the sum is zero.
+\end{proposition}
+
+\begin{proof}
+Since $K_1$ is fixed, for all sufficiently
+large $x$,
+\[
+ x^{2/3}\log(K_1x)\le x/4.
+\]
+By Lemma~\ref{lem:proportionality},
+$\chi\to\infty$, so this holds for all
+$x_j$, $j\in\mathcal J$, when $t$ is large.
+
+Suppose first that $d_j\le x_j^{2/3}$.
+Since $q_j\le K_1x_j$,
+\[
+ q_j^{d_j}
+ \le\exp\{x_j^{2/3}\log(K_1x_j)\}
+ \le e^{x_j/4}.
+\]
+Using \eqref{eq:uniform-block},
+$q_j\ge2$, and $|\Bad_j|\le\mathsf P_j$,
+we obtain
+\[
+ \frac{|\Bad_j|}{B}
+ \ll e^{-3x_j/4}
+ +Q^{4-A/\kappa}e^{-(\beta-1/4)x_j}
+ +B^{-1}e^{x_j/4},
+\]
+because $w_j/N=e^{-x_j}$ and
+$Q^4N^{\beta-1}=Q^{4-A/\kappa}$.
+Here $\beta-1/4=8351/16468>0$.
+Summing over these intervals using
+\eqref{eq:grid-exp} and
+\eqref{eq:grid-increasing} gives
+\[
+ \begin{aligned}
+ \frac1B
+ \sum_{\substack{j\in\mathcal J\\
+                 d_j\le x_j^{2/3}}}
+ |\Bad_j|
+ \ll{}&e^{-3\chi/4}
+ +Q^{4-A/\kappa}e^{-(\beta-1/4)\chi}\\
+ &+Q^4N^{-3/4},
+ \end{aligned}
+\]
+where $B=NQ^{-4}$ was used in the last term.
+
+If $d_j>x_j^{2/3}$, the multiplicative
+rank bound \eqref{eq:rank120} and
+Lemma~\ref{lem:transfer} give
+\[
+ |\Bad_j|
+ \le\frac{6\mathsf P_j}{d_j^2}
+ \le\frac{6C_3B}{d_j^2}
+ <\frac{6C_3B}{x_j^{4/3}}.
+\]
+By \eqref{eq:grid-recip}, the sum over
+these intervals is $O(B\chi^{-1/3})$.
+
+Combining the two cases proves
+\eqref{eq:large-denominators}.
+Every term on its right tends to zero:
+$\chi\to\infty$, $A=18>4\kappa$, and
+\[
+ Q^4N^{-3/4}=Q^{4-3A/4}\longrightarrow0.
+\]
+\end{proof}
+
+We have now excluded all but a negligible
+proportion of the returns admitting exceptional
+rational approximations.
+
+\begin{proof}[Proof of Proposition~\ref{prop:count}]
+By Lemma~\ref{lem:bohr}, $|\RR|\asymp B$.
+It remains to show that $|\RR_i|=o(B)$.
+
+Every exceptional fraction associated with
+$b\in\RR$ satisfies $16v^{10}<3^b$,
+hence $v<F$. The intervals treated in
+Proposition~\ref{prop:small-denominators}
+and Proposition~\ref{prop:large-denominators}
+therefore cover all inadmissible returns:
+\[
+ |\RR_i|=E_{11}(Q^3/6,\infty)
+ \le E_{11}(Q^3/6,V_*)
+ +\sum_{j\in\mathcal J}|\Bad_j|.
+\]
+When $\mathcal J\ne\varnothing$, the two
+propositions yield
+\[
+ \frac{|\RR_i|}{B}
+ \ll t^{-2}+\chi^{-1/3}
+ +Q^{4-A/\kappa}+Q^4N^{-3/4}
+ \longrightarrow0,
+\]
+using $e^{-3\chi/4}\ll\chi^{-1/3}$ and
+$e^{-(\beta-1/4)\chi}\le1$.
+When $\mathcal J=\varnothing$, the same
+conclusion follows directly from
+Proposition~\ref{prop:small-denominators}.
+
+Thus $|\RR_i|=o(B)$, and consequently
+\[
+ |\RR_a|=|\RR|-|\RR_i|\asymp B.
+\]
+This completes the proof of
+Proposition~\ref{prop:count}.
+\end{proof}
+
+
+\section*{Acknowledgments}
+The author was supported by the Brazilian National Council for
+Scientific and Technological Development (CNPq), Grant
+No.~304467/2023-5.
+
+\section*{AI use declaration}
+
+The author used ChatGPT and Codex to review the exposition, check
+steps in the proofs, and compare cited statements with their sources.
+The author takes responsibility for the mathematical arguments and
+the accuracy of the references.
+
+\begin{thebibliography}{99}
+
+\bibitem{BG}
+E. Bombieri and W. Gubler,
+\emph{Heights in Diophantine Geometry},
+New Mathematical Monographs \textbf{4}, Cambridge University Press,
+Cambridge, 2006.
+
+\bibitem{Bugeaud}
+Y. Bugeaud,
+\emph{Approximation by Algebraic Numbers},
+Cambridge Tracts in Mathematics \textbf{160}, Cambridge University Press,
+Cambridge, 2004.
+
+\bibitem{BN}
+Y. Bugeaud and K. D. Nguyen,
+\href{https://doi.org/10.2140/pjm.2023.326.17}{Some arithmetical properties of convergents to algebraic numbers},
+\emph{Pacific J. Math.} \textbf{326} (2023), no.~1, 17--36;
+\href{https://arxiv.org/abs/2209.07485}{arXiv:2209.07485}.
+
+\bibitem{CorvajaZannier} P. Corvaja and U. Zannier,
+On the length of the continued fraction for values of
+quotients of power sums,
+\emph{J. Th\'eor. Nombres Bordeaux} \textbf{17}
+(2005), 737--748.
+
+\bibitem{EM}
+P. Erd\H{o}s and K. Mahler,
+\href{https://doi.org/10.1112/jlms/s1-14.1.12}{Some arithmetical properties of the convergents of a continued fraction},
+\emph{J. London Math. Soc.} \textbf{14} (1939), no.~1, 12--18.
+
+\bibitem{Fraenkel62}
+A. S. Fraenkel,
+\href{https://doi.org/10.1090/S0002-9947-1962-0144852-2}{On a theorem of D. Ridout in the theory of Diophantine approximations},
+\emph{Trans. Amer. Math. Soc.} \textbf{105} (1962), 84--101.
+
+\bibitem{Fraenkel}
+\bysame,
+\href{https://doi.org/10.1112/jlms/s1-39.1.405}{Transcendental numbers and a conjecture of Erd\H{o}s and Mahler},
+\emph{J. London Math. Soc.} \textbf{39} (1964), 405--416.
+
+\bibitem{FraenkelBorosh} A.~S.~Fraenkel and I.~Borosh, Fractional dimension of a set of transcendental numbers, \emph{Proc. London Math. Soc.} (3) \textbf{15} (1965), 458--470. Corrigendum, \emph{ibid.} (3) \textbf{16} (1966), 192.
+
+\bibitem{MR}
+M. Matolcsi and I. Z. Ruzsa,
+\href{https://doi.org/10.1007/978-0-387-68361-4_16}{Sumsets and the convex hull},
+in \emph{Additive Number Theory: Festschrift in Honor of the Sixtieth Birthday of Melvyn B. Nathanson}
+(D. Chudnovsky and G. Chudnovsky, eds.), Springer, New York, 2010, 221--227.
+
+\bibitem{Matveev}
+E. M. Matveev,
+\href{https://doi.org/10.1070/IM2000v064n06ABEH000314}{An explicit lower bound for a homogeneous rational linear form in the logarithms of algebraic numbers. II},
+\emph{Izv. Math.} \textbf{64} (2000), no.~6, 1217--1269.
+
+\bibitem{Ridout}
+D. Ridout,
+\href{https://www.cambridge.org/core/journals/mathematika/article/rational-approximations-to-algebraic-numbers/9B22B10EFDE4FFC405FCAAFB12C67D3C}{Rational approximations to algebraic numbers},
+\emph{Mathematika} \textbf{4} (1957), 125--131.
+
+\bibitem{Schlickewei}
+H. P. Schlickewei,
+\href{https://www.numdam.org/item/CM_1992__82_3_245_0/}{The quantitative Subspace Theorem for number fields},
+\emph{Compositio Math.} \textbf{82} (1992), no.~3, 245--273.
+
+\bibitem{Shorey}
+T. N. Shorey,
+\href{https://doi.org/10.1016/0022-314X(83)90014-8}{Divisors of convergents of a continued fraction},
+\emph{J. Number Theory} \textbf{17} (1983), no.~1, 127--133.
+
+\bibitem{WW}
+Q. Wu and L. Wang,
+\href{https://doi.org/10.1016/j.jnt.2014.03.007}{On the irrationality measure of $\log3$},
+\emph{J. Number Theory} \textbf{142} (2014), 264--273.
+\end{thebibliography}
+\end{document}
