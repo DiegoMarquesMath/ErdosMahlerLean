@@ -12,10 +12,22 @@ theorem proposition21
     (hMat : External.MatveevRational) : Proposition21
 ```
 
-Local integrated verification is complete. GitHub proof CI and the permanent
-verification tag are recorded in the publication follow-up; no citation-release
-eligibility is asserted before those checks. The external theorems remain
-explicit hypothesis types, not proved witnesses or new mathematical axioms.
+Local integrated verification and GitHub proof-verification CI both PASS.
+The final theorem retains the four external theorem types as explicit
+mathematical hypotheses; no witnesses or new mathematical axioms are supplied.
+
+Verified source commit:
+[`7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc).
+Permanent verification tag:
+[`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06).
+[Proof-verification CI](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/runs/42241610620)
+completed successfully on this exact source commit on 2026-11-06.
+
+The [separate documentation workflow](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/runs/42241610049)
+also passed its Lean build; its documentation-generation step was still running
+at 15:22 UTC. Documentation generation is not claimed complete here.
+This documentation-only follow-up records the source SHA and CI evidence without
+changing any Lean source.
 
 ## Completed manuscript obligations
 
@@ -124,7 +136,7 @@ Publication CI/tag status is recorded separately from mathematical completion.
   not committed. Compiler processes and final integrated builds are serialized.
 - Publication uses /tmp/ErdosMahlerLean-publish because the original workspace's
   Git metadata is read-only. Published source files are synchronized back to
-  the shared workspace. The source SHA is recorded by the documentation follow-up.
+  the shared workspace. The verified source SHA is recorded above.
 
 ## Exact declaration inventory
 
