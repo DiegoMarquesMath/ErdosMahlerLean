@@ -9,11 +9,10 @@ if find . -path './.lake' -prune -o -path './.git' -prune -o -type f -name '*.le
 fi
 
 found="$(find . -path './.lake' -prune -o -path './.git' -prune -o -type f -name '*.lean' -print0 | \
-  xargs -0 grep -nE '^[[:space:]]*(axiom|constant)[[:space:]]' | \
-  grep -v '^\./ErdosMahlerLean/External/' || true)"
+  xargs -0 grep -nE '^[[:space:]]*(axiom|constant)[[:space:]]' || true)"
 if [[ -n "$found" ]]; then
   printf '%s\n' "$found" >&2
-  echo '[FAIL] An axiom/constant declaration exists outside the reviewed external input boundary.' >&2
+  echo '[FAIL] An axiom/constant declaration exists in local source; published inputs must be explicit hypothesis types.' >&2
   exit 1
 fi
 

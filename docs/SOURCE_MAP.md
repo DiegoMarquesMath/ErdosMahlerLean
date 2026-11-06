@@ -27,20 +27,21 @@ so its natural indices coincide with the manuscript's integral indices.
 
 No external hypothesis or intermediate counting claim is a field of this target.
 The intended conditional theorem must prove this same proposition from only
-source-checked external interfaces. That theorem is not yet available.
+source-checked external interfaces. `proposition21` now proves this exact target from the four published interfaces.
 
 ## Critical path and constants
 
 All sums and products in this argument are **threefold**, with repetitions.
-The following is a transcription of obligations, not a list of verified lemmas.
+The following table records the exact required statements; their completed proofs
+are reconciled in the sections below.
 
 | Source | Required input/output and uniformity |
 | --- | --- |
 | 3.1 `lem:discrepancy` | Uniform in integer u, positive T and circular interval: error O(T^β); κ=4117/1000, β=3117/4117. Wu–Wang exponent 4.1163051 with ε=10^-4 first gives 4.1164051. |
-| 3.2 `lem:bohr` | Eventually |R| comparable to B, |3R| ≤ C₃B for a fixed C₃>0; Q^-4/(2 log 2) ≤ ρ ≤ Q^-4/log 2; error ratio Q^(4−18/κ). |
+| 3.2 `lem:bohr` | Eventually \|R\| comparable to B, \|3R\| ≤ C₃B for a fixed C₃>0; Q^-4/(2 log 2) ≤ ρ ≤ Q^-4/log 2; error ratio Q^(4−18/κ). |
 | 3.3 `lem:short-arc` | All 0<λ≤1, integer u, positive T: O(Tλ+(T^κ λ)^(1/(κ+1))+1). |
 | 3.4 `lem:smooth-products` | Eventually unique h(ℓ), Y(ℓ)=2^h/3^ℓ; h−αℓ in an interval of length 3ρ in (0,3); distinct sums separated by cκ log 2 (3N)^(-κ). |
-| 3.5 `lem:transfer` | Fixed C₂>0, eventual t, nonempty subset of returns and chosen exceptional fractions in (V,H]; require V^11>C₂N^κ and V^11>2H^6. Injection and bijection 3A→X^[3]; cardinal ≤ C₃B; 1≤z,Y≤8, U≤8H³, W≤H³, 0<|Y−z|<V^-11. Rational separation gives 16v^10<3^b. |
+| 3.5 `lem:transfer` | Fixed C₂>0, eventual t, nonempty subset of returns and chosen exceptional fractions in (V,H]; require V^11>C₂N^κ and V^11>2H^6. Injection and bijection 3A→X^[3]; cardinal ≤ C₃B; 1≤z,Y≤8, U≤8H³, W≤H³, 0<\|Y−z\|<V^-11. Rational separation gives 16v^10<3^b. |
 | 3.6 `lem:rank-height` | Finite nonempty positive rational X⊆[1,2], affine rank d; triple products have same rank; M d²≤6P for d≥1, from Matolcsi–Ruzsa Theorem 1.5 with k=2. |
 | 3.7 `lem:localized-targets` | Uniform V≥Q³/6, eventual Q; ≤10V²/Q⁴ targets of exponent 9 in (V,2V]. Δ=Qu−pv lies in (0,5V/Q³); ≤2V/Q denominator choices per residue. |
 | 3.8 `prop:small-denominators` | V*=Q^9/t; E₁₁(Q³/6,V*)≪B t^-2; σ=1234/5117, ϑ=383/5117; intermediate terms BQ^-21, BQ^(-18ϑ)t^-σ, Bt^-2. |
@@ -48,12 +49,12 @@ The following is a transcription of obligations, not a list of verified lemmas.
 | `eq:contraction` | W_t=max log v over all exceptional fractions at all returns, zero when empty; W_t/N→0 uniformly. Uses 3.9 and v^9<3^(εb)/16. |
 | `eq:large-blocks` | F=3^((Q+N)/10), θ=21/20; V₀=V*, H_j=min(V_j^θ,F), V_(j+1)=H_j, stop at F. Assign least denominator then least numerator within each block. |
 | 3.10 `lem:fibers` | For every nonempty block and integer q≥2: P_j²/q^d_j≤C_j(q)=Σ n_ω²≤P_j²; ordered pairs include diagonal. |
-| 3.11 `prop:matveev` | Positive rational g≠1, τ=log max(num,den), m,n,q integral; nonzero L=m log2+n log3−q log g; log|L|>−10^12 τ(1+log max(1,|q|,max(|m|log2,|n|log3)/τ)). Must derive from cited Matveev, not assume this manuscript proposition. |
-| 3.12 `lem:gap` | γ=1/(4C₀), eventual V, q≥2 and C₀(1+log q)/q<1/4; nonproportional pair has |ℓ′−ℓ|>(log V)exp(γq). |
+| 3.11 `prop:matveev` | Positive rational g≠1, τ=log max(num,den), m,n,q integral; nonzero L=m log2+n log3−q log g; log\|L\|>−10^12 τ(1+log max(1,\|q\|,max(\|m\|log2,\|n\|log3)/τ)). Must derive from cited Matveev, not assume this manuscript proposition. |
+| 3.12 `lem:gap` | γ=1/(4C₀), eventual V, q≥2 and C₀(1+log q)/q<1/4; nonproportional pair has \|ℓ′−ℓ\|>(log V)exp(γq). |
 | 3.13 `lem:proportionality` | w_j=log H_j, x_j=log(N/w_j), K=16C₀, K₁=K+1, q_j=ceil(Kx_j); χ=min x_j→∞ for nonempty block families; eventually C_j=D_j, q_j≤K₁x_j, x_j<log N, uniformly in j. |
 | 3.14 `lem:index-bound` | Every q≥2 and nonempty block: D_j/P_j≪Q^-4 log(2H_j)/q²+(1+log(2H_j)/q)^β+1. |
 | 3.15 `lem:grid` | s=log θ; arithmetic grid except one truncated point. For χ≥1, fixed c>0: Σexp(−cx)≪exp(−cχ), Σx^-4/3≤2χ^-4/3+3χ^-1/3/s, Σexp(x/4)≪N^1/4. |
-| 3.16 `prop:large-denominators` | Rank split at d_j≤x_j^(2/3); Σ|A_j|/B≪χ^-1/3+exp(−3χ/4)+Q^(4−18/κ)exp(−(β−1/4)χ)+Q⁴N^-3/4=o(1); empty family contributes zero. |
+| 3.16 `prop:large-denominators` | Rank split at d_j≤x_j^(2/3); Σ\|A_j\|/B≪χ^-1/3+exp(−3χ/4)+Q^(4−18/κ)exp(−(β−1/4)χ)+Q⁴N^-3/4=o(1); empty family contributes zero. |
 | 2.1 final proof | Cover all exceptional denominators using 16v^10<3^b; combine 3.8 and 3.16, then subtract inadmissible cardinality. No intermediate estimates may be imported as external assumptions. |
 
 ## Adversarial checks on the elementary statements
@@ -194,15 +195,15 @@ consequence v<3ᵇ, multiplied for three indices, suffices for the source's
 noncoincidence argument without needing the sharper fractional-power estimate.
 
 The complete cardinal chain has the fixed valid constant C₃=76. Its proof is
-independent of the still-open return-count comparison: Mathlib's proved
+independent of the return-count comparison: Mathlib's proved
 Dirichlet theorem supplies a reduced p/q with q≤N. `alpha_diophantine` and
 18−4κ=383/250>1 force q≥Q⁴ eventually, with the threshold proved explicitly.
 `triple_returns_strip` constructs h for every represented sum ℓ and places
 q h−pℓ in an interval of length 3qρ+12. `lattice_strip_card` counts the integral
 strip using coprimality and residue classes. The upper bound is
 (3qρ+13)(3N/q+1)≤76B. Thus neither Lemma 3.2 nor another counting conclusion
-is assumed by the correspondence. The upper-bound half of Lemma 3.2 is proved;
-its |R|≍B statement remains open.
+is assumed by the correspondence. The upper-bound half of Lemma 3.2 was proved in the preceding phase;
+its |R|≍B statement is now also proved below.
 
 Reconciled TeX: lines 673–759 for Lemma 3.5 and 496–535 for Lemma 3.2.
 The proof method for the triple-sum bound differs from the manuscript, while
@@ -221,5 +222,113 @@ with explicit positive constants depending only on c and θ.
 that omits the terminal block; `large_blocks_empty_sums` checks the empty case.
 `Grid.lean` supplies the exact reciprocal constant
 2χ^(-4/3)+(3/log θ)χ^(-1/3). No grid representation or counting bound is
-assumed. This closes Lemma 3.15; χ→∞ belongs to the still-open Lemma 3.13.
+assumed. This closes Lemma 3.15; χ→∞ is now proved in `nonempty_block_min_diverges`.
 Reconciled TeX: lines 1060–1072, 1274–1284 and 1442–1485.
+
+## New critical-path closures (2026-11-06)
+
+- **EM-01:** `RotationBlocks.lean` counts reduced p/q blocks by an injective
+  integer-strip map, with absolute error at most 6 per block. Repeated blocks
+  leave a remainder at most half the current length. Strong induction gives
+  the exact exponent β=3117/4117. `uniform_rotation_discrepancy` derives the
+  needed approximants from Mathlib's Dirichlet theorem and `alpha_diophantine`.
+  `uniform_circular_discrepancy` proves the exact uniform integer-start and
+  circular-arc statement, including arcs crossing zero and endpoint corrections.
+  This replaces the manuscript's continued-fraction proof without changing its
+  conclusion; no discrepancy estimate is assumed.
+- **EM-02:** `returns_comparable` gives fixed lower constant 1/(4 log 2)
+  and upper constant 76. `return_discrepancy_power_identity` proves the exact
+  error ratio Q^(4−18/κ), and its decay is internal. `returns_eventually_nonempty`
+  follows. The previous threefold-sum proof is retained without modification.
+- **EM-03:** `ShortArc.lean` optimizes a real-scale reduced Dirichlet approximation
+  and counts integer residues. The short-arc bound has the exact source exponent,
+  is uniform in every starting integer, and includes circular wraparound.
+  See `SHORT_ARC_SOURCE.md` for the proof reconciliation.
+- **EM-06:** `RationalRank.lean` realizes positive rational multiplication by
+  finitely supported integral prime valuations. Its affine rank is the rank of
+  the generated integral ratio lattice, identified with the rational vector
+  space dimension. It proves basepoint invariance, triple-product rank equality,
+  transport to a full real affine span, and M d²≤6P from Matolcsi–Ruzsa.
+  `exceptional_assignment_rank_bound` combines this with the existing full
+  product correspondence to obtain |A|d²≤456B with uniform transfer constants.
+- **EM-09/10:** `fixed_exponent_separation` is derived from the published
+  two-dimensional p-adic Subspace Theorem, using the raw integer vector (Pv,Su).
+  `exceptionalHeight` is a finite maximum of the actual exceptional denominators,
+  zero when empty; finiteness follows from the proved denominator bound.
+  `exceptionalHeight_contraction` proves W_t/N→0, with no contraction hypothesis.
+  The denominator exponent is exactly 9 after comparing v^-11 with v^-2.
+- **EM-11:** `rational_power_classes` and `rationalPowerPairs_card_fibers`
+  prove the exact ordered-pair bounds and fiber identity, including diagonal
+  pairs. The generated integral lattice need not be saturated. Its quotient
+  classes refine the ambient rational-power classes; the proof uses this
+  correct direction rather than assuming injectivity into the ambient quotient.
+- **EM-12:** `matveev_specialization` derives frozen Proposition 3.11 from
+  Matveev's published Corollary 2.3, retaining arbitrary integer coefficients,
+  dependent logarithms, and the exact weighted coefficient parameter. The
+  rational height bounds and numerical constant 10^12 are proved internally.
+  See `MATVEEV_SOURCE.md`; the source interface is restricted to at least three
+  bases, exactly covering the application.
+
+`ReturnProductData` packages the fully proved product correspondence, exponent
+interval, estimates, and count bounds. `exists_returnProductData` constructs it
+from the original assignment and the two original transfer inequalities, with
+C₂,T preceding all stage/subset/assignment/height parameters. Its fields are
+proved outputs, not new external hypotheses. `ProportionalPairs.lean` defines
+indices through the inverse correspondence and the exact source proportionality.
+`largeBlock_proportionality` now proves all-pairs proportionality on these actual data.
+
+The actual block assignments and both transfer conditions are now constructed
+in `BlockAssignments.lean`, uniformly for all nonempty blocks. The choice is any
+valid exceptional fraction in the defining block, rather than the manuscript's
+least denominator/least numerator. Every estimate is proved uniformly for all
+such assignments; no minimality property is needed or assumed.
+`nonempty_block_coordinates_diverge` and `nonempty_block_min_diverges` prove
+x_j→∞ and χ→∞ from the actual height contraction. `largeBlockExponent_bounds`
+uses the exact q_j=ceil(16·10^12 x_j), and
+`largeBlockExponent_eventually_admissible` proves the coefficient condition
+10^12(1+log q_j)/q_j<1/4. These complete the parameter and coefficient conditions used by the now-proved
+`largeBlock_proportionality` and `largeBlock_pair_counts_equal`.
+
+## Final counting and Proposition 2.1 closure (2026-11-06)
+
+- **EM-08:** `smallDenominatorReturns` is the actual exceptional set with
+  Q³/6<v≤Q⁹/t. `small_denominators_bound` gives C B/t² uniformly for t≥1,
+  and `small_denominators_negligible` has the exact epsilon/threshold quantifiers.
+  Shell localization, short arcs, finite dyadic coverage, geometric sums, and
+  stage powers are all internal proofs. See `SMALL_DENOMINATOR_SOURCE.md`.
+- **EM-13:** `nonproportional_pair_gap` derives the nonzero logarithmic form,
+  |L|<2V^-11, the height qτ≤11log V, coefficient bounds, and the gap from the
+  proved Matveev specialization. C₀=10^12, γ=1/(4C₀), log V≥1 and the source's
+  q-admissibility condition are literal. `nonproportional_gap_for_assignments`
+  constructs the product data from the original assignment and transfer conditions.
+- **EM-14:** χ→∞ supplies the q_j admissibility uniformly. The exact ceiling
+  q_j=ceil(16 C₀ x_j) gives γq_j≥4x_j. For x_j≥1 the gap exceeds 4N/θ>3N,
+  contradicting the proved triple-index range. `largeBlock_proportionality`
+  proves every actual power pair proportional, and `largeBlock_pair_counts_equal`
+  identifies the exact two ordered-pair cardinalities, including diagonal pairs.
+- **EM-15:** rational valuation heights give the logarithmic index window;
+  the actual qth-power identity gives both exponent congruences. The quotient
+  index map injects into a closed circular arc, including negative indices and
+  endpoint cases. `proportional_pairs_localized` retains q² in its main term and
+  the exact β exponent; its constant can be 147+27C_discrepancy. All properties
+  come from the actual product data. See `PROPORTIONAL_LOCALIZATION_SOURCE.md`.
+- **EM-17:** the rank split is exactly d≤x^(2/3) versus its complement.
+  The low branch proves q^d≤exp(x/4), including d=0, and uses the proved actual
+  fiber identity, all-pairs proportionality, and localization. The high branch
+  uses |A|d²≤456B only after establishing d≥1. The three proved grid sums include
+  the truncated terminal block. `beta_stage_ratio` gives N^β/B=Q^(4−18/κ), and
+  the quarter-stage term is N^(1/4)/B=Q^(-19/2)=Q⁴N^(-3/4). The exact raw
+  grid expression is retained in `rankError`; `large_denominators_negligible`
+  supplies uniform eventual epsilon bounds and handles the empty family.
+- **EM-18:** `exceptional_den_lt_largeBlockCap` and minimal covering indices
+  give the exact (V_j,H_j] coverage, with no gap at an endpoint. A return may
+  admit several witnesses in several blocks, so the proof uses a union-card
+  upper bound, not a disjointness assumption. `inadmissible_negligible` combines
+  the actual small/large contributions with ε/2. `admissible_comparable` uses
+  the exact finite cardinal partition to obtain lower constant c/2, and
+  `admissible_eventually_nonempty` follows from B>0. `proposition21` concludes
+  every field of the exact target from only the four published inputs.
+
+The frozen manuscript and all previously completed theorem statements remain
+unchanged. No return count, negligibility, proportionality, or final conclusion
+is a new external mathematical hypothesis.

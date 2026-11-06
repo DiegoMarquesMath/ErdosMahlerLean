@@ -1,15 +1,38 @@
+import ErdosMahlerLean.Proposition21
+import ErdosMahlerLean.ProportionalPowerPairs
+import ErdosMahlerLean.BlockRank
+import ErdosMahlerLean.BlockCoordinates
+import ErdosMahlerLean.BlockAssignments
 import ErdosMahlerLean.ProductCorrespondence
 import ErdosMahlerLean.Blocks
 import ErdosMahlerLean.Localization
 import ErdosMahlerLean.External.Inputs
 
-/-!
-# Proposition 2.1 — OPEN
+import ErdosMahlerLean.ShortArc
+import ErdosMahlerLean.RotationBlocks
+import ErdosMahlerLean.RotationDiscrepancy
+import ErdosMahlerLean.CircularDiscrepancy
+import ErdosMahlerLean.ReturnCount
+import ErdosMahlerLean.RationalRank
+import ErdosMahlerLean.Matveev
+import ErdosMahlerLean.ExceptionalHeights
+import ErdosMahlerLean.ReturnProductData
+import ErdosMahlerLean.ProportionalPairs
 
-The exact unconditional target remains `ErdosMahlerLean.Proposition21`.
-EM-00, Lemmas 3.4, 3.5, 3.7 and 3.15 are now formalized; the product separation
-and correspondence explicitly take the published Wu–Wang hypothesis.
-The triple-return sumset upper bound is derived internally by Dirichlet
-approximation and residue counting. No manuscript counting estimate is assumed.
-The remaining obligations and external boundaries are recorded in docs/STATUS.md.
+import ErdosMahlerLean.FixedSeparation
+import ErdosMahlerLean.HeightContraction
+import ErdosMahlerLean.RationalFibers
+import ErdosMahlerLean.RankTransfer
+import ErdosMahlerLean.RationalHeight
+import ErdosMahlerLean.SmallDenominators
+import ErdosMahlerLean.DyadicShells
+import ErdosMahlerLean.SmallDenominatorRange
+
+/-!
+# Proposition 2.1 — complete conditional formalization
+
+`ErdosMahlerLean.proposition21` proves the exact target `Proposition21` from
+four explicitly sourced published-theorem interfaces. Every intermediate
+manuscript estimate is proved internally. See docs/STATUS.md for the exact
+statement, complete declaration inventory, axiom audit, and external boundary.
 -/

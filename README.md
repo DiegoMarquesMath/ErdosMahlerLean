@@ -4,7 +4,10 @@
 
 Author of the mathematical manuscript: Diego Marques.
 
-> **Verification status (initial scaffold): NOT VERIFIED.** No claim in Proposition 2.1 is currently certified by this repository. This is a reproducible starting point, not a completed formal proof.
+> **All Proposition 2.1 deductions are implemented and compiled.**
+> `ErdosMahlerLean.proposition21` proves the exact frozen target from four
+> explicitly sourced published-theorem hypotheses. See [the verification status](docs/STATUS.md)
+> for the integrated audit, external boundary, and publication eligibility.
 
 ## Mathematical objective
 
@@ -14,7 +17,7 @@ Formally check the proof of Proposition 2.1 of the exact manuscript snapshot und
 - The subset `Ri(t)` with an exceptional rational approximation of exponent 11 and denominator `v > Q^3/6` satisfies `|Ri(t)| = o(B)` as `t → ∞`.
 - Hence the admissible return set `Ra(t) = R(t) \\ Ri(t)` has cardinality comparable to `B`.
 
-The aim is to verify all the **new deductions** in the manuscript. Deep published mathematical results may be supplied as *explicitly named, precisely stated external hypotheses*, with their sources and exact use sites recorded. This is a **conditional proof**, not an unconditional formalization of those external results.
+The repository proves all the **new deductions** for Proposition 2.1 in the manuscript. Deep published mathematical results may be supplied as *explicitly named, precisely stated external hypotheses*, with their sources and exact use sites recorded. This is a **conditional proof**, not an unconditional formalization of those external results.
 
 ## Reproducibility
 
@@ -24,13 +27,13 @@ The aim is to verify all the **new deductions** in the manuscript. Deep publishe
 4. For each headline declaration, run `#print axioms` and record the output in `docs/STATUS.md`.
 5. Compare each formal theorem statement against the frozen `paper/Erdos_MahlerREV.tex` using `docs/PROOF_OBLIGATIONS.md`.
 
-CI runs Lean compilation plus an audit for placeholders and undeclared external axioms. **A passing CI on the initial scaffold proves only that the scaffold builds.**
+CI runs Lean compilation and the proof-hygiene audit. `Audit.lean` prints the axioms of every public proof, including the final theorem.
 
 ## Project map
 
-- `ErdosMahlerLean/Arithmetic.lean`: first elementary definitions; not a certification.
-- `ErdosMahlerLean/ProofMap.lean`: formalization placeholders and module plan.
-- `ErdosMahlerLean/External/`: **only** location permitted for formal declarations of external hypotheses after precise review.
+- `ErdosMahlerLean/Proposition21.lean`: final theorem and exact counting consequences.
+- `ErdosMahlerLean/ProofMap.lean`: imports the complete proof dependency graph.
+- `ErdosMahlerLean/External/`: precisely reviewed published-theorem hypothesis types; no axioms or witnesses.
 - `docs/PROOF_OBLIGATIONS.md`: every manuscript lemma needed for Proposition 2.1.
 - `docs/EXTERNAL_DEPENDENCIES.md`: known theorems to use without reproving.
 - `docs/STATUS.md`: transparent per-lemma verification log.
