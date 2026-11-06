@@ -2,5 +2,6 @@ import ErdosMahlerLean.Basic
 import ErdosMahlerLean.Arithmetic
 import ErdosMahlerLean.Definitions
 import ErdosMahlerLean.Elementary
+import ErdosMahlerLean.Smooth
 import ErdosMahlerLean.ProofMap
 import ErdosMahlerLean.Audit

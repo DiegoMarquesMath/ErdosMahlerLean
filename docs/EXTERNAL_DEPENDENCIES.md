@@ -18,7 +18,8 @@ If needed, centralize external hypotheses under `ErdosMahlerLean/External/` with
 ## Source reconciliation in this phase
 
 `External/Inputs.lean` defines hypothesis **types** only; it declares no axiom,
-instance, or witness. No completed theorem uses an external hypothesis.
+instance, or witness. At the end of Phase 1, no completed theorem used an external hypothesis.
+The Phase 2 Wu–Wang applications are proved below as explicit conditional theorems.
 
 - `WuWang`: Theorem 1, exponent 4.1163051, all integral p,q₁,q₂,
   H=max(|q₁|,|q₂|), a positive threshold for every ε>0. Checked against the
@@ -46,3 +47,26 @@ The desired conditional theorem remains OPEN: from these four independently
 reviewed external mathematical results, derive `Proposition21`. There is no
 conditional theorem taking discrepancy, exceptional-height contraction, small
 or large denominator counts, or Proposition 2.1 itself as hypotheses.
+
+
+## Derived Wu–Wang estimates (2026-11-06)
+
+`wuWang_linear_form` and `alpha_diophantine` in `Diophantine.lean`
+(namespace `ErdosMahlerLean`) are proved theorems taking `External.WuWang` as an explicit
+argument. They do not add an axiom or a new external hypothesis. Choosing
+ε=4117/1000−41163051/10000000>0 and multiplying the integer coefficients by
+the published theorem's positive threshold gives a uniform lower bound for
+all nonzero integer pairs. Comparing coefficient height with |n| then proves
+`c * |n|^(-κ) ≤ |m−αn|` uniformly in all integers m and n≠0.
+This is exactly the Diophantine input needed in frozen eq:type, derived
+internally. The proof uses scaling instead of the manuscript's finite minimum;
+the exponent and quantifier order are unchanged. All three declarations in
+`Diophantine.lean` compile and print foundational axioms only. The mathematical
+dependence on Wu–Wang is visible in the theorem argument, not in #print axioms.
+
+The completed `smooth_triple_separation`, `triple_returns_card_bound`, and
+`product_correspondence_full` take only this published Wu–Wang hypothesis.
+No counting hypothesis is added: the C₃=76 bound is proved using Mathlib's
+Dirichlet theorem and internal residue counting. Localization and the complete
+block-grid estimates use no external input. The other three intended deep
+inputs remain unused by these completed results.
