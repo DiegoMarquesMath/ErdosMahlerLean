@@ -1,0 +1,234 @@
+[
+  {
+    "path": "AUDIT_REPORT.md",
+    "sha256": "4b8e1dad0ddc7c19fb6ef61b194919289ce79093f2daa697d8c2c46c27107de0"
+  },
+  {
+    "path": "EXTERNAL_THEOREM_RECONCILIATION.md",
+    "sha256": "e01482c4b0c3d43aeb4b6ddd98246b163e8b42309bcc428b6ed477ae9290c349"
+  },
+  {
+    "path": "VERIFIED_STATEMENT.md",
+    "sha256": "c71a23fc9671ec845a7ada6028075444fd50adfa21e803c538cde1825a9a70f7"
+  },
+  {
+    "path": "audit-evidence/BSSSpecialization.lean",
+    "sha256": "83cbb0eb038ba4e53e3ce4cbc130dd4f57d01525e5cbe2ef345822ca92eabbd2"
+  },
+  {
+    "path": "audit-evidence/Inspect.lean",
+    "sha256": "70b8bd4764a12e394d9cf7481ca012f781e7aab372433249c2d1d75f3263b90c"
+  },
+  {
+    "path": "audit-evidence/Recheck.lean",
+    "sha256": "7c9073f9d64ee482c44e6d3c42118dec92ecd24d036e5c2a87578e04f4ff7e2e"
+  },
+  {
+    "path": "audit-evidence/bss-counterexample-springer.log",
+    "sha256": "ce93ccd7e477ff8ce4f4846e431a5fbd8f8f0948395b2b2ea259a0e1e5d58e49"
+  },
+  {
+    "path": "audit-evidence/bss-specialization.log",
+    "sha256": "d856720d5fe8e1c622d9bec3ffeb3b55e00d40fe5e1b8b961ccc498a576dfb2b"
+  },
+  {
+    "path": "audit-evidence/bss_counterexample.json",
+    "sha256": "ce93ccd7e477ff8ce4f4846e431a5fbd8f8f0948395b2b2ea259a0e1e5d58e49"
+  },
+  {
+    "path": "audit-evidence/bss_counterexample.py",
+    "sha256": "df7db17136eeccc18865a0cf110fa340a33bd564a508410ec7bcf583b9cc4ac6"
+  },
+  {
+    "path": "audit-evidence/check_sources.py",
+    "sha256": "92002e9224b9dea2460030d42f29481d1086cc732fe30bdb4953891cdec38625"
+  },
+  {
+    "path": "audit-evidence/consolidated-axioms-springer.log",
+    "sha256": "1c435991c40c0e63b2b913f511e939b44b93fb17d7cdee1768241e0c09a7f8d4"
+  },
+  {
+    "path": "audit-evidence/consolidated-axioms.json",
+    "sha256": "28d79458752653b3162486020feafdca1d9700bd74f3864dbce95910a22de80e"
+  },
+  {
+    "path": "audit-evidence/continuation-checks.json",
+    "sha256": "26ad46af63808de61eca714a91f8f25a31ec6f3de7aa69b18efc89be6ccad9f2"
+  },
+  {
+    "path": "audit-evidence/counterchecks-springer.log",
+    "sha256": "b39cfc07a44a627002c455ec22c0f28de123b16ad4e0a63862702365572002ef"
+  },
+  {
+    "path": "audit-evidence/counterchecks.json",
+    "sha256": "b39cfc07a44a627002c455ec22c0f28de123b16ad4e0a63862702365572002ef"
+  },
+  {
+    "path": "audit-evidence/counterchecks.py",
+    "sha256": "8c0c80b2fcb03c989975bf1611cd519dec237f79be402c6e7e129ead9de188b2"
+  },
+  {
+    "path": "audit-evidence/dependencies.json",
+    "sha256": "3a7fca5c377960d014e899419b088fd0eb34c338375c0e1faa7f8b4448e19e85"
+  },
+  {
+    "path": "audit-evidence/dependency-prepare.log",
+    "sha256": "c33e4391807bb765262e1f6238363185ef9cb8438a612513c79aafd999294ed5"
+  },
+  {
+    "path": "audit-evidence/dependency-provenance.json",
+    "sha256": "24a23d60aeb2993a0b22e890c5d1f227c3d3a581be0a611e2cc2cbccf16e9dc5"
+  },
+  {
+    "path": "audit-evidence/evidence-verification-springer.log",
+    "sha256": "27bef8f43c51260ee945a4abdc453bfedf12ecb6a479a4abd7c0a0353c2c155a"
+  },
+  {
+    "path": "audit-evidence/external-source-access.json",
+    "sha256": "166c844d70eb239a71a9576859b687577b46f6fac32c7f9153d1435322ad3423"
+  },
+  {
+    "path": "audit-evidence/git-fsck-springer.log",
+    "sha256": "3bbcfca70482e3585f4ee9a226a57d19540425b136886654ccc7292b747a6ada"
+  },
+  {
+    "path": "audit-evidence/git-fsck.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "audit-evidence/hash_artifacts.py",
+    "sha256": "6e0be2689d20958bf3562ab5c3dba9107d49180be9ede31d6c0cbbbcb9b48e29"
+  },
+  {
+    "path": "audit-evidence/hygiene-continuation.log",
+    "sha256": "c2348aa6930165fadc898135bbbd490608c670ece20c70165b03fc4d2ae3c275"
+  },
+  {
+    "path": "audit-evidence/hygiene-springer.log",
+    "sha256": "c2348aa6930165fadc898135bbbd490608c670ece20c70165b03fc4d2ae3c275"
+  },
+  {
+    "path": "audit-evidence/hygiene.log",
+    "sha256": "c2348aa6930165fadc898135bbbd490608c670ece20c70165b03fc4d2ae3c275"
+  },
+  {
+    "path": "audit-evidence/inspect-springer.log",
+    "sha256": "40b2a2367dd16f13cedd0f9fce91e685de4cb4e57f6c43d9a9ee63f7f8756b1e"
+  },
+  {
+    "path": "audit-evidence/inspect.log",
+    "sha256": "40b2a2367dd16f13cedd0f9fce91e685de4cb4e57f6c43d9a9ee63f7f8756b1e"
+  },
+  {
+    "path": "audit-evidence/inspect_springer.swift",
+    "sha256": "e0cd7240f06f30c01af842f563ebbc9ca6a698ad8414203852838fc4114c3470"
+  },
+  {
+    "path": "audit-evidence/kernel-recheck-springer.log",
+    "sha256": "13d4fdd89718959038c27b331ef533304cf4cfb18d42e651848bc9b4db1b0795"
+  },
+  {
+    "path": "audit-evidence/kernel-recheck.json",
+    "sha256": "2f4c8326d676e6d250ea97f3ce0eb143455573f88f285a2c083ad46ec125ebfa"
+  },
+  {
+    "path": "audit-evidence/kernel-recheck.log",
+    "sha256": "13d4fdd89718959038c27b331ef533304cf4cfb18d42e651848bc9b4db1b0795"
+  },
+  {
+    "path": "audit-evidence/lake-build-initial.log",
+    "sha256": "d4cfb876bda394309e0e4930e2f4037f24236514e0f8a36437e692dd982c391d"
+  },
+  {
+    "path": "audit-evidence/lake-build-springer.log",
+    "sha256": "8c101c42ee2b79d53ad0da7274612e8c4bfa9637e949a0adad1af5c617093bc7"
+  },
+  {
+    "path": "audit-evidence/lake-build.log",
+    "sha256": "c8ba8adde02826f265400ef6dfaa2b80a39a0040c912aa2ad2c35b5273c88d0b"
+  },
+  {
+    "path": "audit-evidence/paper-hashes-continuation.log",
+    "sha256": "1daf9629e515c8b67a470326b29a7ad8c5272b7cbe165955d2fd63e6083450c8"
+  },
+  {
+    "path": "audit-evidence/paper-hashes-springer.log",
+    "sha256": "1daf9629e515c8b67a470326b29a7ad8c5272b7cbe165955d2fd63e6083450c8"
+  },
+  {
+    "path": "audit-evidence/paper-hashes.log",
+    "sha256": "1daf9629e515c8b67a470326b29a7ad8c5272b7cbe165955d2fd63e6083450c8"
+  },
+  {
+    "path": "audit-evidence/prepare_offline.py",
+    "sha256": "6e009bf9762d060f023033d2e0f0e87ec3c857dfb765783df13b382fabd99eff"
+  },
+  {
+    "path": "audit-evidence/publication-plan.json",
+    "sha256": "52db367ef6df7cd0f0d99ee4ae7709c113b6944408b6245d5fb27036de06370d"
+  },
+  {
+    "path": "audit-evidence/recheck-progress.txt",
+    "sha256": "ba90e95134f9c3c62667dccd5994752730d9024791d3cc26dd4a775bd7f3f9b0"
+  },
+  {
+    "path": "audit-evidence/remote_commit.json",
+    "sha256": "dc5e62c003b34eec00b4156f2fe53b0a79ce55c3d22060eb1dded3d9beb6ec4b"
+  },
+  {
+    "path": "audit-evidence/remote_tag.json",
+    "sha256": "54c8aeff9db1666619fda2954aa2f69cc6cc6d9fa99c5f18e188d43393697c1b"
+  },
+  {
+    "path": "audit-evidence/source-check-continuation.log",
+    "sha256": "bfb3f4b4f9761300d74a9575782e5112567e53f41d8b1f90291c90a527725dea"
+  },
+  {
+    "path": "audit-evidence/source-check-springer.log",
+    "sha256": "bfb3f4b4f9761300d74a9575782e5112567e53f41d8b1f90291c90a527725dea"
+  },
+  {
+    "path": "audit-evidence/source-check.log",
+    "sha256": "bfb3f4b4f9761300d74a9575782e5112567e53f41d8b1f90291c90a527725dea"
+  },
+  {
+    "path": "audit-evidence/source-hashes.json",
+    "sha256": "76f9103d1b5b4e7094d8bdc784c002774a950000e8373f902322366843255b82"
+  },
+  {
+    "path": "audit-evidence/source-proof-inventory.json",
+    "sha256": "a7d1f820dfd379cea43291c3c202ce08e0fa2e633a74685a0dc9f4fa560b95d6"
+  },
+  {
+    "path": "audit-evidence/source_0.json",
+    "sha256": "50a4c04f12511da3619eb6eeefdab4e303ddf9a9334f3c83c2090ac0c0906d46"
+  },
+  {
+    "path": "audit-evidence/source_1.json",
+    "sha256": "26aba5abb01b7d0b14b993f0d706846a3e304561606a3fc9484895e17e42440d"
+  },
+  {
+    "path": "audit-evidence/springer-checks.json",
+    "sha256": "c92be96523fb135f0d3af5ba1b6a28c30878cd1259211ec578b46ce1d67449c6"
+  },
+  {
+    "path": "audit-evidence/springer-local-inspection.log",
+    "sha256": "42b30acb85a9090c01937113df881586227f22320e772b466b5bfae7fe5b2415"
+  },
+  {
+    "path": "audit-evidence/springer-source-inspection.json",
+    "sha256": "42d54d649c73d9b7edbc9963ed97049ee626702f3ce91358030f3b3e4686a937"
+  },
+  {
+    "path": "audit-evidence/springer-specialization.log",
+    "sha256": "d856720d5fe8e1c622d9bec3ffeb3b55e00d40fe5e1b8b961ccc498a576dfb2b"
+  },
+  {
+    "path": "audit-evidence/verification-summary.json",
+    "sha256": "8dd89a3edbab812ec36762564851246658754cbef56a0d0bde6df58baebc70ad"
+  },
+  {
+    "path": "audit-evidence/verify_springer_evidence.py",
+    "sha256": "b025cceed7168582d17bc05d782ae75c1873dbade77eece17389f735b725fc80"
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-11-06",
+  "sources": [
+    {
+      "name": "Wu-Wang, Theorem 1",
+      "url": "https://doi.org/10.1016/j.jnt.2014.03.007",
+      "access": "Original publisher article text retrieved through web tool"
+    },
+    {
+      "name": "Matolcsi-Ruzsa, Theorem 1.5",
+      "url": "https://math.bme.hu/~matolcsi/hullarxiv.pdf",
+      "access": "Author arXiv v1 inspected in preceding audit; original Springer chapter now directly inspected separately."
+    },
+    {
+      "name": "Matolcsi publication list, entry 33",
+      "url": "https://math.bme.hu/~matolcsi/electronicpapers.htm",
+      "access": "Author link identifies the preprint under the published chapter citation"
+    },
+    {
+      "name": "Final Springer chapter",
+      "url": "https://link.springer.com/chapter/10.1007/978-0-387-68361-4_16",
+      "access": "Original published Springer 2010 book supplied locally; chapter pp. 221-227 directly inspected as text and page images, including theorem p.222 and proof pp.223-227.",
+      "local_path": ".local-sources/additive-number-theory-2010.pdf",
+      "sha256": "dad80340415877806676e6421573cfc847d6bdc19efe09045903005ca0a82062",
+      "evidence": "audit-evidence/springer-source-inspection.json",
+      "original_2010_publisher_chapter_accessed": true,
+      "distribution": "Local only; PDF, extraction and images excluded from Git and publication",
+      "previous_access_status": "Publisher retrieval unsuccessful in earlier audit; superseded by direct local inspection",
+      "provenance_limit": "User-supplied binary; no authenticated publisher download claimed"
+    },
+    {
+      "name": "Schlickewei, pp.245-246",
+      "url": "https://www.numdam.org/article/CM_1992__82_3_245_0.pdf",
+      "access": "Original scan text retrieved independently; printed page246 visually inspected using pre-existing local scan image",
+      "local_pdf_sha256": "f103ee3b7ca8ece4277ec2bac47d668f40a1a335e8a6fd0ad0a27b6aa325c3cb",
+      "local_pdf_origin_note": "Pre-existing local file; no claim of a newly authenticated binary download"
+    },
+    {
+      "name": "Matveev, pp.1218-1219",
+      "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=im&option_lang=eng&paperid=314&what=fullteng",
+      "access": "Original English full-text article retrieved through current journal record; equations and corollary inspected"
+    },
+    {
+      "name": "Boroczky-Santos-Serra (2014), author final manuscript",
+      "url": "https://www.renyi.hu/~carlos/sumset-convexhull-final.pdf",
+      "access": "Web tool PDF text, manuscript dated 2014-08-17: Theorem 1 p1, Corollary 2 p2, Theorem 3 p3, Lemma 9 p8, Claim 13 and Corollary 14 pp11-13, Theorem 1 proof pp13-14, Theorem 20 proof pp18-19. No authenticated PDF binary obtained.",
+      "finding": "Exact interface match; false middle equality in equation (18); independent disjoint-union bypass and separate Theorem 1 proof checked mathematically."
+    },
+    {
+      "name": "BSS publisher metadata",
+      "url": "https://link.springer.com/article/10.1007/s00454-014-9633-2",
+      "access": "Publisher metadata and subscription preview; publisher full-text PDF not accessed.",
+      "authors": [
+        "Karoly J. Boroczky",
+        "Francisco Santos",
+        "Oriol Serra"
+      ],
+      "title": "On Sumsets and Convex Hull",
+      "journal": "Discrete & Computational Geometry",
+      "volume": 52,
+      "pages": "705-729",
+      "year": 2014,
+      "published_online": "2014-09-17",
+      "doi": "10.1007/s00454-014-9633-2"
+    },
+    {
+      "name": "BSS arXiv publication record",
+      "url": "https://arxiv.org/abs/1307.6316",
+      "access": "Confirms journal 52:4 (December 2014), 705-729 and related publisher DOI; archive v1 dated 2013-07-24."
+    },
+    {
+      "name": "BSS earlier arXiv HTML, equation (19)",
+      "url": "https://arxiv.org/html/1307.6316v1",
+      "access": "Cross-check of same false intermediate equality; not claimed to be the 2014 final version."
+    }
+  ]
+}

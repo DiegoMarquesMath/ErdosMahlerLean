@@ -1,0 +1,3 @@
+[AUDIT] Scanning all local Lean sources, including newly created files.
+[PASS] Static proof-hygiene scan passed.
+[NOTE] This scan is not a theorem verification or a substitute for #print axioms.

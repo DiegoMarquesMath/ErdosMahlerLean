@@ -1,0 +1,26 @@
+{
+  "branch": "audit/prop21-independent-2026-11-06",
+  "repository": "DiegoMarquesMath/ErdosMahlerLean",
+  "base_commit": "7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc",
+  "base_tree": "adc78ba405129cac1153df9440ca2d6a14af28dd",
+  "frozen_tag_object": "80eafe32bfcfd3d87f8e418f935a698f753a11c2",
+  "pr_target": "main",
+  "main_observed_before_publication": "618ad243e5bf4809adc8f822c4464d8e6cb470df",
+  "main_delta_from_frozen": [
+    "docs/STATUS.md"
+  ],
+  "scope": "Only AUDIT_REPORT.md, EXTERNAL_THEOREM_RECONCILIATION.md, VERIFIED_STATEMENT.md and audit-evidence/ additions. No existing blob changes.",
+  "force_push": false,
+  "hash_manifest": "audit-evidence/artifact-hashes.json",
+  "manifest_excludes_itself": true,
+  "publication_note": "Commit ID and bundle hash are outside the committed tree in audit-publication/publication-receipt.json to avoid circular hashing.",
+  "status": "UPDATED LOCAL COMMIT AND BUNDLE PREPARATION; no remote write requested in this continuation",
+  "remote_writes_completed": false,
+  "pull_request_opened": false,
+  "previous_local_audit_commit": "a62fbd08ba89cd9d403de597816fe8bd823474e8",
+  "original_2010_publisher_chapter_accessed": true,
+  "source_pdf_distribution": "Forbidden: PDF and all substantial extracts/images stay ignored in .local-sources/",
+  "previous_attempted_tool": "GitHub create_blob",
+  "previous_tool_response": "MCP tool call requires approval, but approval policy is never",
+  "bundle_includes_unchanged_frozen_tag": true
+}

@@ -1,0 +1,1219 @@
+⚠ [3989/4279] Replayed ErdosMahlerLean.Arithmetic
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Data.Finset.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Order.Interval.Finset.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Tauto` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+⚠ [3990/4279] Ran ErdosMahlerLean.Arithmetic:irArts
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Analysis.SpecialFunctions.Log.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Data.Rat.Cast.Order` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Data.Finset.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Order.Interval.Finset.Nat` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Positivity` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Linarith` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Arithmetic.lean: imports `Mathlib.Tactic.Tauto` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3991/4279] Replayed ErdosMahlerLean.Definitions
+warning: ErdosMahlerLean/Definitions.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+⚠ [3993/4279] Replayed ErdosMahlerLean.Elementary
+warning: ErdosMahlerLean/Elementary.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+⚠ [4275/4673] Replayed ErdosMahlerLean.Smooth
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.NumberTheory.Real.Irrational` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.Data.Rat.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Smooth.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+warning: ErdosMahlerLean/Smooth.lean:126:21: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/Smooth.lean:126:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/Smooth.lean:148:0: 'ErdosMahlerLean.log_two_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:149:0: 'ErdosMahlerLean.alpha_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:150:0: 'ErdosMahlerLean.alpha_lt_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:151:0: 'ErdosMahlerLean.alpha_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:152:0: 'ErdosMahlerLean.a_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:153:0: 'ErdosMahlerLean.a_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:154:0: 'ErdosMahlerLean.a_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:155:0: 'ErdosMahlerLean.R_eq_nat_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:156:0: 'ErdosMahlerLean.smooth_num' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:157:0: 'ErdosMahlerLean.smooth_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:158:0: 'ErdosMahlerLean.R_num' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:159:0: 'ErdosMahlerLean.R_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:160:0: 'ErdosMahlerLean.R_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:161:0: 'ErdosMahlerLean.log_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:162:0: 'ErdosMahlerLean.R_mem_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:163:0: 'ErdosMahlerLean.rotation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:164:0: 'ErdosMahlerLean.R_le_two_sub_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:165:0: 'ErdosMahlerLean.Q_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:166:0: 'ErdosMahlerLean.J_subset_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:167:0: 'ErdosMahlerLean.smooth_triple_nat_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Smooth.lean:168:0: 'ErdosMahlerLean.smooth_triple_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4276/4673] Ran ErdosMahlerLean.Smooth:irArts
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.NumberTheory.Real.Irrational` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.Data.Rat.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Smooth.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [4435/4673] Replayed ErdosMahlerLean.External.Inputs
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.Analysis.Convex.Hull` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [4436/4673] Ran ErdosMahlerLean.External.Inputs:irArts
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.Analysis.Convex.Hull` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Inputs.lean: imports `Mathlib.LinearAlgebra.AffineSpace.AffineSubspace.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [4437/4673] Replayed ErdosMahlerLean.Diophantine
+warning: ErdosMahlerLean/Diophantine.lean:70:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Diophantine.lean:102:35: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/Diophantine.lean:102:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/Diophantine.lean:120:0: 'ErdosMahlerLean.integer_pair_height_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Diophantine.lean:121:0: 'ErdosMahlerLean.wuWang_linear_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Diophantine.lean:123:0: 'ErdosMahlerLean.alpha_diophantine' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4439/4673] Replayed ErdosMahlerLean.SmoothProducts
+info: ErdosMahlerLean/SmoothProducts.lean:272:0: 'ErdosMahlerLean.log_sub_le_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:273:0: 'ErdosMahlerLean.abs_log_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:274:0: 'ErdosMahlerLean.zeta_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:275:0: 'ErdosMahlerLean.J_upper_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:276:0: 'ErdosMahlerLean.width_le_one_div_81' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:277:0: 'ErdosMahlerLean.rho_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:278:0: 'ErdosMahlerLean.three_rho_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:279:0: 'ErdosMahlerLean.exponentInterval_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:280:0: 'ErdosMahlerLean.exponentInterval_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:281:0: 'ErdosMahlerLean.return_exponent_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:282:0: 'ErdosMahlerLean.triple_exponent_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:283:0: 'ErdosMahlerLean.triple_a_eq_of_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:284:0: 'ErdosMahlerLean.smooth_triple_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:285:0: 'ErdosMahlerLean.smooth_triple_eq_of_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:286:0: 'ErdosMahlerLean.smooth_power_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:287:0: 'ErdosMahlerLean.smooth_exponent_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:288:0: 'ErdosMahlerLean.log_smooth_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:289:0: 'ErdosMahlerLean.one_le_smooth_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:291:0: 'ErdosMahlerLean.smooth_triple_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmoothProducts.lean:292:0: 'ErdosMahlerLean.smooth_triple_separation_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4441/4673] Replayed ErdosMahlerLean.Transfer
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Finset.Prod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Fintype.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Rat.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Tactic.GCongr` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Tactic.Choose` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: ErdosMahlerLean/Transfer.lean:49:0: 'ErdosMahlerLean.triple_product_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:67:0: 'ErdosMahlerLean.rat_triple_product_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:77:0: 'ErdosMahlerLean.triple_product_den_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:98:0: 'ErdosMahlerLean.triple_product_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:108:0: 'ErdosMahlerLean.rat_distance_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:123:0: 'ErdosMahlerLean.triple_product_distance_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:152:0: 'ErdosMahlerLean.rational_products_eq_of_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: ErdosMahlerLean/Transfer.lean:164:2: `simp [tripleSumset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:166:4: `rintro ⟨b₁, b₂, b₃, ⟨hb₁, hb₂, hb₃⟩, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 164!
+warning: ErdosMahlerLean/Transfer.lean:164:2: `simp [tripleSumset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:167:4: `exact ⟨b₁, hb₁, b₂, hb₂, b₃, hb₃, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 164!
+warning: ErdosMahlerLean/Transfer.lean:164:2: `simp [tripleSumset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:168:4: `rintro ⟨b₁, hb₁, b₂, hb₂, b₃, hb₃, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 164!
+warning: ErdosMahlerLean/Transfer.lean:164:2: `simp [tripleSumset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:169:4: `exact ⟨b₁, b₂, b₃, ⟨hb₁, hb₂, hb₃⟩, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 164!
+info: ErdosMahlerLean/Transfer.lean:171:0: 'ErdosMahlerLean.mem_tripleSumset' depends on axioms: [propext, Classical.choice, Quot.sound]
+warning: ErdosMahlerLean/Transfer.lean:176:2: `simp [tripleProductset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:178:4: `rintro ⟨b₃, b₂, b₁, ⟨hb₁, hb₂, hb₃⟩, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 176!
+warning: ErdosMahlerLean/Transfer.lean:176:2: `simp [tripleProductset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:179:4: `exact ⟨b₁, hb₁, b₂, hb₂, b₃, hb₃, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 176!
+warning: ErdosMahlerLean/Transfer.lean:176:2: `simp [tripleProductset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:180:4: `rintro ⟨b₁, hb₁, b₂, hb₂, b₃, hb₃, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 176!
+warning: ErdosMahlerLean/Transfer.lean:176:2: `simp [tripleProductset]` is a flexible tactic modifying `⊢`. Try `simp?` and use the suggested `simp only [...]`. Alternatively, use `suffices` to explicitly state the simplified form.
+
+Note: This linter can be disabled with `set_option linter.flexible false`
+info: ErdosMahlerLean/Transfer.lean:181:4: `exact ⟨b₃, b₂, b₁, ⟨hb₁, hb₂, hb₃⟩, he⟩`
+modifies the current goal, which was modified by the flexible tactic `simp` on line 176!
+info: ErdosMahlerLean/Transfer.lean:183:0: 'ErdosMahlerLean.mem_tripleProductset_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:231:0: 'ErdosMahlerLean.triple_correspondence_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:244:0: 'ErdosMahlerLean.card_le_tripleSumset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:259:0: 'ErdosMahlerLean.assignment_error_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:281:0: 'ErdosMahlerLean.triple_assignment_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:296:0: 'ErdosMahlerLean.denominator_lt_of_exceptional_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:313:0: 'ErdosMahlerLean.triple_product_ne_of_den_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:373:0: 'ErdosMahlerLean.triple_kernel_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:387:0: 'ErdosMahlerLean.assignment_injective_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:399:0: 'ErdosMahlerLean.triple_card_eq_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:408:0: 'ErdosMahlerLean.tripleSumset_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:424:0: 'ErdosMahlerLean.triple_card_bounds_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:435:0: 'ErdosMahlerLean.exceptional_denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:443:0: 'ErdosMahlerLean.exceptional_den_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:452:0: 'ErdosMahlerLean.exceptional_triple_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:483:0: 'ErdosMahlerLean.exceptional_triple_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Transfer.lean:555:0: 'ErdosMahlerLean.product_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4442/4673] Ran ErdosMahlerLean.Transfer:irArts
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Finset.Prod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Fintype.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Data.Rat.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Tactic.GCongr` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Transfer.lean: imports `Mathlib.Tactic.Choose` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [4443/4673] Replayed ErdosMahlerLean.Rotation
+warning: ErdosMahlerLean/Rotation.lean:102:26: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/Rotation.lean:102:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/Rotation.lean:119:0: 'ErdosMahlerLean.Phi_mem_rotationInterval_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:120:0: 'ErdosMahlerLean.Phi_exp_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:121:0: 'ErdosMahlerLean.Phi_image_J' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:122:0: 'ErdosMahlerLean.rotationInterval_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:123:0: 'ErdosMahlerLean.rotationInterval_subset_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:124:0: 'ErdosMahlerLean.mem_returns_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Rotation.lean:125:0: 'ErdosMahlerLean.rho_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4445/4673] Replayed ErdosMahlerLean.Localization
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Int.Interval` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Int.GCD` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Set.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Algebra.BigOperators.Group.Finset.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean:8:0: The module doc-string for a file should be the first command after the imports
+and any necessary `set_option` commands.
+Please, add a module doc-string (`/-! ... -/`) before `namespace ErdosMahlerLean`.
+
+Hint: Type `m(odule docstring) + [tab]` to insert a template via snippet.
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+warning: ErdosMahlerLean/Localization.lean:167:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Localization.lean:190:50: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/Localization.lean:190:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/Localization.lean:254:0: 'ErdosMahlerLean.localized_delta_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:255:0: 'ErdosMahlerLean.localized_delta_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:256:0: 'ErdosMahlerLean.residue_interval_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:257:0: 'ErdosMahlerLean.localized_fraction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:258:0: 'ErdosMahlerLean.finite_ncard_of_finset_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:259:0: 'ErdosMahlerLean.localized_targets_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Localization.lean:260:0: 'ErdosMahlerLean.exceptional_mem_localizedTargets' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4446/4673] Ran ErdosMahlerLean.Localization:irArts
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Int.Interval` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Int.GCD` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Data.Set.Card` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Algebra.BigOperators.Group.Finset.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Localization.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+ℹ [4447/4673] Replayed ErdosMahlerLean.ReturnSums
+info: ErdosMahlerLean/ReturnSums.lean:57:0: 'ErdosMahlerLean.residue_closed_interval_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSums.lean:99:0: 'ErdosMahlerLean.lattice_strip_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4461/4673] Replayed ErdosMahlerLean.ReturnApproximation
+warning: ErdosMahlerLean/ReturnApproximation.lean: imports `Mathlib.NumberTheory.DiophantineApproximation.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/ReturnApproximation.lean:37:26: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/ReturnApproximation.lean:37:30: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/ReturnApproximation.lean:37:30: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+info: ErdosMahlerLean/ReturnApproximation.lean:94:0: 'ErdosMahlerLean.eventually_scaled_Q_power_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnApproximation.lean:95:0: 'ErdosMahlerLean.rat_scaled_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnApproximation.lean:96:0: 'ErdosMahlerLean.eventually_return_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4462/4673] Ran ErdosMahlerLean.ReturnApproximation:irArts
+warning: ErdosMahlerLean/ReturnApproximation.lean: imports `Mathlib.NumberTheory.DiophantineApproximation.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [4463/4673] Replayed ErdosMahlerLean.ReturnSumBound
+warning: ErdosMahlerLean/ReturnSumBound.lean:44:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ErdosMahlerLean/ReturnSumBound.lean:159:27: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/ReturnSumBound.lean:159:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/ReturnSumBound.lean:177:0: 'ErdosMahlerLean.Q_le_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:178:0: 'ErdosMahlerLean.triple_sum_index_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:179:0: 'ErdosMahlerLean.triple_returns_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:180:0: 'ErdosMahlerLean.rho_le_two_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:181:0: 'ErdosMahlerLean.return_sum_bound_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:183:0: 'ErdosMahlerLean.triple_returns_card_le_of_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ReturnSumBound.lean:184:0: 'ErdosMahlerLean.triple_returns_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4465/4673] Replayed ErdosMahlerLean.ProductCorrespondence
+info: ErdosMahlerLean/ProductCorrespondence.lean:41:0: 'ErdosMahlerLean.product_correspondence_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4467/4673] Replayed ErdosMahlerLean.ReturnProductData
+warning: ErdosMahlerLean/ReturnProductData.lean:91:19: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+ℹ [4471/4673] Replayed ErdosMahlerLean.ShortArc
+info: ErdosMahlerLean/ShortArc.lean:237:0: 'ErdosMahlerLean.mem_shortArcReturns' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ShortArc.lean:238:0: 'ErdosMahlerLean.short_arc_card_of_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ShortArc.lean:239:0: 'ErdosMahlerLean.diophantine_approximation_inv_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ShortArc.lean:240:0: 'ErdosMahlerLean.short_arc_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ShortArc.lean:241:0: 'ErdosMahlerLean.short_arc_scale_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ShortArc.lean:242:0: 'ErdosMahlerLean.uniform_short_arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [4473/4673] Replayed ErdosMahlerLean.RotationDiscrepancy
+warning: ErdosMahlerLean/RotationDiscrepancy.lean:7:12: please avoid 'open (scoped) Classical' statements: this can hide theorem statements which would be better stated with explicit decidability statements.
+Instead, use `open Classical in` for definitions or instances, the `classical` tactic for proofs.
+For theorem statements, either add missing decidability assumptions or use `open Classical in`.
+
+Note: This linter can be disabled with `set_option linter.style.openClassical false`
+⚠ [4483/4673] Replayed ErdosMahlerLean.ReturnCount
+warning: ErdosMahlerLean/ReturnCount.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/ReturnCount.lean:71:47: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [4484/4673] Ran ErdosMahlerLean.ReturnCount:irArts
+warning: ErdosMahlerLean/ReturnCount.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5780/5884] Replayed ErdosMahlerLean.Grid
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Analysis.SumIntegralComparisons` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Algebra.Order.Field.GeomSum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+info: ErdosMahlerLean/Grid.lean:210:0: 'ErdosMahlerLean.log_grid_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:211:0: 'ErdosMahlerLean.log_grid_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:212:0: 'ErdosMahlerLean.log_theta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:213:0: 'ErdosMahlerLean.grid_exp_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:214:0: 'ErdosMahlerLean.grid_power_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:215:0: 'ErdosMahlerLean.grid_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:216:0: 'ErdosMahlerLean.grid_exp_increasing_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:217:0: 'ErdosMahlerLean.grid_power_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:218:0: 'ErdosMahlerLean.grid_exp_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:219:0: 'ErdosMahlerLean.grid_exp_increasing_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Grid.lean:220:0: 'ErdosMahlerLean.grid_quarter_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5781/5884] Ran ErdosMahlerLean.Grid:irArts
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Analysis.SumIntegralComparisons` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Analysis.SpecialFunctions.Integrals.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Grid.lean: imports `Mathlib.Algebra.Order.Field.GeomSum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5782/5884] Replayed ErdosMahlerLean.Blocks
+warning: ErdosMahlerLean/Blocks.lean: imports `Mathlib.Algebra.Order.Archimedean.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Blocks.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Blocks.lean:366:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Blocks.lean:437:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Blocks.lean:461:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Blocks.lean:472:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/Blocks.lean:477:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+info: ErdosMahlerLean/Blocks.lean:513:0: 'ErdosMahlerLean.blockLogEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:514:0: 'ErdosMahlerLean.blockEndpoint_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:515:0: 'ErdosMahlerLean.blockEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:516:0: 'ErdosMahlerLean.exists_block_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:517:0: 'ErdosMahlerLean.blockLogEndpoint_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:518:0: 'ErdosMahlerLean.blockLogEndpoint_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:519:0: 'ErdosMahlerLean.blockEndpoint_before_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:520:0: 'ErdosMahlerLean.blockCoordinate_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:521:0: 'ErdosMahlerLean.blockCoordinate_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:522:0: 'ErdosMahlerLean.blockCoordinate_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:523:0: 'ErdosMahlerLean.blockCoordinate_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:524:0: 'ErdosMahlerLean.block_regular_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:525:0: 'ErdosMahlerLean.block_regular_exp_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:526:0: 'ErdosMahlerLean.block_regular_quarter_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:527:0: 'ErdosMahlerLean.sum_le_erase_add_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:528:0: 'ErdosMahlerLean.block_subfamily_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:529:0: 'ErdosMahlerLean.block_grid_constants_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:530:0: 'ErdosMahlerLean.largeBlockCoordinate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:531:0: 'ErdosMahlerLean.largeBlockIndices_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:532:0: 'ErdosMahlerLean.largeBlockStart_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:533:0: 'ErdosMahlerLean.largeBlockCap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:534:0: 'ErdosMahlerLean.largeBlock_log_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:535:0: 'ErdosMahlerLean.largeBlockEndpoint_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:536:0: 'ErdosMahlerLean.largeBlockEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:537:0: 'ErdosMahlerLean.large_blocks_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:538:0: 'ErdosMahlerLean.large_blocks_empty_sums' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Blocks.lean:539:0: 'ErdosMahlerLean.large_blocks_nonempty_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5783/5884] Ran ErdosMahlerLean.Blocks:irArts
+warning: ErdosMahlerLean/Blocks.lean: imports `Mathlib.Algebra.Order.Archimedean.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/Blocks.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5784/5884] Replayed ErdosMahlerLean.BlockAssignments
+warning: ErdosMahlerLean/BlockAssignments.lean:20:36: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: ErdosMahlerLean/BlockAssignments.lean:105:84: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/BlockAssignments.lean:105:84: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [5788/5884] Replayed ErdosMahlerLean.SmallDenominators
+info: ErdosMahlerLean/SmallDenominators.lean:136:0: 'ErdosMahlerLean.Phi_distance_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominators.lean:137:0: 'ErdosMahlerLean.exceptional_shell_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominators.lean:138:0: 'ErdosMahlerLean.exceptional_shell_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5790/5884] Replayed ErdosMahlerLean.DyadicShells
+info: ErdosMahlerLean/DyadicShells.lean:93:0: 'ErdosMahlerLean.dyadic_shell_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/DyadicShells.lean:94:0: 'ErdosMahlerLean.exists_dyadic_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/DyadicShells.lean:95:0: 'ErdosMahlerLean.dyadic_negative_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/DyadicShells.lean:96:0: 'ErdosMahlerLean.dyadic_positive_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/DyadicShells.lean:97:0: 'ErdosMahlerLean.stage_square_le_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5792/5884] Replayed ErdosMahlerLean.SmallDenominatorRange
+info: ErdosMahlerLean/SmallDenominatorRange.lean:144:0: 'ErdosMahlerLean.short_arc_shell_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominatorRange.lean:145:0: 'ErdosMahlerLean.exceptional_shell_power_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominatorRange.lean:146:0: 'ErdosMahlerLean.exceptional_range_dyadic_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominatorRange.lean:148:0: 'ErdosMahlerLean.exceptional_range_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5794/5884] Replayed ErdosMahlerLean.SmallDenominatorBound
+warning: ErdosMahlerLean/SmallDenominatorBound.lean:59:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/SmallDenominatorBound.lean:105:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/SmallDenominatorBound.lean:106:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/SmallDenominatorBound.lean:107:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+info: ErdosMahlerLean/SmallDenominatorBound.lean:158:0: 'ErdosMahlerLean.small_denominator_stage_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominatorBound.lean:159:0: 'ErdosMahlerLean.small_denominators_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/SmallDenominatorBound.lean:161:0: 'ErdosMahlerLean.small_denominators_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5822/5884] Replayed ErdosMahlerLean.RationalRank
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.NumberTheory.Padics.PadicVal.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.Dimension.DivisionRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.RingTheory.Localization.Module` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.FreeModule.PID` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean:13:0: Unscoped option maxHeartbeats is not allowed:
+Please scope this to individual declarations, as in
+```
+set_option maxHeartbeats in
+-- comment explaining why this is necessary
+example : ... := ...
+```
+
+Note: This linter can be disabled with `set_option linter.style.setOption false`
+warning: ErdosMahlerLean/RationalRank.lean:26:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/RationalRank.lean:32:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/RationalRank.lean:121:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/RationalRank.lean:269:14: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ErdosMahlerLean/RationalRank.lean:349:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/RationalRank.lean:480:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/RationalRank.lean:477:40: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: ErdosMahlerLean/RationalRank.lean:549:0: 'ErdosMahlerLean.rationalValuation_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:550:0: 'ErdosMahlerLean.rationalValuation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:551:0: 'ErdosMahlerLean.rationalValuation_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:552:0: 'ErdosMahlerLean.rationalValuation_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:553:0: 'ErdosMahlerLean.rationalValuation_injective_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:554:0: 'ErdosMahlerLean.rationalRatioSpace_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:555:0: 'ErdosMahlerLean.rationalRatioLattice_eq_vectorSpan' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:556:0: 'ErdosMahlerLean.rationalRatioLattice_basepoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:557:0: 'ErdosMahlerLean.affineMultiplicativeRank_eq_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:558:0: 'ErdosMahlerLean.rationalRatioSpace_eq_vectorSpan' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:559:0: 'ErdosMahlerLean.affineMultiplicativeRank_eq_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:560:0: 'ErdosMahlerLean.mem_tripleProductset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:561:0: 'ErdosMahlerLean.tripleProductset_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:562:0: 'ErdosMahlerLean.tripleProductset_cube_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:563:0: 'ErdosMahlerLean.rationalRatioLattice_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:564:0: 'ErdosMahlerLean.affineMultiplicativeRank_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:565:0: 'ErdosMahlerLean.affineMultiplicativeRank_lt_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:566:0: 'ErdosMahlerLean.mem_tripleAddSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:567:0: 'ErdosMahlerLean.tripleAddSet_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:568:0: 'ErdosMahlerLean.rationalRealCoordinates_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:569:0: 'ErdosMahlerLean.rationalRealCoordinates_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:570:0: 'ErdosMahlerLean.matolcsi_rational_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:571:0: 'ErdosMahlerLean.matolcsi_rank_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:572:0: 'ErdosMahlerLean.matolcsi_rational_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:573:0: 'ErdosMahlerLean.rationalRatioVectors_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:574:0: 'ErdosMahlerLean.rationalRatioVectors_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:575:0: 'ErdosMahlerLean.rationalRatioVectors_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:576:0: 'ErdosMahlerLean.rationalValuation_triple_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:577:0: 'ErdosMahlerLean.rationalRatioVectors_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:578:0: 'ErdosMahlerLean.multiplicative_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:579:0: 'ErdosMahlerLean.rationalValuation_zpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:580:0: 'ErdosMahlerLean.rationalRatioLattice_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:581:0: 'ErdosMahlerLean.rationalValuation_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:582:0: 'ErdosMahlerLean.rationalRatioLattice_iff_integral_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalRank.lean:583:0: 'ErdosMahlerLean.rationalRatioLattice_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5823/5884] Ran ErdosMahlerLean.RationalRank:irArts
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.NumberTheory.Padics.PadicVal.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.Dimension.DivisionRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.RingTheory.Localization.Module` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalRank.lean: imports `Mathlib.LinearAlgebra.FreeModule.PID` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5824/5884] Replayed ErdosMahlerLean.RationalFibers
+warning: ErdosMahlerLean/RationalFibers.lean: imports `Mathlib.Data.ZMod.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalFibers.lean: imports `Mathlib.Algebra.Order.BigOperators.Ring.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalFibers.lean:9:12: please avoid 'open (scoped) Classical' statements: this can hide theorem statements which would be better stated with explicit decidability statements.
+Instead, use `open Classical in` for definitions or instances, the `classical` tactic for proofs.
+For theorem statements, either add missing decidability assumptions or use `open Classical in`.
+
+Note: This linter can be disabled with `set_option linter.style.openClassical false`
+warning: ErdosMahlerLean/RationalFibers.lean:10:0: Unscoped option maxHeartbeats is not allowed:
+Please scope this to individual declarations, as in
+```
+set_option maxHeartbeats in
+-- comment explaining why this is necessary
+example : ... := ...
+```
+
+Note: This linter can be disabled with `set_option linter.style.setOption false`
+warning: ErdosMahlerLean/RationalFibers.lean:78:9: Variable name `x` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _x
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ErdosMahlerLean/RationalFibers.lean:78:13: Variable name `z` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _z
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ErdosMahlerLean/RationalFibers.lean:125:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/RationalFibers.lean:140:26: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/RationalFibers.lean:140:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ErdosMahlerLean/RationalFibers.lean:149:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: ErdosMahlerLean/RationalFibers.lean:241:0: 'ErdosMahlerLean.mem_sameFiberPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:242:0: 'ErdosMahlerLean.sameFiberPairs_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:243:0: 'ErdosMahlerLean.sameFiberPairs_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:244:0: 'ErdosMahlerLean.rationalPowerRelated_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:245:0: 'ErdosMahlerLean.rationalPowerRelated_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:246:0: 'ErdosMahlerLean.rationalPowerRelated_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:247:0: 'ErdosMahlerLean.rationalPowerPairs_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:248:0: 'ErdosMahlerLean.ratioResidueClass_eq_implies_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:249:0: 'ErdosMahlerLean.rationalPowerPairs_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:250:0: 'ErdosMahlerLean.rationalPowerPairs_card_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:251:0: 'ErdosMahlerLean.rationalPowerPairs_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalFibers.lean:252:0: 'ErdosMahlerLean.rational_power_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5825/5884] Ran ErdosMahlerLean.RationalFibers:irArts
+warning: ErdosMahlerLean/RationalFibers.lean: imports `Mathlib.Data.ZMod.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RationalFibers.lean: imports `Mathlib.Algebra.Order.BigOperators.Ring.Finset` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+ℹ [5826/5884] Replayed ErdosMahlerLean.BlockRank
+info: ErdosMahlerLean/BlockRank.lean:53:0: 'ErdosMahlerLean.ReturnProductData.selected_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/BlockRank.lean:54:0: 'ErdosMahlerLean.ReturnProductData.products_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/BlockRank.lean:55:0: 'ErdosMahlerLean.ReturnProductData.products_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/BlockRank.lean:56:0: 'ErdosMahlerLean.ReturnProductData.products_card_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/BlockRank.lean:57:0: 'ErdosMahlerLean.ReturnProductData.rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/BlockRank.lean:58:0: 'ErdosMahlerLean.ReturnProductData.fiber_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5828/5884] Replayed ErdosMahlerLean.RankTransfer
+info: ErdosMahlerLean/RankTransfer.lean:36:0: 'ErdosMahlerLean.exceptional_assignment_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5830/5884] Replayed ErdosMahlerLean.RankDichotomy
+warning: ErdosMahlerLean/RankDichotomy.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/RankDichotomy.lean:136:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+info: ErdosMahlerLean/RankDichotomy.lean:217:0: 'ErdosMahlerLean.eventually_rank_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:218:0: 'ErdosMahlerLean.low_rank_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:219:0: 'ErdosMahlerLean.high_rank_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:220:0: 'ErdosMahlerLean.block_height_exponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:221:0: 'ErdosMahlerLean.low_rank_scaled_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:222:0: 'ErdosMahlerLean.quarter_stage_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:223:0: 'ErdosMahlerLean.quarter_stage_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:224:0: 'ErdosMahlerLean.power_fiber_bound_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:225:0: 'ErdosMahlerLean.localization_expression_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:226:0: 'ErdosMahlerLean.sum_rank_dichotomy_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDichotomy.lean:227:0: 'ErdosMahlerLean.reciprocal_grid_simplify' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5831/5884] Ran ErdosMahlerLean.RankDichotomy:irArts
+warning: ErdosMahlerLean/RankDichotomy.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+ℹ [5832/5884] Replayed ErdosMahlerLean.ProportionalPairs
+info: ErdosMahlerLean/ProportionalPairs.lean:67:0: 'ErdosMahlerLean.ReturnProductData.index_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:68:0: 'ErdosMahlerLean.ReturnProductData.index_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:69:0: 'ErdosMahlerLean.ReturnProductData.psi_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:70:0: 'ErdosMahlerLean.ReturnProductData.index_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:71:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_psi_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:72:0: 'ErdosMahlerLean.ReturnProductData.product_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:73:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:74:0: 'ErdosMahlerLean.ReturnProductData.ne_of_nonproportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalPairs.lean:75:0: 'ErdosMahlerLean.ReturnProductData.index_ne_of_nonproportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [5834/5884] Replayed ErdosMahlerLean.ProportionalPowerPairs
+info: ErdosMahlerLean/ProportionalPowerPairs.lean:76:0: 'ErdosMahlerLean.ReturnProductData.proportionalPowerPairs_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/ProportionalPowerPairs.lean:77:0: 'ErdosMahlerLean.ReturnProductData.proportionalPowerPairs_card_eq_of_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [5836/5884] Replayed ErdosMahlerLean.External.Matveev
+warning: ErdosMahlerLean/External/Matveev.lean: imports `Mathlib.Data.Fin.VecNotation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5837/5884] Ran ErdosMahlerLean.External.Matveev:irArts
+warning: ErdosMahlerLean/External/Matveev.lean: imports `Mathlib.Data.Fin.VecNotation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5838/5884] Replayed ErdosMahlerLean.ValuationHeight
+warning: ErdosMahlerLean/ValuationHeight.lean: imports `Mathlib.NumberTheory.Padics.PadicVal.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/ValuationHeight.lean:46:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/ValuationHeight.lean:47:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/ValuationHeight.lean:61:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/ValuationHeight.lean:62:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/ValuationHeight.lean:78:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/ValuationHeight.lean:79:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: ErdosMahlerLean/ValuationHeight.lean:93:0: 'ErdosMahlerLean.natural_valuation_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ValuationHeight.lean:94:0: 'ErdosMahlerLean.rational_valuation_height_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ValuationHeight.lean:95:0: 'ErdosMahlerLean.smooth_valuation_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ValuationHeight.lean:96:0: 'ErdosMahlerLean.smooth_valuation_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ValuationHeight.lean:97:0: 'ErdosMahlerLean.smooth_power_quotient_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5839/5884] Ran ErdosMahlerLean.ValuationHeight:irArts
+warning: ErdosMahlerLean/ValuationHeight.lean: imports `Mathlib.NumberTheory.Padics.PadicVal.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5840/5884] Replayed ErdosMahlerLean.CircularDiscrepancy
+warning: ErdosMahlerLean/CircularDiscrepancy.lean:6:12: please avoid 'open (scoped) Classical' statements: this can hide theorem statements which would be better stated with explicit decidability statements.
+Instead, use `open Classical in` for definitions or instances, the `classical` tactic for proofs.
+For theorem statements, either add missing decidability assumptions or use `open Classical in`.
+
+Note: This linter can be disabled with `set_option linter.style.openClassical false`
+ℹ [5842/5884] Replayed ErdosMahlerLean.CongruenceArcCount
+info: ErdosMahlerLean/CongruenceArcCount.lean:83:0: 'ErdosMahlerLean.congruence_arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5844/5884] Replayed ErdosMahlerLean.ProportionalCountAlgebra
+warning: ErdosMahlerLean/ProportionalCountAlgebra.lean:39:6: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/ProportionalCountAlgebra.lean:39:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/ProportionalCountAlgebra.lean:55:0: 'ErdosMahlerLean.proportional_count_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5846/5884] Replayed ErdosMahlerLean.ProportionalLocalization
+warning: ErdosMahlerLean/ProportionalLocalization.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: ErdosMahlerLean/ProportionalLocalization.lean:203:0: 'ErdosMahlerLean.ReturnProductData.upper_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:204:0: 'ErdosMahlerLean.ReturnProductData.product_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:205:0: 'ErdosMahlerLean.ReturnProductData.product_valuation_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:206:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_index_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:207:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_divisibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:208:0: 'ErdosMahlerLean.proportional_partners_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:209:0: 'ErdosMahlerLean.proportional_pairs_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/ProportionalLocalization.lean:211:0: 'ErdosMahlerLean.proportional_pairs_localized_assignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5848/5884] Replayed ErdosMahlerLean.RankBlockEstimate
+info: ErdosMahlerLean/RankBlockEstimate.lean:81:0: 'ErdosMahlerLean.rank_block_estimate_of_proportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5850/5884] Replayed ErdosMahlerLean.RankDecay
+info: ErdosMahlerLean/RankDecay.lean:105:0: 'ErdosMahlerLean.rank_grid_coeff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDecay.lean:106:0: 'ErdosMahlerLean.beta_stage_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDecay.lean:107:0: 'ErdosMahlerLean.rankDecayEnvelope_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RankDecay.lean:108:0: 'ErdosMahlerLean.eventually_rankError_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5856/5884] Replayed ErdosMahlerLean.External.Subspace
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.NumberTheory.Padics.PadicNorm` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.Analysis.SpecialFunctions.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.Data.Fin.VecNotation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5857/5884] Ran ErdosMahlerLean.External.Subspace:irArts
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.NumberTheory.Padics.PadicNorm` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.Analysis.SpecialFunctions.Sqrt` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: ErdosMahlerLean/External/Subspace.lean: imports `Mathlib.Data.Fin.VecNotation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [5858/5884] Replayed ErdosMahlerLean.FixedSeparation
+warning: ErdosMahlerLean/FixedSeparation.lean:83:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/FixedSeparation.lean:84:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/FixedSeparation.lean:102:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/FixedSeparation.lean:103:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: ErdosMahlerLean/FixedSeparation.lean:111:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+info: ErdosMahlerLean/FixedSeparation.lean:367:0: 'ErdosMahlerLean.proper_subspace_det_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:368:0: 'ErdosMahlerLean.subspace_coordinates_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:369:0: 'ErdosMahlerLean.proper_subspace_ratios_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:370:0: 'ErdosMahlerLean.finite_subspace_ratios' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:371:0: 'ErdosMahlerLean.ratio_mem_of_vector_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:372:0: 'ErdosMahlerLean.padicNorm_nat_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:373:0: 'ErdosMahlerLean.smooth_padic_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:374:0: 'ErdosMahlerLean.raw_subspace_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:375:0: 'ErdosMahlerLean.raw_subspace_height_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:376:0: 'ErdosMahlerLean.finite_rational_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:377:0: 'ErdosMahlerLean.eventually_subspace_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/FixedSeparation.lean:378:0: 'ErdosMahlerLean.fixed_exponent_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5860/5884] Replayed ErdosMahlerLean.HeightContraction
+warning: ErdosMahlerLean/HeightContraction.lean:30:27: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/HeightContraction.lean:30:31: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/HeightContraction.lean:30:31: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [5862/5884] Replayed ErdosMahlerLean.BlockCoordinates
+warning: ErdosMahlerLean/BlockCoordinates.lean:26:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: ErdosMahlerLean/BlockCoordinates.lean:110:100: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+ℹ [5864/5884] Replayed ErdosMahlerLean.Matveev
+info: ErdosMahlerLean/Matveev.lean:190:0: 'ErdosMahlerLean.rationalLogHeight_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:191:0: 'ErdosMahlerLean.rationalLogHeight_ge_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:192:0: 'ErdosMahlerLean.abs_log_le_rationalLogHeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:193:0: 'ErdosMahlerLean.rationalLogHeight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:194:0: 'ErdosMahlerLean.matveev_constant_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:195:0: 'ErdosMahlerLean.matveev_weighted_coefficient_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Matveev.lean:196:0: 'ErdosMahlerLean.matveev_specialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5866/5884] Replayed ErdosMahlerLean.MatveevGap
+warning: ErdosMahlerLean/MatveevGap.lean:108:19: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ErdosMahlerLean/MatveevGap.lean:108:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ErdosMahlerLean/MatveevGap.lean:122:0: 'ErdosMahlerLean.weighted_log_max_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/MatveevGap.lean:123:0: 'ErdosMahlerLean.matveev_gap_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5868/5884] Replayed ErdosMahlerLean.RationalHeight
+info: ErdosMahlerLean/RationalHeight.lean:67:0: 'ErdosMahlerLean.rationalLogHeight_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalHeight.lean:68:0: 'ErdosMahlerLean.rational_div_height_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/RationalHeight.lean:69:0: 'ErdosMahlerLean.rationalLogHeight_div_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5870/5884] Replayed ErdosMahlerLean.NonproportionalGap
+info: ErdosMahlerLean/NonproportionalGap.lean:193:0: 'ErdosMahlerLean.log_distance_le_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/NonproportionalGap.lean:194:0: 'ErdosMahlerLean.ReturnProductData.exponent_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/NonproportionalGap.lean:195:0: 'ErdosMahlerLean.nonproportional_pair_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/NonproportionalGap.lean:196:0: 'ErdosMahlerLean.nonproportional_gap_for_assignments' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [5874/5884] Replayed ErdosMahlerLean.LargeDenominators
+info: ErdosMahlerLean/LargeDenominators.lean:102:0: 'ErdosMahlerLean.large_blocks_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/LargeDenominators.lean:103:0: 'ErdosMahlerLean.large_denominators_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [5878/5884] Replayed ErdosMahlerLean.ProofMap
+warning: ErdosMahlerLean/ProofMap.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+⚠ [5880/5884] Replayed ErdosMahlerLean.Audit
+warning: ErdosMahlerLean/Audit.lean:1:1: * `-/`:
+Copyright too short!
+
+
+Note: This linter can be disabled with `set_option linter.style.header false`
+info: ErdosMahlerLean/Audit.lean:6:0: 'ErdosMahlerLean.Q_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:7:0: 'ErdosMahlerLean.largeBlockAssignment_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:8:0: 'ErdosMahlerLean.largeBlockReturns_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:9:0: 'ErdosMahlerLean.largeBlockStart_ge_Q_pow_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:10:0: 'ErdosMahlerLean.largeBlockEndpoint_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:11:0: 'ErdosMahlerLean.largeBlockEndpoint_ge_start' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:12:0: 'ErdosMahlerLean.largeBlockEndpoint_log_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:13:0: 'ErdosMahlerLean.largeBlockEndpoint_upper_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:14:0: 'ErdosMahlerLean.largeBlock_height_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:15:0: 'ErdosMahlerLean.largeBlock_size_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:16:0: 'ErdosMahlerLean.largeBlock_product_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:17:0: 'ErdosMahlerLean.nonempty_block_log_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:18:0: 'ErdosMahlerLean.largeBlockCoordinate_lt_log_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:19:0: 'ErdosMahlerLean.nonempty_block_coordinates_diverge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:20:0: 'ErdosMahlerLean.nonempty_block_min_diverges' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:21:0: 'ErdosMahlerLean.largeBlockExponent_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:22:0: 'ErdosMahlerLean.largeBlockExponent_eventually_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:23:0: 'ErdosMahlerLean.exceptional_den_lt_largeBlockCap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:24:0: 'ErdosMahlerLean.largeBlock_covers_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:25:0: 'ErdosMahlerLean.exceptional_mem_largeBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:26:0: 'ErdosMahlerLean.inadmissible_small_large_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:27:0: 'ErdosMahlerLean.inadmissible_card_le_small_add_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:28:0: 'ErdosMahlerLean.largeBlock_gap_exceeds_index_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:29:0: 'ErdosMahlerLean.largeBlock_proportionality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:30:0: 'ErdosMahlerLean.largeBlock_pair_counts_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:31:0: 'ErdosMahlerLean.ReturnProductData.selected_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:32:0: 'ErdosMahlerLean.ReturnProductData.products_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:33:0: 'ErdosMahlerLean.ReturnProductData.products_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:34:0: 'ErdosMahlerLean.ReturnProductData.products_card_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:35:0: 'ErdosMahlerLean.ReturnProductData.rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:36:0: 'ErdosMahlerLean.ReturnProductData.fiber_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:37:0: 'ErdosMahlerLean.blockLogEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:38:0: 'ErdosMahlerLean.blockEndpoint_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:39:0: 'ErdosMahlerLean.blockEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:40:0: 'ErdosMahlerLean.exists_block_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:41:0: 'ErdosMahlerLean.blockLogEndpoint_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:42:0: 'ErdosMahlerLean.blockLogEndpoint_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:43:0: 'ErdosMahlerLean.blockEndpoint_before_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:44:0: 'ErdosMahlerLean.blockCoordinate_regular' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:45:0: 'ErdosMahlerLean.blockCoordinate_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:46:0: 'ErdosMahlerLean.blockCoordinate_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:47:0: 'ErdosMahlerLean.blockCoordinate_le_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:48:0: 'ErdosMahlerLean.block_regular_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:49:0: 'ErdosMahlerLean.block_regular_exp_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:50:0: 'ErdosMahlerLean.block_regular_quarter_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:51:0: 'ErdosMahlerLean.sum_le_erase_add_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:52:0: 'ErdosMahlerLean.block_subfamily_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:53:0: 'ErdosMahlerLean.block_grid_constants_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:54:0: 'ErdosMahlerLean.largeBlockIndices_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:55:0: 'ErdosMahlerLean.largeBlockCoordinate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:56:0: 'ErdosMahlerLean.largeBlockStart_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:57:0: 'ErdosMahlerLean.largeBlockCap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:58:0: 'ErdosMahlerLean.largeBlock_log_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:59:0: 'ErdosMahlerLean.largeBlockEndpoint_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:60:0: 'ErdosMahlerLean.largeBlockEndpoint_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:61:0: 'ErdosMahlerLean.large_blocks_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:62:0: 'ErdosMahlerLean.large_blocks_empty_sums' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:63:0: 'ErdosMahlerLean.large_blocks_nonempty_grid' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:64:0: 'ErdosMahlerLean.rotationCount_eq_integer_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:65:0: 'ErdosMahlerLean.rotation_phase_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:66:0: 'ErdosMahlerLean.rotation_closed_open_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:67:0: 'ErdosMahlerLean.uniform_circular_discrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:68:0: 'ErdosMahlerLean.congruence_arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:69:0: 'ErdosMahlerLean.integer_pair_height_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:70:0: 'ErdosMahlerLean.wuWang_linear_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:71:0: 'ErdosMahlerLean.alpha_diophantine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:72:0: 'ErdosMahlerLean.dyadic_shell_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:73:0: 'ErdosMahlerLean.exists_dyadic_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:74:0: 'ErdosMahlerLean.dyadic_negative_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:75:0: 'ErdosMahlerLean.dyadic_positive_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:76:0: 'ErdosMahlerLean.stage_square_le_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:77:0: 'ErdosMahlerLean.N_eq_B_mul' depends on axioms: [propext]
+info: ErdosMahlerLean/Audit.lean:78:0: 'ErdosMahlerLean.B_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:79:0: 'ErdosMahlerLean.constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:80:0: 'ErdosMahlerLean.width_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:81:0: 'ErdosMahlerLean.J_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:82:0: 'ErdosMahlerLean.mem_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:83:0: 'ErdosMahlerLean.return_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:84:0: 'ErdosMahlerLean.inadmissible_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:85:0: 'ErdosMahlerLean.card_partition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:86:0: 'ErdosMahlerLean.mem_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:87:0: 'ErdosMahlerLean.admissible_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:88:0: 'ErdosMahlerLean.rational_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:89:0: 'ErdosMahlerLean.denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:90:0: 'ErdosMahlerLean.shifted_interval_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:91:0: 'ErdosMahlerLean.mem_exceptionalDenominators' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:92:0: 'ErdosMahlerLean.exceptionalHeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:93:0: 'ErdosMahlerLean.exceptional_log_den_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:94:0: 'ErdosMahlerLean.exceptionalHeight_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:95:0: 'ErdosMahlerLean.exceptionalHeight_eq_zero_of_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:96:0: 'ErdosMahlerLean.exceptionalHeight_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:97:0: 'ErdosMahlerLean.exceptional_log_den_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:98:0: 'ErdosMahlerLean.exceptionalHeight_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:99:0: 'ErdosMahlerLean.exceptional_log_den_of_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:100:0: 'ErdosMahlerLean.proper_subspace_det_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:101:0: 'ErdosMahlerLean.subspace_coordinates_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:102:0: 'ErdosMahlerLean.proper_subspace_ratios_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:103:0: 'ErdosMahlerLean.finite_subspace_ratios' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:104:0: 'ErdosMahlerLean.ratio_mem_of_vector_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:105:0: 'ErdosMahlerLean.padicNorm_nat_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:106:0: 'ErdosMahlerLean.smooth_padic_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:107:0: 'ErdosMahlerLean.raw_subspace_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:108:0: 'ErdosMahlerLean.raw_subspace_height_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:109:0: 'ErdosMahlerLean.finite_rational_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:110:0: 'ErdosMahlerLean.eventually_subspace_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:111:0: 'ErdosMahlerLean.fixed_exponent_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:112:0: 'ErdosMahlerLean.log_grid_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:113:0: 'ErdosMahlerLean.log_grid_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:114:0: 'ErdosMahlerLean.log_theta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:115:0: 'ErdosMahlerLean.grid_exp_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:116:0: 'ErdosMahlerLean.grid_power_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:117:0: 'ErdosMahlerLean.grid_power_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:118:0: 'ErdosMahlerLean.grid_exp_increasing_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:119:0: 'ErdosMahlerLean.grid_power_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:120:0: 'ErdosMahlerLean.grid_exp_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:121:0: 'ErdosMahlerLean.grid_exp_increasing_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:122:0: 'ErdosMahlerLean.grid_quarter_sum_with_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:123:0: 'ErdosMahlerLean.exceptionalHeight_eventually_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:124:0: 'ErdosMahlerLean.exceptionalHeight_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:125:0: 'ErdosMahlerLean.large_blocks_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:126:0: 'ErdosMahlerLean.large_denominators_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:127:0: 'ErdosMahlerLean.localized_delta_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:128:0: 'ErdosMahlerLean.localized_delta_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:129:0: 'ErdosMahlerLean.residue_interval_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:130:0: 'ErdosMahlerLean.localized_fraction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:131:0: 'ErdosMahlerLean.finite_ncard_of_finset_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:132:0: 'ErdosMahlerLean.localized_targets_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:133:0: 'ErdosMahlerLean.exceptional_mem_localizedTargets' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:134:0: 'ErdosMahlerLean.rationalLogHeight_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:135:0: 'ErdosMahlerLean.rationalLogHeight_ge_log_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:136:0: 'ErdosMahlerLean.abs_log_le_rationalLogHeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:137:0: 'ErdosMahlerLean.rationalLogHeight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:138:0: 'ErdosMahlerLean.matveev_constant_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:139:0: 'ErdosMahlerLean.matveev_weighted_coefficient_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:140:0: 'ErdosMahlerLean.matveev_specialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:141:0: 'ErdosMahlerLean.weighted_log_max_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:142:0: 'ErdosMahlerLean.matveev_gap_of_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:143:0: 'ErdosMahlerLean.log_distance_le_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:144:0: 'ErdosMahlerLean.ReturnProductData.exponent_difference_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:145:0: 'ErdosMahlerLean.nonproportional_pair_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:146:0: 'ErdosMahlerLean.nonproportional_gap_for_assignments' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:147:0: 'ErdosMahlerLean.product_correspondence_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:148:0: 'ErdosMahlerLean.proportional_count_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:149:0: 'ErdosMahlerLean.ReturnProductData.upper_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:150:0: 'ErdosMahlerLean.ReturnProductData.product_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:151:0: 'ErdosMahlerLean.ReturnProductData.product_valuation_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:152:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_index_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/Audit.lean:153:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_divisibility' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/Audit.lean:154:0: 'ErdosMahlerLean.proportional_partners_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:155:0: 'ErdosMahlerLean.proportional_pairs_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:156:0: 'ErdosMahlerLean.proportional_pairs_localized_assignment' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:157:0: 'ErdosMahlerLean.ReturnProductData.index_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:158:0: 'ErdosMahlerLean.ReturnProductData.index_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:159:0: 'ErdosMahlerLean.ReturnProductData.psi_index' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:160:0: 'ErdosMahlerLean.ReturnProductData.index_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:161:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_psi_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:162:0: 'ErdosMahlerLean.ReturnProductData.product_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:163:0: 'ErdosMahlerLean.ReturnProductData.proportionalPair_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:164:0: 'ErdosMahlerLean.ReturnProductData.ne_of_nonproportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:165:0: 'ErdosMahlerLean.ReturnProductData.index_ne_of_nonproportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/Audit.lean:166:0: 'ErdosMahlerLean.ReturnProductData.proportionalPowerPairs_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/Audit.lean:167:0: 'ErdosMahlerLean.ReturnProductData.proportionalPowerPairs_card_eq_of_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ErdosMahlerLean/Audit.lean:168:0: 'ErdosMahlerLean.inadmissible_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:169:0: 'ErdosMahlerLean.admissible_comparable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:170:0: 'ErdosMahlerLean.admissible_eventually_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:171:0: 'ErdosMahlerLean.proposition21' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:172:0: 'ErdosMahlerLean.rank_block_estimate_of_proportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:173:0: 'ErdosMahlerLean.beta_stage_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:174:0: 'ErdosMahlerLean.rank_grid_coeff_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:175:0: 'ErdosMahlerLean.rankDecayEnvelope_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:176:0: 'ErdosMahlerLean.eventually_rankError_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:177:0: 'ErdosMahlerLean.eventually_rank_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:178:0: 'ErdosMahlerLean.low_rank_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:179:0: 'ErdosMahlerLean.high_rank_saving' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:180:0: 'ErdosMahlerLean.block_height_exponential' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:181:0: 'ErdosMahlerLean.low_rank_scaled_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:182:0: 'ErdosMahlerLean.quarter_stage_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:183:0: 'ErdosMahlerLean.quarter_stage_decay' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:184:0: 'ErdosMahlerLean.power_fiber_bound_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:185:0: 'ErdosMahlerLean.localization_expression_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:186:0: 'ErdosMahlerLean.sum_rank_dichotomy_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:187:0: 'ErdosMahlerLean.reciprocal_grid_simplify' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:188:0: 'ErdosMahlerLean.exceptional_assignment_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:189:0: 'ErdosMahlerLean.mem_sameFiberPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:190:0: 'ErdosMahlerLean.sameFiberPairs_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:191:0: 'ErdosMahlerLean.sameFiberPairs_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:192:0: 'ErdosMahlerLean.rationalPowerRelated_refl' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:193:0: 'ErdosMahlerLean.rationalPowerRelated_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:194:0: 'ErdosMahlerLean.rationalPowerRelated_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:195:0: 'ErdosMahlerLean.rationalPowerPairs_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:196:0: 'ErdosMahlerLean.ratioResidueClass_eq_implies_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:197:0: 'ErdosMahlerLean.rationalPowerPairs_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:198:0: 'ErdosMahlerLean.rationalPowerPairs_card_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:199:0: 'ErdosMahlerLean.rationalPowerPairs_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:200:0: 'ErdosMahlerLean.rational_power_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:201:0: 'ErdosMahlerLean.rationalLogHeight_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:202:0: 'ErdosMahlerLean.rational_div_height_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:203:0: 'ErdosMahlerLean.rationalLogHeight_div_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:204:0: 'ErdosMahlerLean.rationalValuation_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:205:0: 'ErdosMahlerLean.rationalValuation_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:206:0: 'ErdosMahlerLean.rationalValuation_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:207:0: 'ErdosMahlerLean.rationalValuation_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:208:0: 'ErdosMahlerLean.rationalValuation_injective_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:209:0: 'ErdosMahlerLean.rationalRatioSpace_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:210:0: 'ErdosMahlerLean.rationalRatioLattice_eq_vectorSpan' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:211:0: 'ErdosMahlerLean.rationalRatioLattice_basepoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:212:0: 'ErdosMahlerLean.affineMultiplicativeRank_eq_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:213:0: 'ErdosMahlerLean.rationalRatioSpace_eq_vectorSpan' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:214:0: 'ErdosMahlerLean.affineMultiplicativeRank_eq_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:215:0: 'ErdosMahlerLean.mem_tripleProductset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:216:0: 'ErdosMahlerLean.tripleProductset_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:217:0: 'ErdosMahlerLean.tripleProductset_cube_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:218:0: 'ErdosMahlerLean.rationalRatioLattice_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:219:0: 'ErdosMahlerLean.affineMultiplicativeRank_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:220:0: 'ErdosMahlerLean.affineMultiplicativeRank_lt_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:221:0: 'ErdosMahlerLean.mem_tripleAddSet' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:222:0: 'ErdosMahlerLean.tripleAddSet_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:223:0: 'ErdosMahlerLean.rationalRealCoordinates_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:224:0: 'ErdosMahlerLean.rationalRealCoordinates_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:225:0: 'ErdosMahlerLean.matolcsi_rational_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:226:0: 'ErdosMahlerLean.matolcsi_rank_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:227:0: 'ErdosMahlerLean.matolcsi_rational_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:228:0: 'ErdosMahlerLean.rationalRatioVectors_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:229:0: 'ErdosMahlerLean.rationalRatioVectors_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:230:0: 'ErdosMahlerLean.rationalRatioVectors_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:231:0: 'ErdosMahlerLean.rationalValuation_triple_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:232:0: 'ErdosMahlerLean.rationalRatioVectors_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:233:0: 'ErdosMahlerLean.multiplicative_rank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:234:0: 'ErdosMahlerLean.rationalValuation_zpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:235:0: 'ErdosMahlerLean.rationalRatioLattice_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:236:0: 'ErdosMahlerLean.rationalRatioLattice_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:237:0: 'ErdosMahlerLean.rationalValuation_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:238:0: 'ErdosMahlerLean.rationalRatioLattice_iff_integral_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:239:0: 'ErdosMahlerLean.eventually_scaled_Q_power_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:240:0: 'ErdosMahlerLean.rat_scaled_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:241:0: 'ErdosMahlerLean.eventually_return_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:242:0: 'ErdosMahlerLean.returns_card_rotationCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:243:0: 'ErdosMahlerLean.rotationInterval_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:244:0: 'ErdosMahlerLean.return_discrepancy_power_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:245:0: 'ErdosMahlerLean.Q_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:246:0: 'ErdosMahlerLean.eventually_discrepancy_le_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:247:0: 'ErdosMahlerLean.returns_discrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:248:0: 'ErdosMahlerLean.returns_comparable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:249:0: 'ErdosMahlerLean.returns_eventually_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:250:0: 'ErdosMahlerLean.ReturnProductData.Y_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:251:0: 'ErdosMahlerLean.ReturnProductData.log_Y' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:252:0: 'ErdosMahlerLean.ReturnProductData.index_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:253:0: 'ErdosMahlerLean.exists_returnProductData' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:254:0: 'ErdosMahlerLean.Q_le_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:255:0: 'ErdosMahlerLean.triple_sum_index_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:256:0: 'ErdosMahlerLean.triple_returns_strip' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:257:0: 'ErdosMahlerLean.rho_le_two_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:258:0: 'ErdosMahlerLean.return_sum_bound_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:259:0: 'ErdosMahlerLean.triple_returns_card_le_of_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:260:0: 'ErdosMahlerLean.triple_returns_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:261:0: 'ErdosMahlerLean.residue_closed_interval_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:262:0: 'ErdosMahlerLean.lattice_strip_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:263:0: 'ErdosMahlerLean.Phi_mem_rotationInterval_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:264:0: 'ErdosMahlerLean.Phi_exp_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:265:0: 'ErdosMahlerLean.Phi_image_J' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:266:0: 'ErdosMahlerLean.rotationInterval_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:267:0: 'ErdosMahlerLean.rotationInterval_subset_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:268:0: 'ErdosMahlerLean.mem_returns_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:269:0: 'ErdosMahlerLean.rho_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:270:0: 'ErdosMahlerLean.rotation_block_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:271:0: 'ErdosMahlerLean.rotation_block_discrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:272:0: 'ErdosMahlerLean.rotationCount_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:273:0: 'ErdosMahlerLean.rotation_multiple_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:274:0: 'ErdosMahlerLean.remainder_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:275:0: 'ErdosMahlerLean.rotation_discrepancy_from_approximants' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:276:0: 'ErdosMahlerLean.uniform_rotation_discrepancy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:277:0: 'ErdosMahlerLean.mem_shortArcReturns' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:278:0: 'ErdosMahlerLean.short_arc_card_of_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:279:0: 'ErdosMahlerLean.diophantine_approximation_inv_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:280:0: 'ErdosMahlerLean.short_arc_approximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:281:0: 'ErdosMahlerLean.short_arc_scale_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:282:0: 'ErdosMahlerLean.uniform_short_arc_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:283:0: 'ErdosMahlerLean.small_denominator_stage_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:284:0: 'ErdosMahlerLean.small_denominators_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:285:0: 'ErdosMahlerLean.small_denominators_negligible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:286:0: 'ErdosMahlerLean.short_arc_shell_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:287:0: 'ErdosMahlerLean.exceptional_shell_power_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:288:0: 'ErdosMahlerLean.exceptional_range_dyadic_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:289:0: 'ErdosMahlerLean.exceptional_range_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:290:0: 'ErdosMahlerLean.Phi_distance_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:291:0: 'ErdosMahlerLean.exceptional_shell_arc' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:292:0: 'ErdosMahlerLean.exceptional_shell_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:293:0: 'ErdosMahlerLean.log_two_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:294:0: 'ErdosMahlerLean.alpha_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:295:0: 'ErdosMahlerLean.alpha_lt_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:296:0: 'ErdosMahlerLean.alpha_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:297:0: 'ErdosMahlerLean.a_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:298:0: 'ErdosMahlerLean.a_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:299:0: 'ErdosMahlerLean.a_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:300:0: 'ErdosMahlerLean.R_eq_nat_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:301:0: 'ErdosMahlerLean.smooth_num' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:302:0: 'ErdosMahlerLean.smooth_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:303:0: 'ErdosMahlerLean.R_num' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:304:0: 'ErdosMahlerLean.R_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:305:0: 'ErdosMahlerLean.R_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:306:0: 'ErdosMahlerLean.log_R' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:307:0: 'ErdosMahlerLean.R_mem_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:308:0: 'ErdosMahlerLean.rotation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:309:0: 'ErdosMahlerLean.R_le_two_sub_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:310:0: 'ErdosMahlerLean.Q_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:311:0: 'ErdosMahlerLean.J_subset_Ioo' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:312:0: 'ErdosMahlerLean.smooth_triple_nat_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:313:0: 'ErdosMahlerLean.smooth_triple_den' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:314:0: 'ErdosMahlerLean.log_sub_le_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:315:0: 'ErdosMahlerLean.abs_log_sub_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:316:0: 'ErdosMahlerLean.zeta_gt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:317:0: 'ErdosMahlerLean.J_upper_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:318:0: 'ErdosMahlerLean.width_le_one_div_81' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:319:0: 'ErdosMahlerLean.rho_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:320:0: 'ErdosMahlerLean.three_rho_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:321:0: 'ErdosMahlerLean.exponentInterval_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:322:0: 'ErdosMahlerLean.exponentInterval_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:323:0: 'ErdosMahlerLean.return_exponent_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:324:0: 'ErdosMahlerLean.triple_exponent_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:325:0: 'ErdosMahlerLean.triple_a_eq_of_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:326:0: 'ErdosMahlerLean.smooth_triple_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:327:0: 'ErdosMahlerLean.smooth_triple_eq_of_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:328:0: 'ErdosMahlerLean.smooth_power_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:329:0: 'ErdosMahlerLean.smooth_exponent_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:330:0: 'ErdosMahlerLean.log_smooth_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:331:0: 'ErdosMahlerLean.one_le_smooth_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:332:0: 'ErdosMahlerLean.smooth_triple_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:333:0: 'ErdosMahlerLean.smooth_triple_separation_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:334:0: 'ErdosMahlerLean.triple_product_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:335:0: 'ErdosMahlerLean.rat_triple_product_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:336:0: 'ErdosMahlerLean.triple_product_den_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:337:0: 'ErdosMahlerLean.triple_product_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:338:0: 'ErdosMahlerLean.rat_distance_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:339:0: 'ErdosMahlerLean.triple_product_distance_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:340:0: 'ErdosMahlerLean.rational_products_eq_of_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:341:0: 'ErdosMahlerLean.mem_tripleSumset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:342:0: 'ErdosMahlerLean.mem_tripleProductset_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:343:0: 'ErdosMahlerLean.triple_correspondence_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:344:0: 'ErdosMahlerLean.card_le_tripleSumset' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:345:0: 'ErdosMahlerLean.assignment_error_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:346:0: 'ErdosMahlerLean.triple_assignment_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:347:0: 'ErdosMahlerLean.denominator_lt_of_exceptional_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:348:0: 'ErdosMahlerLean.triple_product_ne_of_den_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:349:0: 'ErdosMahlerLean.triple_kernel_of_estimates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:350:0: 'ErdosMahlerLean.assignment_injective_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:351:0: 'ErdosMahlerLean.triple_card_eq_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:352:0: 'ErdosMahlerLean.tripleSumset_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:353:0: 'ErdosMahlerLean.triple_card_bounds_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:354:0: 'ErdosMahlerLean.exceptional_denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:355:0: 'ErdosMahlerLean.exceptional_den_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:356:0: 'ErdosMahlerLean.exceptional_triple_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:357:0: 'ErdosMahlerLean.exceptional_triple_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:358:0: 'ErdosMahlerLean.product_correspondence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:359:0: 'ErdosMahlerLean.natural_valuation_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:360:0: 'ErdosMahlerLean.rational_valuation_height_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:361:0: 'ErdosMahlerLean.smooth_valuation_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:362:0: 'ErdosMahlerLean.smooth_valuation_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ErdosMahlerLean/Audit.lean:363:0: 'ErdosMahlerLean.smooth_power_quotient_divisibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (5884 jobs).

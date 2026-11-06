@@ -1,0 +1,25 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "{\"sha\":\"9d581dfff2e41de989072ea63abf3daf69311520\",\"node_id\":\"C_kwDOFcwZ1doAKDlkNTgxZGZmZjJlNDFkZTk4OTA3MmVhNjNhYmYzZGFmNjkzMTE1MjA\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/commits/9d581dfff2e41de989072ea63abf3daf69311520\",\"html_url\":\"https://github.com/leanprover-community/mathlib4/commit/9d581dfff2e41de989072ea63abf3daf69311520\",\"author\":{\"name\":\"Garmelon\",\"email\":\"11077553+Garmelon@users.noreply.github.com\",\"date\":\"2026-10-27T21:34:08Z\"},\"committer\":{\"name\":\"Garmelon\",\"email\":\"11077553+Garmelon@users.noreply.github.com\",\"date\":\"2026-10-27T21:34:08Z\"},\"tree\":{\"sha\":\"1d7262af98d9a7a8f7b8ea0bf2d3d189300e7ab2\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/trees/1d7262af98d9a7a8f7b8ea0bf2d3d189300e7ab2\"},\"message\":\"chore: bump toolchain to v4.36.0-rc2 (#45383)\\n\\n\\n\\nCo-authored-by: Joscha <joscha@plugh.de>\",\"parents\":[{\"sha\":\"be69e0dcc4d198ffa81bdcb748e781e52e953160\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/commits/be69e0dcc4d198ffa81bdcb748e781e52e953160\",\"html_url\":\"https://github.com/leanprover-community/mathlib4/commit/be69e0dcc4d198ffa81bdcb748e781e52e953160\"}],\"verification\":{\"verified\":false,\"reason\":\"unsigned\",\"signature\":null,\"payload\":null,\"verified_at\":null}}",
+      "title": "9d581dfff2e41de989072ea63abf3daf69311520",
+      "modified_date": null,
+      "url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/9d581dfff2e41de989072ea63abf3daf69311520",
+      "display_url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/9d581dfff2e41de989072ea63abf3daf69311520",
+      "display_title": "9d581dfff2e41de989072ea63abf3daf69311520",
+      "structuredContent": {
+        "title": "9d581dfff2e41de989072ea63abf3daf69311520",
+        "content": "{\"sha\":\"9d581dfff2e41de989072ea63abf3daf69311520\",\"node_id\":\"C_kwDOFcwZ1doAKDlkNTgxZGZmZjJlNDFkZTk4OTA3MmVhNjNhYmYzZGFmNjkzMTE1MjA\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/commits/9d581dfff2e41de989072ea63abf3daf69311520\",\"html_url\":\"https://github.com/leanprover-community/mathlib4/commit/9d581dfff2e41de989072ea63abf3daf69311520\",\"author\":{\"name\":\"Garmelon\",\"email\":\"11077553+Garmelon@users.noreply.github.com\",\"date\":\"2026-10-27T21:34:08Z\"},\"committer\":{\"name\":\"Garmelon\",\"email\":\"11077553+Garmelon@users.noreply.github.com\",\"date\":\"2026-10-27T21:34:08Z\"},\"tree\":{\"sha\":\"1d7262af98d9a7a8f7b8ea0bf2d3d189300e7ab2\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/trees/1d7262af98d9a7a8f7b8ea0bf2d3d189300e7ab2\"},\"message\":\"chore: bump toolchain to v4.36.0-rc2 (#45383)\\n\\n\\n\\nCo-authored-by: Joscha <joscha@plugh.de>\",\"parents\":[{\"sha\":\"be69e0dcc4d198ffa81bdcb748e781e52e953160\",\"url\":\"https://api.github.com/repos/leanprover-community/mathlib4/git/commits/be69e0dcc4d198ffa81bdcb748e781e52e953160\",\"html_url\":\"https://github.com/leanprover-community/mathlib4/commit/be69e0dcc4d198ffa81bdcb748e781e52e953160\"}],\"verification\":{\"verified\":false,\"reason\":\"unsigned\",\"signature\":null,\"payload\":null,\"verified_at\":null}}",
+        "display_url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/9d581dfff2e41de989072ea63abf3daf69311520"
+      }
+    },
+    "isError": false
+  }
+}

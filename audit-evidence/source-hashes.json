@@ -1,0 +1,522 @@
+{
+  "commit": "7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc",
+  "tree": "adc78ba405129cac1153df9440ca2d6a14af28dd",
+  "files": [
+    {
+      "path": ".github/workflows/create-release.yml",
+      "git_blob": "6dacf77ca24a1a2a99dc974d16c53408e8b32058",
+      "sha256": "491f1c02bb31774c3f711155a4cc24da5923dc8ba7016e9aaff13969e2ea49ca",
+      "matches_frozen": true
+    },
+    {
+      "path": ".github/workflows/lean.yml",
+      "git_blob": "0890aeeaf7ff95f26a7abebe801b97352d80684d",
+      "sha256": "2fe8af92d4366493572bf6e2e220d67bedb79a53b364e953bcf8a24e8a792212",
+      "matches_frozen": true
+    },
+    {
+      "path": ".github/workflows/lean_action_ci.yml",
+      "git_blob": "ed60ee495401d34b1f83ada1dae3f00bf14c01c1",
+      "sha256": "27c305b340e38c4adc482ea8109aa3e36dfd89c8e56eaf90d57aa7368be2b627",
+      "matches_frozen": true
+    },
+    {
+      "path": ".github/workflows/update.yml",
+      "git_blob": "96b7622a72a1c6d92e3927a2f494656c0797fc00",
+      "sha256": "608304be502130030682762aa4a9bbec3e127d6b1eb2acf054818b84b6c81a4f",
+      "matches_frozen": true
+    },
+    {
+      "path": ".gitignore",
+      "git_blob": "f8ca97fa5326d821fb61cf4650006bace325b703",
+      "sha256": "e057ff56bb7e4cb54ccb234ff1c3da9827f8e5f826a8007aaa101c6353fc3fd0",
+      "matches_frozen": true
+    },
+    {
+      "path": "CITATION.cff",
+      "git_blob": "b8cfb82257ca1f8f8b2f1b33664be917e9357cfc",
+      "sha256": "003d10ef0f373b466b5368ec07b061ee55de0c6f809620c0226df67f7d6eb664",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean.lean",
+      "git_blob": "9d5bbdff77ad7cdc8956f11bd9dd8abf74521215",
+      "sha256": "bbd8e3d008d930b0a246bb0804f5f123ddea9ee6f1355ff46055fc3431cc96cb",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Arithmetic.lean",
+      "git_blob": "343ba8b4c55af831decb93bb356e2e61c2a92f5f",
+      "sha256": "5278232ac24455384218ff7df366f3c159589d65298b2e2b27da79ff339c976c",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Audit.lean",
+      "git_blob": "6137825a18238151e5a69ba77d8da4720ba24084",
+      "sha256": "acd6f148a542dc1680a98c0dd0f60c468d7cecbbebcd9be8dc11f261f3934ebe",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Basic.lean",
+      "git_blob": "99415d9d9fc72e540b7fc4f2e1242b9cfd06814d",
+      "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/BlockAssignments.lean",
+      "git_blob": "a8b79f02e6841c9bf909ea8db87aa8bb2db1f1ec",
+      "sha256": "1c29da2c5f4c93cf5a213f58c6656aed3768c1bbae20effa0f26a42517675828",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/BlockCoordinates.lean",
+      "git_blob": "9e8a978691acef80b9918f50512d14a9c033fee4",
+      "sha256": "49e066d51c0a3ef83c310e371c3d010fd0c929c921e5415383b6ee1bf76bbb3e",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/BlockCoverage.lean",
+      "git_blob": "d53d5ea55bd0cdb3ee27cbe592cf4e517d03ca65",
+      "sha256": "0850176ed56aaba204a1082c701d96eb9b20f1217796ae735852a5cf60630fc2",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/BlockProportionality.lean",
+      "git_blob": "663fa606962c5fe51c3c8ad3d5d37023c9f54683",
+      "sha256": "f07cb7ed4b67d1d001ee2dcd9f266270b0e62e81e2d10b9b1ba5c01b80ae4ffc",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/BlockRank.lean",
+      "git_blob": "5e0fb5542a06efad2199a74f2f646e376770fd29",
+      "sha256": "39e92038f8ea9b115bd55b1869ab7793b947c468b17701c72f17d826ddac194d",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Blocks.lean",
+      "git_blob": "55c9c0a1e65d45c7f376228b70f569f3cbe4719e",
+      "sha256": "1a77ceef4dc09fb16059afc773655a0986a79b1661f663755731c84185048499",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/CircularDiscrepancy.lean",
+      "git_blob": "d3572fc121cc08e4fdd2f85687a68c728ac6b91b",
+      "sha256": "c59fc96cd3c03840a59eb4aa044b10cc8c5f49e24a7e2c8dcbfbe3de962b77fa",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/CongruenceArcCount.lean",
+      "git_blob": "3781671c64134fb623b3b8a9ee8e1fa36b534ec7",
+      "sha256": "566df12d69decb0937050a3fc5af77b651df07d9e765852791199683d2a9e27f",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Definitions.lean",
+      "git_blob": "5bf9218f764d7b2be9c64dabedd43a02eb95a606",
+      "sha256": "2cda825e2dde2f5c19f8385c017765aafee49714c4b4b7c842147722bc8a230c",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Diophantine.lean",
+      "git_blob": "c67f9ce90aa2131d451aaddd645b7e80d8e5eee5",
+      "sha256": "cd006abfc56ee7e6765d90c41b1b9fd1a83d517366b700c9dd90c97bcfff2549",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/DyadicShells.lean",
+      "git_blob": "d4b4ac3f6d949c5486dd2f5a5137e526fba7b9e6",
+      "sha256": "bd60d4ceba3446106a084a353a3384a10b5e815819abe3120c2f9930da85488a",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Elementary.lean",
+      "git_blob": "81a5a233d7234878f7394113342f4df5af43c82b",
+      "sha256": "4a1b87b0d3e95ef5693bfef1f366b7648657b04f4208ef7856d55d17135b7150",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ExceptionalHeights.lean",
+      "git_blob": "2036a4f5a05343f1795f378a3ac0a0d547ebc354",
+      "sha256": "ce24fc396cacbd26bac82862091713a2dc61a8f0ae1ab6f3760d50113a040749",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/External/Inputs.lean",
+      "git_blob": "30577425d01b5c3a21d0b2efe48991d89c28e9af",
+      "sha256": "54d50aa34dc0ea28167450b86d8888d26823dd68749107c244809364ac76184a",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/External/Matveev.lean",
+      "git_blob": "9fc8465de662716616ca0399b3515d706a14949c",
+      "sha256": "b352b50482472cebb69553fbc4e84ce7e9a4c34a5fad06b8b7b7248d911cbc2f",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/External/Subspace.lean",
+      "git_blob": "541d569fef46cbb03efaf516bbbf8243c97c0480",
+      "sha256": "d22d0a92d6e1307394262900d98f5f55393c726128db99fe33f084d1b07834f6",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/FixedSeparation.lean",
+      "git_blob": "78b758ee5914893a656ca2c1b20c2ddd5008cf59",
+      "sha256": "9e426669943fcb419681d3c5d752a4d37c3824e3fb5d7db11b4c83813f4f53ac",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Grid.lean",
+      "git_blob": "4f07d38de80dacedf1ac5ff7476ccbf0fcc5c911",
+      "sha256": "2daf88c76db0e2d2dc8e9958abb08e69cfe39056f04e9826d5447af6e69a8796",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/HeightContraction.lean",
+      "git_blob": "808c41426f8f437d3cd90971855abbe5ed078c8b",
+      "sha256": "a8bdbb446e21d8527b607d6c0e6c84c14cf3ab1abaacad3b47794ff86cd37ddb",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/LargeDenominators.lean",
+      "git_blob": "107940e7d499bb3aed2271b7a9fc23af36983f14",
+      "sha256": "7e3da6f63c78f6f765c3a6487d8be4db77fe157d934cc21bf5d50730865dc113",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Localization.lean",
+      "git_blob": "085c3cfa51a875550a553fc66678ca4e742ef133",
+      "sha256": "efaa9f730c042524ac1e6e73e87620752a3b049041ef7d0970607c7fe56e90b9",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Matveev.lean",
+      "git_blob": "d9c821f6b77901ea4ccfbce2f4737f98a4746c1f",
+      "sha256": "0afe4b7e68378a8ffcd1cdc848db23af59b8dcb776d169fcde557b367c23bd03",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/MatveevGap.lean",
+      "git_blob": "8a88bfb3cd00931705c32e564c48b440009ec937",
+      "sha256": "615ad4f66c498e8392f7c61f3fdd30173edc9c8adf634584490b71162342f6ac",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/NonproportionalGap.lean",
+      "git_blob": "24e1d45805e78aa7f9fefa4844b7ae0c24ceafa9",
+      "sha256": "1a0b13f500897ba077b3eda452e176c3ddca67b1b8f5b7444fc7b7204e49fd7c",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProductCorrespondence.lean",
+      "git_blob": "36a4b1a9f59b5ac39cd4fa1a336d2f5f0702a6a5",
+      "sha256": "22ff9e729b682cf9ba65aabe5b75791b40797ca3d87a4d2f937ace46907a906b",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProofMap.lean",
+      "git_blob": "7dfc37bf619cbf7e4afef3fdfe3e5ec7bff76430",
+      "sha256": "912af10c21bd802af4bd26541fd9b28e5c75856cd20150b874eddbc9c10e560d",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProportionalCountAlgebra.lean",
+      "git_blob": "5fbfc227743f23faf8708db51a3171b52c2a26bf",
+      "sha256": "b483576ca75a83f68517fbb33dcdb8db1e57046781af9bb638cc4c7dadd99db0",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProportionalLocalization.lean",
+      "git_blob": "cdddf0de8d8b9c17e21103ff66761cb048379598",
+      "sha256": "0567b4c01fb3eb21e8602686b6b93dfc10612ce15c9f749f787bb85966c3399f",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProportionalPairs.lean",
+      "git_blob": "d68090298f4f1433208e7cded31479bc2441886f",
+      "sha256": "e88161c8bc2f3300d540bf7a2b117c9127a5dfc381aecfb99aef61153c53d319",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ProportionalPowerPairs.lean",
+      "git_blob": "de8f48b3cf1ca2749871701714856d1c1f400190",
+      "sha256": "82d58614e89cd8152ccb0fc88ff7fcaeed4d148526215fb7307dd137bd2b0b2a",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Proposition21.lean",
+      "git_blob": "f2178a121a3b91d4f664d0fcf9d28abdeb4dade0",
+      "sha256": "2efd129a3225f141fa6e1c41396a7885f20bfd060888434084ab15c0e118c046",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RankBlockEstimate.lean",
+      "git_blob": "096a664ce36478559cc85b264253f9d86dc1456d",
+      "sha256": "f023c495803fcdecf57cd89cd691372ff1f9028d1df145e1dfe83d94e251d4d9",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RankDecay.lean",
+      "git_blob": "d52f75d50478b58e80a71c89a9bf70c9e5a89bc7",
+      "sha256": "822b9433ec5160c80a0f40e8a314601db8a580a5d114ea5d5f6553df99462de3",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RankDichotomy.lean",
+      "git_blob": "c11488d6c8fda841feca2e6d07acbdf7098e9500",
+      "sha256": "4962a66fd3847aa4832c93a463bb9b3adafbd37978d6927e46b45577725010e3",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RankTransfer.lean",
+      "git_blob": "9c6a59cc664e0d5f60eca8cd51e5eae0b0fbb576",
+      "sha256": "d837de16efdf0c128e1bf8985481a58510b3cd8025aa4f9a4b119940ad5eeb47",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RationalFibers.lean",
+      "git_blob": "46b1d2a0247e4efb2a3c3095b6cf3a57068eea8e",
+      "sha256": "aa3c237c4470f0fdb9a50bd76979e0a3a353f40a22f8e868595e660e250f4a2a",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RationalHeight.lean",
+      "git_blob": "d06bdd22ee4519aade5a0e0e22a0a4ae42905a44",
+      "sha256": "a38840e18fc5dcdf46b71156e071ca280eb1f56b536cbb4bf137cad0ed858ca3",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RationalRank.lean",
+      "git_blob": "1610f15321a47cd80655358437dcfb26876be924",
+      "sha256": "9f830aaa4f664588d95ce77d6fd3d55668733d8eb729a8972d6c36a097e38589",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ReturnApproximation.lean",
+      "git_blob": "0740ec0770c69c5bc6e82ae8b4af9820c1a26f0d",
+      "sha256": "b03bb6209566e2db3a584d922fe60baacab67d1fa0bd62e8c1daed8b01286727",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ReturnCount.lean",
+      "git_blob": "0e8c5db3ce495485df44713cde155c270474800d",
+      "sha256": "9cd5d01140f9f06f9b7158c915d4a456bd084b84800a7b793548e9b23e89f62c",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ReturnProductData.lean",
+      "git_blob": "bdd84540ecc597eed68a4273cdaf9aca16f7913a",
+      "sha256": "199b013e157fe87ce905c73edf5d31d7ca7fe21518835a6692a44ea411b4cfca",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ReturnSumBound.lean",
+      "git_blob": "548bc3b0e16162f443ad7c0a12141f938d8cd490",
+      "sha256": "7ab241e58b7e367fc1f0f1c8dfe1313936ca0473909bdd274a8edf4c6a1e75a3",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ReturnSums.lean",
+      "git_blob": "2ae3120aa1ee61faf99962de7becd22da1b777d9",
+      "sha256": "5d9ed1f8cb92ce0df0cbd06d7ea66f71c185ce8cc19bc214e1049f1652eb22af",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Rotation.lean",
+      "git_blob": "3410a93cac3e643bb75b9a8a98568cb847d7b87b",
+      "sha256": "0eb74113c2ec56d4224bbf2d8d5c9010eca69d42daa19d9177798a58fafd2abd",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RotationBlocks.lean",
+      "git_blob": "310be34fd83280ddaf5f0ae45b70d7c7a6070594",
+      "sha256": "69cdf722e73056048783aa9720b520388471e6b689354e1df83a4b35700bbb8e",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/RotationDiscrepancy.lean",
+      "git_blob": "25800e74fef9c3c9192b076ed2ea41fa411a4be9",
+      "sha256": "7ea4db2393c2645908f5e5fa2e1d501128a1469d16afb9d0d44e37f09f0132e2",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ShortArc.lean",
+      "git_blob": "af7ab4ae648d7fd8f3f8943e5255a6a4ee8b3f08",
+      "sha256": "b67acb3da759d0db4c2af192ae183e3faa38a1cc9ba878a3547deac731c1065c",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/SmallDenominatorBound.lean",
+      "git_blob": "8d2bee7dba517be4fc7195dac7971c05666ee0ff",
+      "sha256": "65101b1840c7dca01a4956a2bb38e61c2342b1a43afd9efea6e9c71cd2e9e5de",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/SmallDenominatorRange.lean",
+      "git_blob": "72fed962bb01ae8305cb154b0f522abf4cb071d4",
+      "sha256": "aa649dd2ef13eb054ef9ed3684472477ef78fb2d205dd8cb0ca224e0dd4cb9a7",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/SmallDenominators.lean",
+      "git_blob": "fdb6900bf2f120703e444b2c5346afbe81931936",
+      "sha256": "a646fe5bcbee5d2dc82e11c5189edfa83b2436f885be69557d97bd8187f6099a",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Smooth.lean",
+      "git_blob": "7636dbaadcc9a5041b1d493d5d0e9edfc8de0feb",
+      "sha256": "b82fa3d55417842376eec155a1965b01ca11f8643db4cb663e72b9c131dc1a0f",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/SmoothProducts.lean",
+      "git_blob": "d34c19b4738848777a5c7b5af324ce523c509e90",
+      "sha256": "33186ca0bb0d5610979a479d7c7d348a34c8e0ccaf38b65145ad75ab5dc0fbc2",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/Transfer.lean",
+      "git_blob": "50d7bff190f26e3625c1047f2a0cc757b9887b2b",
+      "sha256": "214ea271f631d0c1794b1d8e1424a054755d89c8979169ac5b1dd17e39d1e9c0",
+      "matches_frozen": true
+    },
+    {
+      "path": "ErdosMahlerLean/ValuationHeight.lean",
+      "git_blob": "7b2e8c63a77ebb3a289cc3d320a8021f90b1d094",
+      "sha256": "a53c9b5f3430acf8df391ba38a57cf6043446ca47e429b0dfa3e4aaacc069a17",
+      "matches_frozen": true
+    },
+    {
+      "path": "LICENSE",
+      "git_blob": "f1089289a792130dba43a92c94c14f4a6b8c5b4c",
+      "sha256": "641345ac3b02eb2f28f337edbdc16e49a5aa8984cc957dbd66fffda453b723a2",
+      "matches_frozen": true
+    },
+    {
+      "path": "README.md",
+      "git_blob": "3686d52d77c0dbe909cf1ef25136a52a0f7f6d88",
+      "sha256": "a547683d6e3e39037776448bada0a12cd08a50a427675785500012aab3f27ea1",
+      "matches_frozen": true
+    },
+    {
+      "path": "RUN_ME_FIRST.md",
+      "git_blob": "29e235d26ba6d873e3cd47b67b4df0ef50ee8f9e",
+      "sha256": "aec3ac713eb8556c114fa463749c13944e38c87eb25853c45122cdd17f5336e4",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/CODEX_AGENT_PROMPT.md",
+      "git_blob": "272a4a9fe19206fd9f5b6da74b27c09103762d58",
+      "sha256": "4580f0be90676698e7648e68b402396a9fd96387f7aba6be259cda5f2016e5bd",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/EXTERNAL_DEPENDENCIES.md",
+      "git_blob": "95fd7df02661b1f6c06dfb4e04a79f688a1e0519",
+      "sha256": "aa858c25bddbb183feeac89c039021943a403f1b170ae3460492712dbe446cfc",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/MATVEEV_SOURCE.md",
+      "git_blob": "587ad596253af616f8a81902834b2c98fc42b027",
+      "sha256": "d7fb4c17e4db609eb589cff04ea4c5c7f5c6102c07f76b30827b93d21a7d579c",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/PROOF_OBLIGATIONS.md",
+      "git_blob": "02f85581660f7918f30db08943687f90fca5d1f4",
+      "sha256": "037baac2761c8262775e3bcdcd91e4351d8b31eea46986762c1a32aba95d3f1b",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/PROPORTIONAL_LOCALIZATION_SOURCE.md",
+      "git_blob": "dda18a1f34fbdf31fb9952e80cbe0f3afd156c0f",
+      "sha256": "4c481ace6037ee4350f71804289e1eb74a66a339443c6a63a96321b969a96416",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/SHORT_ARC_SOURCE.md",
+      "git_blob": "6c11efdae30b3c1947295e548850de7c1fc4ccae",
+      "sha256": "5e61d450449bfaa3fb844d3bf13c13f4925b76421642e226d145fe036b0b978e",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/SMALL_DENOMINATOR_SOURCE.md",
+      "git_blob": "ce32ad65f0e862b376d18ef684a73d308de6a0ac",
+      "sha256": "251438bc0e0919629837413d7ad424948e5d7a8127c3b7faf95900ea449a576f",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/SOURCE_MAP.md",
+      "git_blob": "f3b55e3ff9222e8234dc161bb32dd8f7580f2b38",
+      "sha256": "6d619cf91ee8efec70cf9a088f089d22abf50e000affc2e66aece7bdfadd7ee0",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/STATUS.md",
+      "git_blob": "499c21ab79d78631c3de3134f0f803a30ba685a2",
+      "sha256": "2f44df8d47d9b83b7829430c4a154c465daa76fb916ce9ecf64598febece4501",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/SUBSPACE_SOURCE.md",
+      "git_blob": "3b75232b9e21dbe7f4a231bee900fd0ee71f4556",
+      "sha256": "1519618f441b016fe09477696fcd8182ec6d091795256794a5c087bf88ab10d5",
+      "matches_frozen": true
+    },
+    {
+      "path": "docs/WORK_PLAN_24H.md",
+      "git_blob": "685cf6b4c5066bd6b668f202d1a85e7bfdf99a67",
+      "sha256": "aa0ab4c8e9fd82c718c1925f9b4d2a0dcd22a419c39ee9b73a1ab7b9884f8c3c",
+      "matches_frozen": true
+    },
+    {
+      "path": "lake-manifest.json",
+      "git_blob": "0549fc511b95831f2c7f8743597f623387057ba0",
+      "sha256": "69465b39a260c2df34f136445b2151a90edf98b57c23443fede4121d3f75d837",
+      "matches_frozen": true
+    },
+    {
+      "path": "lakefile.toml",
+      "git_blob": "6b9922b98557a514ccc2b3bfb587e36cef327f76",
+      "sha256": "36b391159bfcebf2ddf6a29fbfe241159ff0681ef7cb7da26f8201fa25f10a95",
+      "matches_frozen": true
+    },
+    {
+      "path": "lean-toolchain",
+      "git_blob": "0fc4336929df18cb6edbdcce0498f49d38877271",
+      "sha256": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+      "matches_frozen": true
+    },
+    {
+      "path": "paper/Erdos_MahlerREV.pdf",
+      "git_blob": "998e8f9ee9c8cda59acce6d127ea0a5b58471fe3",
+      "sha256": "c1c36478f20f4680df298b3028093dcd9d8516984d08507a618e5d2029181d6d",
+      "matches_frozen": true
+    },
+    {
+      "path": "paper/Erdos_MahlerREV.tex",
+      "git_blob": "28af47c5143e6217462c6e09ee7d9e2e0ddd56fa",
+      "sha256": "eb1c356128177a3780b4853d6cbc93449d2f80e2f7536406a15665ec5dce8726",
+      "matches_frozen": true
+    },
+    {
+      "path": "paper/README.md",
+      "git_blob": "76b1742deeae30d272a42e30d1950a2614b4edbd",
+      "sha256": "66a089c50b7798994b0ebf36ce960e3906a241b05b28e2a0c8fe99b1326dee3d",
+      "matches_frozen": true
+    },
+    {
+      "path": "paper/SHA256SUMS",
+      "git_blob": "8667a541f62a7331430e55655eed5fdb686f2753",
+      "sha256": "f80e1f3a5391cbc9b4a53dcda4133115bbd121e4e595406fa5949255aa2585c1",
+      "matches_frozen": true
+    },
+    {
+      "path": "scripts/audit.sh",
+      "git_blob": "01ed5affbc92ce4eabf8193a0a0fa4b5c65a8751",
+      "sha256": "54bd9502dbe29b27be908c5746c7d0d15aa359298a399343426faeda8c215f1e",
+      "matches_frozen": true
+    }
+  ]
+}

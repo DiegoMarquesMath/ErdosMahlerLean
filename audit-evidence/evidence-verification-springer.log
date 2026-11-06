@@ -1,0 +1,3 @@
+PASS: local PDF, extracted text and page-image hashes; local source ignored and untracked.
+PASS: retained build/probe outputs, 358 axiom results, kernel counts and all 86 frozen file hashes.
+External hypotheses remain unproved; this evidence verifier does not compile Lean or prove source geometry.

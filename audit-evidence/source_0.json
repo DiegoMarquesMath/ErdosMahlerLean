@@ -1,0 +1,25 @@
+{
+  "status": "fulfilled",
+  "value": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "content": "{\"ref\":\"refs/tags/prop21-conditional-2026-11-06\",\"node_id\":\"REF_kwDOVkqJ3NoAJ3JlZnMvdGFncy9wcm9wMjEtY29uZGl0aW9uYWwtMjAyNi0xMS0wNg\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/refs/tags/prop21-conditional-2026-11-06\",\"object\":{\"sha\":\"80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"type\":\"tag\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2\"}}",
+      "title": "prop21-conditional-2026-11-06",
+      "modified_date": null,
+      "url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/ref/tags/prop21-conditional-2026-11-06",
+      "display_url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/ref/tags/prop21-conditional-2026-11-06",
+      "display_title": "prop21-conditional-2026-11-06",
+      "structuredContent": {
+        "title": "prop21-conditional-2026-11-06",
+        "content": "{\"ref\":\"refs/tags/prop21-conditional-2026-11-06\",\"node_id\":\"REF_kwDOVkqJ3NoAJ3JlZnMvdGFncy9wcm9wMjEtY29uZGl0aW9uYWwtMjAyNi0xMS0wNg\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/refs/tags/prop21-conditional-2026-11-06\",\"object\":{\"sha\":\"80eafe32bfcfd3d87f8e418f935a698f753a11c2\",\"type\":\"tag\",\"url\":\"https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/tags/80eafe32bfcfd3d87f8e418f935a698f753a11c2\"}}",
+        "display_url": "https://api.github.com/repos/DiegoMarquesMath/ErdosMahlerLean/git/ref/tags/prop21-conditional-2026-11-06"
+      }
+    },
+    "isError": false
+  }
+}

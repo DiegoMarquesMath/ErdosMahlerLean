@@ -1,0 +1,137 @@
+{
+  "arithmetic": "exact rational, no floating point",
+  "source": "https://www.renyi.hu/~carlos/sumset-convexhull-final.pdf",
+  "location": "page 18, Theorem 20 proof, equation (18), middle equality",
+  "dimension": 2,
+  "A_equals_B": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "shelling_vertices": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  ],
+  "shelling_indices": [
+    0,
+    1,
+    2
+  ],
+  "Ai": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        3
+      ]
+    ],
+    []
+  ],
+  "cases": [
+    {
+      "k": 1,
+      "ambient_count": 1,
+      "middle_count": 0,
+      "nonvertex_count": 0,
+      "vertex_count": 1,
+      "vertex_points": [
+        [
+          0,
+          3
+        ]
+      ],
+      "claimed_equality_holds": false,
+      "corrected_disjoint_union_bound_holds": true
+    },
+    {
+      "k": 2,
+      "ambient_count": 3,
+      "middle_count": 0,
+      "nonvertex_count": 0,
+      "vertex_count": 3,
+      "vertex_points": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "claimed_equality_holds": false,
+      "corrected_disjoint_union_bound_holds": true
+    }
+  ],
+  "limitation": "Counterexample to an intermediate equality, not to Theorem 1, 3, or Corollary 2."
+}
