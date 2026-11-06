@@ -126,7 +126,8 @@ remaining gaps are the explicit unfinished obligations above.
   The original workspace's Git metadata remains at the initial commit; its
   sources are preserved and synchronized with the published verification.
 
-Verified source commit: to be recorded after committing the verified snapshot.
+Verified source commit: `df4c97298e6ea7fd5b68ab52a19039eda925f159`.
+The documentation-only follow-up records this SHA without changing Lean sources.
 
 ## Verbatim consolidated axiom output
 
