@@ -1,71 +1,64 @@
-# A counterexample to the Erdős–Mahler conjecture
+# Erdős–Mahler: Lean 4 verification
 
-**Lean 4 verification of Proposition 2.1**  
 Diego Marques · Universidade de Brasília
 
-[![Lean CI](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml/badge.svg?branch=main)](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml)
+This repository supports *A counterexample to the Erdős–Mahler conjecture*. The verified status of each mathematical statement is recorded explicitly. Compilation of an older proof must not be mistaken for verification of the current manuscript.
 
-This repository accompanies the manuscript *A counterexample to the Erdős–Mahler conjecture*. It formalizes the proof of its central counting result, **Proposition 2.1**, in Lean 4, conditional on four explicitly stated published theorems. The formalization has undergone an independent source and proof audit.
+## Versions and scope
 
-The manuscript constructs a Cantor set of irrational numbers with irrationality exponent between 4 and 11 and infinitely many convergents of the form $2^a/3^b$. **That final construction is not formalized here.**
+| Track | Mathematical statement | Status |
+| --- | --- | --- |
+| [Archived source, 2026-11-06](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06) | Earlier Proposition 2.1, exponent 11, threefold products and blocks of length $Q^{18}$ | Kernel-checked **conditional** implication, with four explicit published-theorem hypotheses |
+| **Revised manuscript** (this branch) | Exceptional approximations with $4<\nu\le5$, twofold products, and prescribed irrationality exponents $\tau\ge4$ | **In progress — no revised conclusion yet verified in Lean** |
 
-## The counting proposition
+The existing Lean files, the 2026-11-06 tag, and all historical audit evidence remain unchanged.
 
-Let
+## Revised Proposition 2.1: specification
 
+Set
 $$
-\alpha=\frac{\log 3}{\log 2},\qquad
-R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},\qquad
-Q=3^t,\quad N=Q^{18},\quad B=Q^{14}.
+\alpha=\frac{\log3}{\log2},\qquad
+R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b}.
 $$
-
-For $t\ge1$, let $\mathcal R_t$ consist of the integers $b$ satisfying $Q\le b<Q+N$ and
-
+Let $\mathcal D$ be the denominators of the regular continued-fraction convergents of $\alpha$. For $4<\nu\le5$, a reduced rational $u/v\in[1,2]$ is exceptional for $b$ when $u/v\ne R(b)$ and
 $$
-R(t)+Q^{-4}<R(b)<R(t)+2Q^{-4}.
+\left|R(b)-\frac uv\right|<\frac{1}{16v^\nu}.
 $$
-
-A return $b$ is *inadmissible* if a reduced rational $u/v\in[1,2]$, different from $R(b)$, satisfies
-
+For $D\ge2$, let $E_N(D,\nu)$ count $b\in[N,2N)$ with an exceptional rational having $v>D$. The target is
 $$
-v>Q^3/6,\qquad
-\left|R(b)-\frac uv\right|<\frac{1}{16v^{11}}.
+\exists C>0\quad\forall\,4<\nu\le5\quad\forall D\ge2:
+\qquad
+\limsup_{\substack{N\to\infty\\N\in\mathcal D}}
+\frac{E_N(D,\nu)}{N}\le CD^{2-\nu}.
 $$
+The constant $C$ is absolute. There is **no claim** that the threshold in $N$ is uniform as $\nu\downarrow4$.
 
-Write $\mathcal R_t^{\mathrm{inad}}$ for the inadmissible returns and $\mathcal R_t^{\mathrm{adm}}$ for the remaining returns. **Proposition 2.1** states that, as $t\to\infty$,
+## Revised main theorem: specification
 
-$$
-\lvert\mathcal R_t\rvert\asymp B,\qquad
-\lvert\mathcal R_t^{\mathrm{inad}}\rvert=o(B),\qquad
-\lvert\mathcal R_t^{\mathrm{adm}}\rvert\asymp B.
-$$
+For each real $\tau\ge4$, there is a Cantor set $K_\tau\subset(1,2)$ such that every $\xi\in K_\tau$ has $\mu(\xi)=\tau$ and infinitely many regular continued-fraction convergents of the form $2^a/3^b$ with positive integers $a,b$.
 
-In particular, admissible returns exist for all sufficiently large $t$.
+This is a formalization *target*, not yet a Lean theorem.
 
-## Formal proof
+## Verification standard
 
-The final declaration is [`ErdosMahlerLean.proposition21`](ErdosMahlerLean/Proposition21.lean):
+Only established external results may be assumed through named, precisely reconciled theorem interfaces: the classical convergent estimate, the $p$-adic Subspace Theorem, Petridis's Plünnecke–Ruzsa result, and Matveev's **Corollary 2.3 with weighted coefficient parameter**. Existing mathlib theorems may of course be used.
 
-```lean
-theorem proposition21
-    (hWW  : External.WuWang)
-    (hMR  : External.MatolcsiRuzsaThree)
-    (hST  : External.SubspaceTwoThree)
-    (hMat : External.MatveevRational) : Proposition21
-```
+All new manuscript-specific steps — the grid count, small-denominator estimate, sublinear height bound, twofold-product transfer, rational-power class count, Matveev specialization, block summation, Proposition 2.1 and the Cantor theorem — must be derived or listed as incomplete. They cannot be smuggled into external assumptions. No use of new axioms, admitted goals, or unsafe theorem shortcuts can substantiate a verification claim.
 
-The hypotheses encode the published results of **Wu–Wang**, **Matolcsi–Ruzsa**, the **$p$-adic Subspace Theorem**, and **Matveev**. They are explicit theorem arguments, **not proved within Lean**. No new counting estimate from the manuscript is taken as an assumption. The exact interfaces and their reconciliation with the original sources are documented in [Verified statement](VERIFIED_STATEMENT.md) and [External theorem reconciliation](EXTERNAL_THEOREM_RECONCILIATION.md).
+The revised code lives under `ErdosMahlerLean/Revised/`, in the separate namespace `ErdosMahlerLean.Revised`. Formal verification requires:
+- exact match of theorem statements with the frozen revised LaTeX source;
+- a successful `lake build` of a target that actually imports the revised modules;
+- a no-`sorry` / no-`admit` / no-new-`axiom` audit;
+- theorem-type and `#print axioms` inspection, including all explicit mathematical hypotheses;
+- a documented Git commit and GitHub Actions run.
 
-The argument uses rotation discrepancy to count returns, and equalities among threefold index sums to obtain multiplicative identities. These identities pass to sufficiently close rational approximations. Congruence and short-arc estimates control small denominators; multiplicative rank and rational-power classes, together with the external theorems, control large denominators. The two estimates yield the negligible inadmissible count.
+Any unproved obligation must be identified plainly as **OPEN**; passing an old build does not close it.
 
-## Verification and reproduction
+## Reproduction and status
 
-The proof is fixed at commit [`7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc), tag [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06).
+Follow [four-hour protocol](docs/REVISED_VERIFICATION_4H.md), [agent instructions](docs/REVISED_CODEX_PROMPT.md), and [current status](docs/REVISED_STATUS.md). The authoritative `ERDOSrev.tex` and `ERDOSrev.pdf`, once copied from the author's Mac and hashed, are placed under `paper/revised/`. The older `paper/Erdos_MahlerREV.*` files must not be overwritten.
 
-The [independent audit](AUDIT_REPORT.md) checked the formal statement against the frozen manuscript, the four published inputs, the proof dependencies, and kernel/axiom output. The reported foundational axioms are `propext`, `Classical.choice`, and `Quot.sound`; the four mathematical hypotheses remain visible in the theorem's type.
-
-To reproduce the conditional proof with the pinned Lean/mathlib dependencies:
-
+Historical verified target:
 ```bash
 git clone https://github.com/DiegoMarquesMath/ErdosMahlerLean.git
 cd ErdosMahlerLean
@@ -75,10 +68,6 @@ lake build
 bash scripts/audit.sh
 ```
 
-See [Reproducibility](docs/REPRODUCIBILITY.md) for the complete verification commands and their scope.
+This historical proof is conditional on four stated published inputs; see [Verified statement](VERIFIED_STATEMENT.md) and [historical audit](AUDIT_REPORT.md). The historical citation in [CITATION.cff](CITATION.cff) does not assert the revised result has been verified.
 
-## Citation
-
-D. Marques, *ErdosMahlerLean: Lean 4 formalization of Proposition 2.1 in A counterexample to the Erdős–Mahler conjecture*, GitHub repository, 2026. [Verified proof commit](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc).
-
-Citation metadata: [`CITATION.cff`](CITATION.cff). The source code is released under the [MIT License](LICENSE).
+License: MIT.

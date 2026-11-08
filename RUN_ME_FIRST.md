@@ -1,36 +1,15 @@
-# First actions on the Mac
+# Start here: revised Erdős–Mahler verification
 
-Your two files must already be at:
+This is the **revised** manuscript, not the 2026-11-06 frozen proof.
 
-- `~/Desktop/Lean4 EM/Erdos_MahlerREV.tex`
-- `~/Desktop/Lean4 EM/Erdos_MahlerREV.pdf`
+The author has two local files:
+- ~/Desktop/Auditoria ERDOSMAHLER/ERDOSrev.tex
+- ~/Desktop/Auditoria ERDOSMAHLER/ERDOSrev.pdf
 
-1. Download this starter ZIP into `~/Downloads`.
-2. In Terminal:
+Use the dedicated branch formalization/revised-twofold-nu4-2026-11-08. The repository is public; copying the manuscript into paper/revised/ and pushing it publishes that snapshot.
 
-```bash
-cd "$HOME/Desktop/Lean4 EM"
-unzip -o "$HOME/Downloads/ErdosMahlerLean_Starter.zip"
-bash "$HOME/Desktop/Lean4 EM/ErdosMahlerLean_Starter/bootstrap.sh"
-```
+**Open [docs/COMMANDS_ON_MAC.md](docs/COMMANDS_ON_MAC.md) and execute it step by step.** It includes clone, source freeze, local Lake baseline, four focused Codex invocations, kernel/build audits, checkpoint commits and pushes.
 
-The bootstrap uses `lake ... new ... math`, downloads Mathlib cache, builds the project, copies and hashes the source files, runs basic checks, and makes a first local commit. It does **not** claim the Proposition 2.1 proof is complete.
+Read [README.md](README.md), [docs/REVISED_VERIFICATION_4H.md](docs/REVISED_VERIFICATION_4H.md) and [docs/REVISED_STATUS.md](docs/REVISED_STATUS.md) for exact targets, assumptions and verification status. Issue #3 and draft PR #4 track the work.
 
-After it succeeds, create your remote repository from the project directory with the already authenticated GitHub CLI:
-
-```bash
-cd "$HOME/Desktop/Lean4 EM/ErdosMahlerLean"
-gh auth status
-gh repo create DiegoMarquesMath/ErdosMahlerLean --private --source=. --remote=origin --push --description "Lean 4 formal verification of Proposition 2.1 in a counterexample to the Erdős–Mahler conjecture"
-```
-
-If the repository already exists, set the existing remote instead; do not recreate it. Start private; make public only after the exact proof status and external dependency statement have been audited.
-
-To start your local Codex agent:
-
-```bash
-cd "$HOME/Desktop/Lean4 EM/ErdosMahlerLean"
-codex
-```
-
-Paste the complete contents of `docs/CODEX_AGENT_PROMPT.md` in the Codex session. Agents must edit disjoint modules and never claim success merely from a passing scaffold build.
+There is a fixed four-hour limit. If the final theorem is not kernel checked within that budget, keep the PR draft, record exactly which revised lemmas compile and list all OPEN obligations. Do not declare the revised paper proved because the historical project still builds.
