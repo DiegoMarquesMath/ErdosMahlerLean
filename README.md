@@ -1,70 +1,50 @@
-# A counterexample to the Erdős–Mahler conjecture
+# Erdős–Mahler — Lean 4 formalization
 
-**Lean 4 verification of Proposition 2.1**  
 Diego Marques · Universidade de Brasília
 
-[![Lean CI](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml/badge.svg?branch=main)](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml)
+This repository supports the manuscript *A counterexample to the Erdős–Mahler conjecture* and records the **exact scope** of formal verification. Its Lean build and the mathematical validity of a manuscript claim are different assertions.
 
-This repository accompanies the manuscript *A counterexample to the Erdős–Mahler conjecture*. It formalizes the proof of its central counting result, **Proposition 2.1**, in Lean 4, conditional on four explicitly stated published theorems. The formalization has undergone an independent source and proof audit.
+## Two distinct manuscripts
 
-The manuscript constructs a Cantor set of irrational numbers with irrationality exponent between 4 and 11 and infinitely many convergents of the form $2^a/3^b$. **That final construction is not formalized here.**
+| Track | Mathematical content | Status |
+| --- | --- | --- |
+| [Archived proof](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06) | An earlier counting proposition with exponent 11, threefold products and blocks of length (Q^{18}) | Kernel-checked **conditional implication**, with four explicit external theorem hypotheses. Does **not** verify the revised manuscript. |
+| **Revised proof** (this branch) | Exceptional approximations at every (4<\nu\le5), twofold products, a limsup estimate, and a Cantor construction for each (\tau\ge4) | **Formalization in progress. No revised theorem has yet been kernel-verified on this branch.** |
 
-## The counting proposition
+The previously audited source code, proof tag and its historical audit documents are retained unchanged. Do not identify the old `ErdosMahlerLean.proposition21` with Proposition 2.1 of the revised paper.
 
-Let
+## Revised mathematical targets
 
-$$
+Set
+[
 \alpha=\frac{\log 3}{\log 2},\qquad
-R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},\qquad
-Q=3^t,\quad N=Q^{18},\quad B=Q^{14}.
-$$
+R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},
+]
+and let (\mathcal D) be the denominators of the regular continued-fraction convergents of (\alpha). For (4<\nu\le5), call (u/v\in[1,2]) *exceptional for (b)* if it is reduced, differs from (R(b)), and
+[
+\left|R(b)-\frac uv\right|<\frac1{16v^\nu}.
+]
+For (D\ge2), let (E_N(D,\nu)) count indices (b\in[N,2N)) admitting an exceptional rational with (v>D).
 
-For $t\ge1$, let $\mathcal R_t$ consist of the integers $b$ satisfying $Q\le b<Q+N$ and
+**Revised Proposition 2.1 (target).** An absolute (C>0) exists such that
+[
+\forall,4<\nu\le5\ \forall D\ge2:\quad
+\limsup_{\substack{N\to\infty\\N\in\mathcal D}}
+\frac{E_N(D,\nu)}{N}\le C D^{2-\nu}.
+]
+The absolute (C) is uniform in (\nu,D); the eventual threshold in (N) is **not** asserted uniform as (\nu\downarrow4).
 
-$$
-R(t)+Q^{-4}<R(b)<R(t)+2Q^{-4}.
-$$
+**Revised main theorem (target).** For each real (\tau\ge4), there is a Cantor set (K_\tau\subset(1,2)) such that every (\xi\in K_\tau) has (\mu(\xi)=\tau) and infinitely many regular continued-fraction convergents of the form (2^a/3^b), with (a,b\ge1).
 
-A return $b$ is *inadmissible* if a reduced rational $u/v\in[1,2]$, different from $R(b)$, satisfies
+These are specifications, not declarations of verified results.
 
-$$
-v>Q^3/6,\qquad
-\left|R(b)-\frac uv\right|<\frac{1}{16v^{11}}.
-$$
+## Verification boundary
 
-Write $\mathcal R_t^{\mathrm{inad}}$ for the inadmissible returns and $\mathcal R_t^{\mathrm{adm}}$ for the remaining returns. **Proposition 2.1** states that, as $t\to\infty$,
+Only the *published* external results are allowed as named theorem hypotheses, with their complete hypotheses and source references: continued-fraction convergent estimates; the (p)-adic Subspace Theorem; Petridis's Plünnecke–Ruzsa estimate; and Matveev's **Corollary 2.3 with weighted (B)**. Their precise instantiations must be checked. The revised counting proposition, height contraction, product transfer, power-class bound, block estimate, summation, and final Cantor deduction **may not be assumed as opaque new hypotheses**.
 
-$$
-\lvert\mathcal R_t\rvert\asymp B,\qquad
-\lvert\mathcal R_t^{\mathrm{inad}}\rvert=o(B),\qquad
-\lvert\mathcal R_t^{\mathrm{adm}}\rvert\asymp B.
-$$
+All revised declarations belong in a separate namespace/module tree, planned as `ErdosMahlerLean/Revised/`. Until those modules compile and a proof audit confirms their exact statements, the branch documents a verification effort **only**. If only some lemmas compile, the report must name them individually and describe the remaining gaps. No `sorry`, `admit` or new unchecked `axiom` is permitted in a claimed verified artifact.
 
-In particular, admissible returns exist for all sufficiently large $t$.
-
-## Formal proof
-
-The final declaration is [`ErdosMahlerLean.proposition21`](ErdosMahlerLean/Proposition21.lean):
-
-```lean
-theorem proposition21
-    (hWW  : External.WuWang)
-    (hMR  : External.MatolcsiRuzsaThree)
-    (hST  : External.SubspaceTwoThree)
-    (hMat : External.MatveevRational) : Proposition21
-```
-
-The hypotheses encode the published results of **Wu–Wang**, **Matolcsi–Ruzsa**, the **$p$-adic Subspace Theorem**, and **Matveev**. They are explicit theorem arguments, **not proved within Lean**. No new counting estimate from the manuscript is taken as an assumption. The exact interfaces and their reconciliation with the original sources are documented in [Verified statement](VERIFIED_STATEMENT.md) and [External theorem reconciliation](EXTERNAL_THEOREM_RECONCILIATION.md).
-
-The argument uses rotation discrepancy to count returns, and equalities among threefold index sums to obtain multiplicative identities. These identities pass to sufficiently close rational approximations. Congruence and short-arc estimates control small denominators; multiplicative rank and rational-power classes, together with the external theorems, control large denominators. The two estimates yield the negligible inadmissible count.
-
-## Verification and reproduction
-
-The proof is fixed at commit [`7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc), tag [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06).
-
-The [independent audit](AUDIT_REPORT.md) checked the formal statement against the frozen manuscript, the four published inputs, the proof dependencies, and kernel/axiom output. The reported foundational axioms are `propext`, `Classical.choice`, and `Quot.sound`; the four mathematical hypotheses remain visible in the theorem's type.
-
-To reproduce the conditional proof with the pinned Lean/mathlib dependencies:
+## Reproduce the historical result
 
 ```bash
 git clone https://github.com/DiegoMarquesMath/ErdosMahlerLean.git
@@ -75,10 +55,16 @@ lake build
 bash scripts/audit.sh
 ```
 
-See [Reproducibility](docs/REPRODUCIBILITY.md) for the complete verification commands and their scope.
+The historical result is conditional upon four explicit external theorem hypotheses; see [VERIFIED_STATEMENT.md](VERIFIED_STATEMENT.md) and [AUDIT_REPORT.md](AUDIT_REPORT.md).
 
-## Citation
+## Work on the revised version
 
-D. Marques, *ErdosMahlerLean: Lean 4 formalization of Proposition 2.1 in A counterexample to the Erdős–Mahler conjecture*, GitHub repository, 2026. [Verified proof commit](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc).
+Follow [the four-hour verification protocol](docs/REVISED_VERIFICATION_4H.md), [the Codex agent instructions](docs/REVISED_CODEX_PROMPT.md), and [the live status record](docs/REVISED_STATUS.md). The authoritative revised source files, once copied from the user's Mac, belong in `paper/revised/` with recorded SHA-256 checksums. The older `paper/Erdos_MahlerREV.*` files remain historical and must not be overwritten.
 
-Citation metadata: [`CITATION.cff`](CITATION.cff). The source code is released under the [MIT License](LICENSE).
+The CI badge on the default branch applies to the files imported by its build; a successful build of old modules is **not evidence** for the new theorem unless the revised root module is an explicit build target and the audit examines it.
+
+## Attribution and integrity
+
+Source and proof provenance, the distinction between formalized deductions and cited mathematical inputs, and negative results or unfinished obligations are part of the research record. See [CITATION.cff](CITATION.cff) for the historical tagged version. Do not use it as the citation for the revised verification before a new checked release exists.
+
+Code license: MIT.
