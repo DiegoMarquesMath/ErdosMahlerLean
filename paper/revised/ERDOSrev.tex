@@ -1,0 +1,812 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amssymb,microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=blue,urlcolor=black]{hyperref}
+\hypersetup{pdftitle={A counterexample to the Erdos--Mahler conjecture},
+  pdfsubject={Smooth convergents and prescribed irrationality exponents},
+  pdfauthor={Diego Marques}}
+
+\usepackage{enumitem}
+
+\newtheorem*{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}[lemma]{Proposition}
+\theoremstyle{definition}
+\newtheorem*{conjecture}{Conjecture}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\DD}{\mathcal D}
+\newcommand{\PP}{\mathrm P}
+\setlength{\emergencystretch}{1em}
+
+\title{A counterexample to the Erd\H{o}s--Mahler conjecture}
+\author[D. Marques]{Diego Marques}
+\address{Departamento de Matem\'atica, Universidade de Bras\'ilia,
+Bras\'ilia, DF, Brazil}
+\email{diego@mat.unb.br}
+\thanks{The author was supported by the Brazilian National Council for
+Scientific and Technological Development (CNPq), Grant No.~304467/2023-5.}
+\subjclass[2020]{Primary 11J70; Secondary 11J82, 11J86, 11J87}
+\keywords{Erd\H{o}s--Mahler conjecture, continued fractions, smooth
+convergents, irrationality exponent, Subspace Theorem, linear forms in
+logarithms}
+
+\begin{document}
+
+\begin{abstract}
+We disprove a 1939 conjecture of Erd\H{o}s and Mahler by constructing,
+for every real $\tau\ge4$, a Cantor set of numbers of irrationality
+exponent $\tau$, each having infinitely many regular continued-fraction
+convergents of the form $2^a/3^b$.
+\end{abstract}
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+For an irrational real number $\xi$, its \emph{irrationality exponent}
+$\mu(\xi)$ is the supremum of the real numbers $\nu>0$ for which
+$0<|\xi-u/v|<v^{-\nu}$ holds for infinitely many reduced fractions
+$u/v$ with $v\ge1$. Thus $\xi$ is a Liouville number precisely when
+$\mu(\xi)=\infty$. Write $p_n/q_n$ for the regular continued-fraction
+convergents of $\xi$, and $\PP(m)$ for the largest prime factor of
+$|m|$ when $m$ is a nonzero integer, with $\PP(\pm1)=1$.
+
+In 1939, Erd\H{o}s and Mahler~\cite{EM} investigated
+the prime factors of continued-fraction numerators
+and denominators. They proved that if
+$\PP(q_{n-1}q_nq_{n+1})$ is bounded for infinitely
+many $n$, then $\xi$ is a Liouville number.
+They conjectured that the same conclusion should
+hold if $\PP(p_nq_n)$ is bounded for infinitely
+many $n$. The question was subsequently studied by
+Fraenkel~\cite{Fraenkel} and recalled by Erd\H{o}s
+in his reminiscences of Mahler~\cite{ErdosReminiscences}. 
+In 2004, Bugeaud~\cite[Problem~43, p.~215]{Bugeaud}
+included the conjecture among the open problems
+on continued fractions.
+
+\begin{conjecture}[Erd\H{o}s--Mahler]
+If $\PP(p_nq_n)$ is bounded for infinitely many $n$, then $\xi$ is
+a Liouville number.
+\end{conjecture}
+
+We disprove the conjecture even when the selected numerators are
+powers of $2$ and the corresponding denominators are powers of $3$.
+
+\begin{theorem}
+For every real $\tau\ge4$, there exists a Cantor set
+$K_\tau\subset(1,2)$ such that every $\xi\in K_\tau$
+has irrationality exponent $\tau$ and infinitely many regular
+continued-fraction convergents of the form $2^a/3^b$, with $a,b$
+positive integers.
+\end{theorem}
+
+By Ridout's theorem~\cite{Ridout}, bounded prime factors of the
+denominators of infinitely many convergents already imply
+transcendence. Fraenkel~\cite{Fraenkel62,Fraenkel} studied rational
+approximation with prescribed prime factors and constructed Liouville
+numbers with infinitely many convergents subject to such restrictions.
+Fraenkel and Borosh~\cite{FraenkelBorosh} subsequently obtained
+non-Liouville examples by allowing additional cofactors in the
+numerators and denominators. When both cofactors are bounded, their
+Hausdorff-dimension formula gives zero. 
+Lelis and Marques~\cite[Theorem~1.1]{LelisMarques}
+proved that $\xi$ is a Liouville number if there is an
+increasing sequence $(n_j)$ such that
+$\PP(p_{n_j}q_{n_j})$ is bounded and
+$n_{j+1}-n_j=o(\log q_{n_j})$ as $j\to\infty$.
+
+
+More recently, Bugeaud and Nguyen~\cite[Question~4.1, p.~32]{BN}
+revisited the conjecture and constructed further examples with
+restricted prime factors, leaving open whether the numbers they
+constructed are Liouville. This illustrates the main difficulty:
+prescribing infinitely many convergents does not exclude
+exceptionally good rational approximations at other denominators.
+
+Our construction selects successive fractions $2^a/3^b$
+in short intervals to the right of the preceding choice.
+Their prescribed displacement gives the lower bound
+$\mu(\xi)\ge\tau$; the difficulty is to exclude better
+rational approximations at other denominators. For
+$\nu>4$, the neighborhoods of radius $v^{-\nu}$ around
+reduced fractions in $[1,2]$ with denominator $v>D$
+have a union of measure $O(D^{2-\nu})$. Proposition~\ref{prop:count} gives the same upper bound,
+with an absolute implied constant, for the upper limiting
+proportion of prescribed fractions admitting such competing
+approximations. The estimate holds despite their rigid
+arithmetic structure and is independent of the intervals
+used in the construction.
+
+The proof begins with an elementary counting estimate for
+irrational rotations, which handles small denominators.
+For the remaining approximations, the $p$-adic Subspace
+Theorem improves the elementary bound $\log v=O(N)$ to
+$\log v=o(N)$ on blocks of $N$ indices. The main
+combinatorial observation is that, for a fixed sum of
+two indices, the product of the corresponding fractions
+takes at most two values. In denominator ranges
+$(V,V^\theta]$ with $1<\theta<\nu/4$, these identities
+persist for sufficiently close rational approximants,
+whose product set consequently has cardinality $O(N)$.
+The Pl\"unnecke--Ruzsa inequality then bounds the number
+of classes these approximants occupy modulo $q$th powers,
+for a suitable integer $q$. A lower bound for linear forms
+in logarithms, together with $3$-adic valuations, confines
+the corresponding indices in each class to a short
+interval. The bound $\log v=o(N)$ makes the resulting
+estimates summable over all denominator ranges.
+
+
+\section{The counting proposition and the main theorem}
+\label{sec:main}
+
+We first state the counting proposition and deduce the main theorem from it. The proposition is proved in Section~\ref{sec:count}.
+
+All logarithms are natural. We write $\N=\{1,2,\ldots\}$,
+take rational fractions with positive denominators, and
+use $|I|$ for the length of an interval or the cardinality
+of a finite set. Put
+\[
+ \alpha=\frac{\log 3}{\log 2},\qquad
+ a(b)=\lceil b\alpha\rceil,\qquad
+ R(b)=\frac{2^{a(b)}}{3^b}\qquad(b\in\N).
+\]
+Since $\alpha$ is irrational, $0<a(b)-b\alpha<1$.
+Thus $R(b)$ is the unique fraction in $(1,2)$ with
+denominator $3^b$ and numerator a power of~$2$.
+It is in lowest terms. Let $\DD$ be the set of
+denominators of the regular continued-fraction
+convergents of $\alpha$.
+
+At each stage of the construction, we shall select fractions
+$R(b)$ lying in a prescribed short interval. We must also
+exclude those admitting exceptionally close competing rational
+approximations. The following proposition controls these
+exceptions over the entire block $[N,2N)$, independently
+of the target interval. Crucially, its constant is independent
+of the approximation exponent, which will approach $4$
+along the construction.
+
+Fix $4<\nu\le5$. A reduced fraction $u/v\in[1,2]$ is
+\emph{exceptional for $b$ at exponent $\nu$} if
+$u/v\ne R(b)$ and
+\begin{equation}\label{eq:exception}
+ \left|R(b)-\frac uv\right|<\frac1{16v^\nu}.
+\end{equation}
+For $D\ge2$, let $E_N(D,\nu)$ count the integers
+$b\in[N,2N)$ for which there is an exceptional
+fraction with $v>D$.
+
+\begin{proposition}[Exceptional approximations]
+\label{prop:count}
+There is an absolute constant $C$ such that, for every
+$4<\nu\le5$ and every $D\ge2$,
+\[
+ \limsup_{\substack{N\to\infty\\N\in\DD}}
+ \frac{E_N(D,\nu)}{N}\le CD^{2-\nu}.
+\]
+\end{proposition}
+
+We now fix a real $\tau\ge4$ for the construction.
+For $t\in\mathbb N$ put $Q=3^t$ and define
+\[
+ \begin{aligned}
+ J_t&=(R(t)+Q^{-\tau},R(t)+2Q^{-\tau}),\\
+ K(t)&=[R(t)+Q^{-\tau},R(t)+3Q^{-\tau}].
+ \end{aligned}
+\]
+The next fraction will be chosen in $J_t$, while $K(t)$
+will contain the corresponding limit. Both intervals lie
+in $(1,2)$ for sufficiently large $t$, since
+$R(t)\le2-Q^{-1}$.
+
+Put
+\[
+ D_t=Q^{\tau-1}/6,\qquad \nu_t=4+1/t.
+\]
+An index $b$ is \emph{admissible at $t$} if $R(b)\in J_t$
+and $b$ has no exceptional fraction at exponent $\nu_t$
+with denominator $v>D_t$. The threshold $D_t$ separates the denominators handled
+by rational separation from those controlled by admissibility. 
+For these parameters, Proposition~\ref{prop:count} bounds
+the upper limiting proportion of exceptional indices by
+$O(Q^{-2(\tau-1)})$, whereas the proportion of indices $b$
+with $R(b)\in J_t$ tends to a quantity of order $Q^{-\tau}$.
+Thus sufficiently many admissible indices remain.
+
+\begin{lemma}\label{lem:choice}
+For every sufficiently large $t$, all sufficiently large $N\in\DD$
+admit two distinct indices $b,c\in[N,2N)$ admissible at $t$.
+\end{lemma}
+
+\begin{proof}
+Fix $t$ and put
+\[
+ \Phi(y)=1-\frac{\log y}{\log2}
+ \quad(1\le y\le2),\qquad
+ \rho_t=|\Phi(J_t)|.
+\]
+Write $\{x\}=x-\lfloor x\rfloor$ for fractional part. Since
+$\Phi(R(b))=\{b\alpha\}$ and $|\Phi'(y)|=1/(y\log2)$, we have
+\[
+ \frac{Q^{-\tau}}{2\log2}\le\rho_t\le\frac{Q^{-\tau}}{\log2}.
+\]
+By the grid estimate \eqref{eq:grid}, proved at the beginning
+of Section~\ref{sec:count}, there are $N\rho_t+O(1)$ indices
+with $R(b)\in J_t$. Among these we discard at most $E_N(D_t,\nu_t)$,
+since this last count includes exceptional indices in the whole of
+$[N,2N)$. Writing $A_t(N)$ for the number of admissible indices
+that remain, we obtain from Proposition~\ref{prop:count}
+\[
+ \liminf_{\substack{N\to\infty\\N\in\DD}}\frac{A_t(N)}{N}
+ \ge \rho_t-C D_t^{2-\nu_t}\ge\rho_t-36C Q^{-2(\tau-1)}.
+\]
+Here $D_t^{2-\nu_t}\le D_t^{-2}$, and the last error divided
+by $\rho_t$ is $O(Q^{2-\tau})$. Hence the right-hand side exceeds
+$\rho_t/2$ for every sufficiently large $t$. With such a $t$ fixed,
+$A_t(N)$ therefore tends to infinity.
+\end{proof}
+
+\begin{proof}[Proof of the theorem]
+For any $t$ large enough for Lemma~\ref{lem:choice}, take
+$N\in\DD$ larger than $Q=3^t$ and sufficiently large to provide
+two admissible indices $b<c$ in $[N,2N)$. We verify that their
+intervals lie strictly inside $K(t)$ and are disjoint.
+
+For $d=b$ or $c$, the left endpoint of $K(d)$ exceeds $R(t)+Q^{-\tau}$.
+At the other endpoint, $R(d)\in J_t$ and $3^d\ge2Q$ give
+\[
+ R(d)+3\cdot3^{-\tau d}
+ <R(t)+(2+3\cdot2^{-\tau})Q^{-\tau}<R(t)+3Q^{-\tau}.
+\]
+To see disjointness, use the fact that the two indices were taken
+from the same interval $[N,2N)$, so that $c<2b$. The distinct
+fractions $R(b)$ and $R(c)$ can both be written with denominator
+$3^c$, and hence differ by at least $3^{-c}>3^{-2b}$. Each of the
+two intervals lies within $3\cdot3^{-\tau b}<3^{-2b}$ to the right of
+its corresponding fraction.
+
+Starting at a sufficiently large $t_0$, repeat the selection in
+each interval, labeling the two choices $0$ and $1$ in order of
+their indices. An infinite binary sequence determines a nested
+chain of intervals $K(t_j)$. Write $Q_j=3^{t_j}$ and $r_j=R(t_j)$
+along this chain. Since $Q_{j+1}\ge2Q_j$, every interval at level
+$j$ has length at most $2Q_0^{-\tau}2^{-\tau j}$. The chain therefore
+has a unique common point $\xi$. Sequences agreeing through level $j$
+give points in the same interval at that level, and sequences making
+different choices give distinct points by disjointness. Thus the map
+from $\{0,1\}^{\N}$ to its image is continuous and injective. By
+compactness it is a homeomorphism onto a Cantor set $K_\tau\subset(1,2)$.
+
+Fix any $\xi\in K_\tau$ and consider its chain. Since the next interval
+lies in the interior of the preceding one, we have
+\begin{equation}\label{eq:displacement}
+ Q_j^{-\tau}<\xi-r_j<3Q_j^{-\tau}\qquad(j\ge0).
+\end{equation}
+If $\xi=u/v$ were rational, its distance from $r_j$ would be at
+least $1/(vQ_j)$, in contradiction with \eqref{eq:displacement} for
+large $j$. Moreover, $3Q_j^{-\tau}<1/(2Q_j^2)$, so Legendre's
+criterion \cite[Theorem~1.8, p.~10]{Bugeaud} makes each $r_j$ a
+regular convergent of $\xi$. This gives infinitely many convergents
+$2^{a(t_j)}/3^{t_j}$ since the denominators strictly increase.
+For every $s<\tau$, their errors are less
+than $Q_j^{-s}$ for all sufficiently large $j$, which gives
+$\mu(\xi)\ge\tau$.
+
+For the upper bound, let $u/v\in[1,2]$ be reduced with $v\ge Q_0$.
+Choose the unique $j$ for which $Q:=Q_j\le v<Q_{j+1}=:S$.
+For $v\le D_{t_j}$ we compare $u/v$ with $r_j$. If $u/v=r_j$,
+then $v=Q$ and \eqref{eq:displacement} gives $|\xi-u/v|>v^{-\tau}$.
+Otherwise rational separation gives
+\[
+ |\xi-u/v|\ge\frac1{vQ}-\frac3{Q^\tau}
+ \ge\frac1{2vQ}\ge\frac1{2v^2},
+\]
+where we used $6v\le Q^{\tau-1}$ and $Q\le v$.
+
+For $D_{t_j}<v<S$ we compare instead with $r_{j+1}$. The condition
+$v<S$ ensures that $u/v\ne r_{j+1}$, and gives
+\[
+ |r_{j+1}-u/v|\ge\frac1{Sv}>S^{-2}.
+\]
+Since $v<S$ and $S\ge3$, we have $6v<S^3$, and hence
+\[
+ |\xi-r_{j+1}|<\frac3{S^\tau}\le\frac3{S^4}
+ \le\frac1{2Sv}
+ \le\frac12|r_{j+1}-u/v|.
+\]
+As $v>D_{t_j}$, the admissibility of $t_{j+1}$ at
+$t_j$ gives
+\[
+ |\xi-u/v|\ge\tfrac12|r_{j+1}-u/v|
+ \ge \frac1{32v^{\nu_{t_j}}}.
+\]
+
+For $Q_j\le v<Q_{j+1}$ and $u/v\ne r_j$, the two ranges give
+$|\xi-u/v|\ge(32v^{\nu_{t_j}})^{-1}$. Given $\varepsilon>0$, we have
+$\nu_{t_j}\le4+\varepsilon/2$ for all sufficiently large $j$.
+For all sufficiently large $v$ we also have $v^{\varepsilon/2}\ge32$,
+so $|\xi-u/v|\ge v^{-4-\varepsilon}$ for all such fractions.
+For the prescribed convergents themselves, \eqref{eq:displacement}
+gives $|\xi-r_j|>Q_j^{-\tau}$. Since $\tau\ge4$ and rationals
+outside $[1,2]$ are bounded away from $\xi$, it follows that
+$\mu(\xi)\le\tau$. Thus $\mu(\xi)=\tau$ for every $\xi\in K_\tau$.
+\end{proof}
+
+\section{Proof of Proposition~\ref{prop:count}}\label{sec:count}
+
+We begin with the elementary rotation estimate used in
+Lemma~\ref{lem:choice}. For every arc
+$I\subset\mathbb R/\mathbb Z$ and $N\in\DD$,
+\begin{equation}\label{eq:grid}
+ \#\{N\le b<2N:\{b\alpha\}\in I\}
+ =N|I|+O(1),
+\end{equation}
+with an absolute implied constant. To prove this, let
+$p/N$ be the convergent of $\alpha$ with denominator $N$.
+Since $(p,N)=1$, the points
+\[
+ N\alpha+\frac{ip}{N}\pmod 1,
+ \qquad 0\le i<N,
+\]
+form a translate of the uniform grid of spacing $1/N,
+$ which contains $N|I|+O(1)$ points in $I$.
+By~\cite[Corollary~1.4, p.~10]{Bugeaud},
+we have $|\alpha-p/N|<N^{-2}$. Thus replacing these
+points by $(N+i)\alpha$ moves each by less than $1/N$.
+Only grid points within this distance of an endpoint
+of $I$ can change membership, and there are $O(1)$ such points.
+
+Fix $4<\nu\le5$ and let $N$ tend to infinity through $\DD$.
+We divide the exceptional approximations according as their
+denominators are at most $N^{1/3}$ or exceed it. In the first range
+we can sum the error term in \eqref{eq:grid} over all the fractions
+in question. In the second, the interval belonging to a single
+fraction has length smaller than the grid spacing $1/N$. Thus each
+fraction occurs for only a bounded number of indices. The problem
+in this range is to bound the number of distinct fractions that occur.
+
+\subsection{The range of exceptional denominators}
+
+For $V\ge2$, there are $O(V^2)$ reduced fractions in $[1,2]$ with
+denominator in $(V,2V]$. For such a fraction $u/v$, the image under
+$\Phi$ of its $(16v^\nu)^{-1}$-neighborhood in $[1,2]$ is an
+interval of length $O(V^{-\nu})$. The grid estimate \eqref{eq:grid}
+therefore gives $O(NV^{-\nu}+1)$ possible indices for this fraction.
+Summing first over the fractions and then over $V=2^iD$, $i\ge0$,
+with $V<N^{1/3}$, we bound the number of indices admitting an
+exceptional denominator in $(D,N^{1/3}]$ by an absolute constant times
+\begin{equation}\label{eq:small}
+ \sum_{V}\bigl(NV^{2-\nu}+V^2\bigr)
+ \ll ND^{2-\nu}+N^{2/3}.
+\end{equation}
+The decreasing sum is bounded in terms of its first term, since
+$2^{2-\nu}\le1/4$. The increasing sum is $O(N^{2/3})$, so the accumulated grid error
+is $o(N)$.
+
+For larger denominators, rational separation alone gives
+$16v^{\nu-1}<3^b$ by \eqref{eq:exception}. In particular it gives
+only $\log v=O(N)$ on $[N,2N)$. To sum the estimates for separate
+denominator ranges we shall need $\log v=o(N)$ uniformly over the
+exceptional fractions. The following consequence of the $p$-adic
+Subspace Theorem supplies this improvement.
+
+\begin{lemma}\label{lem:height}
+For every $\varepsilon>0$, all sufficiently large $b$ and
+all reduced $u/v\in[1,2]$ distinct from $R(b)$ satisfy
+\[
+ |R(b)-u/v|\ge 3^{-\varepsilon b}v^{-2}.
+\]
+\end{lemma}
+
+\begin{proof}
+Write $P=2^{a(b)}$ and $S=3^b$. If $P/S$ is close to $u/v$, the
+integers $Pv$ and $Su$ are close relative to their size. We apply
+the Subspace Theorem to the primitive pair with this ratio. Put
+\[
+ d=\gcd(Pv,Su),\qquad U=Pv/d,\qquad W=Su/d,\qquad e=|Pv-Su|.
+\]
+We have $e\ge1$. Every prime divisor of $d$ belongs to $\{2,3\}$,
+since any other common prime divisor would divide both $u$ and $v$.
+For a positive integer $n$, put $[n]_6=2^{v_2(n)}3^{v_3(n)}$, where
+$v_p$ is the usual $p$-adic valuation. With $|p|_p=p^{-1}$ we have
+\[
+ |UW|_2|UW|_3=[UW]_6^{-1}=\frac{d^2}{PS[uv]_6}.
+\]
+At the real place we take the forms $X-Y,Y$, so the factor in the
+product there is $|(U-W)W|=eSu/d^2$. Taking $X,Y$ at each of
+$2$ and $3$ gives
+\[
+ \Pi:=|(U-W)W|\,|UW|_2|UW|_3
+ =\frac{eu}{P[uv]_6}
+ \le 2v^2|P/S-u/v|.
+\]
+For the last inequality, use $e=Sv|P/S-u/v|$, $u\le2v$, and $S<P$.
+
+Suppose now that the asserted inequality fails along a sequence
+$b\to\infty$. On this sequence
+\[
+ (Sv)^{-1}\le |P/S-u/v|<S^{-\varepsilon}v^{-2},
+\]
+so $v<S$. It follows that $H=\max(U,W)\le2Sv<2S^2$ and hence
+\[
+ \Pi<2S^{-\varepsilon}\le2^{1+\varepsilon/2}H^{-\varepsilon/2}.
+\]
+The forms at each of the three places have determinant one.
+The $p$-adic Subspace Theorem
+\cite[p.~246, (1.3)--(1.5)]{Schlickewei} therefore implies that
+all such pairs of sufficiently large height lie on finitely many
+rational lines through the origin.
+Indeed, the right-hand side is smaller than $(U^2+W^2)^{-\delta/2}$
+for all sufficiently large $H$, with
+$\delta=\min(\varepsilon/4,1/2)>0$.
+
+Each rational line contains at most one positive primitive
+pair, and there are only finitely many pairs of bounded
+height. Thus $U/W$ belongs to a finite set not containing
+$1$. On the other hand,
+\[
+ 0<|U/W-1|
+ =\frac{|P/S-u/v|}{u/v}
+ <S^{-\varepsilon}v^{-2}
+ \le 3^{-\varepsilon b}\longrightarrow0
+\]
+as $b\to\infty$, a contradiction.
+\end{proof}
+
+Let $W_N$ be the largest value of $\log v$ among exceptional
+fractions for $N\le b<2N$, taking $W_N=0$ when there are none.
+The preceding rational separation bound ensures that the maximum
+is finite. For each $\varepsilon>0$, Lemma~\ref{lem:height} and
+\eqref{eq:exception} give $16v^{\nu-2}<3^{\varepsilon b}$ as
+soon as $N$ is sufficiently large. Since $b<2N$,
+\[
+ \limsup_{N\to\infty,\ N\in\DD}\frac{W_N}{N}
+ \le\frac{2\varepsilon\log3}{\nu-2}.
+\]
+Letting $\varepsilon$ decrease to zero, we conclude that
+\begin{equation}\label{eq:height}
+ W_N=o(N).
+\end{equation}
+
+\subsection{Products in a fixed denominator range}
+
+Choose $\theta$ with $1<\theta<\nu/4$. The condition
+$4\theta<\nu$ ensures that the error in a product
+of two exceptional approximants is smaller than
+the separation between distinct rational products.
+For $w>0$ put $H=e^w$ and $V=e^{w/\theta}$,
+so that $H=V^\theta$. Write
+$\mathcal A(w)$ for the set of indices $b\in[N,2N)$ admitting an
+exceptional fraction with $v>N^{1/3}$ and $V<v\le H$. We shall
+first estimate $|\mathcal A(w)|$ for a single $w$, and only at
+the end choose the ranges over which to sum.
+
+Assume $\mathcal A(w)$ is nonempty. For each of its indices choose
+one such fraction $s_b$, and let $X$ be the set of distinct fractions
+so obtained. Write $M=|X|$. If the same fraction of denominator $v$
+is chosen several times, \eqref{eq:grid} bounds the number of those
+indices by $O(1+Nv^{-\nu})=O(1)$, since $v>N^{1/3}$ and $\nu>4$.
+Consequently
+\begin{equation}\label{eq:multiplicity}
+ |\mathcal A(w)|\ll M .
+\end{equation}
+We may henceforth retain one index for each element of $X$.
+
+For these indices, compare the products $s_bs_c$ with the fractions
+\[
+ R(b)R(c)=2^{a(b)+a(c)}3^{-(b+c)} .
+\]
+For fixed $\ell=b+c$, the integer $a(b)+a(c)$ lies in
+$(\alpha\ell,\alpha\ell+2)$ and thus takes at most two values.
+There are fewer than $2N$ choices for $\ell$. It follows that the
+products $R(b)R(c)$ take at most $4N$ values.
+
+The choice of $\theta$ allows us to transfer this bound to
+$XX=\{ss':s,s'\in X\}$. Indeed, \eqref{eq:exception} and the
+fact that all fractions lie in $[1,2]$ give
+\[
+ |s_bs_c-R(b)R(c)|
+ \le 2|s_b-R(b)|+2|s_c-R(c)|<\tfrac14 V^{-\nu}.
+\]
+If $R(b)R(c)=R(b')R(c')$, the two corresponding products of elements
+of $X$ thus differ by less than $\tfrac12 V^{-\nu}$. Their reduced
+denominators are at most $H^2$, so distinct products would differ by
+at least $H^{-4}$. Since $H^4=V^{4\theta}<V^\nu$, the products
+are equal. We have proved
+\begin{equation}\label{eq:products}
+ |XX|\le4N .
+\end{equation}
+
+When $M$ is a substantial fraction of $N$, \eqref{eq:products}
+bounds the ratio $|XX|/M$. We use this ratio to bound the number of
+classes occupied by $X$ modulo rational $q$th powers. Two positive
+rationals belong to the same class when their quotient is a $q$th
+power in $\Q$. For finite subsets $A,B$ of an abelian group, write
+$A\pm B=\{a\pm b:a\in A,\ b\in B\}$ and
+$m\cdot A=\{ma:a\in A\}$. In the next lemma
+the group law is written additively.
+
+\begin{lemma}\label{lem:classes}
+Let $A$ be a finite nonempty subset of a torsion-free abelian group
+$G$, and put $L=|A+A|/|A|$. For $q=2^k$ with $k\ge1$, the image
+of $A$ in $G/qG$ has at most $L^{3k}$ elements.
+\end{lemma}
+
+\begin{proof}
+Choose one representative $a\in A$ of each class in the image of
+$A$. The sets $a-q\cdot A$ lie in distinct cosets of $qG$ and
+each contains $|A|$ elements, since dilation by $q$ is injective.
+Their union is contained in $A-q\cdot A$. It therefore suffices
+to bound $|A-q\cdot A|/|A|$.
+
+For a single doubling, the Pl\"unnecke--Ruzsa inequality
+\cite[Theorem~1.2]{Petridis}, applied to $A$ and itself, gives
+\[
+ |A-2\cdot A|\le|A-A-A|\le L^3|A|.
+\]
+For the iteration we use Ruzsa's triangle inequality
+$|U-W|\,|V|\le|U-V|\,|V-W|$ for finite nonempty sets
+\cite[proof of Theorem~1.2, (3)]{Petridis}. Take
+$U=A$, $V=2^{i-1}\cdot A$, $W=2^i\cdot A$. Since
+$V-W=2^{i-1}\cdot(A-2\cdot A)$, injectivity of dilation gives
+\[
+ \frac{|A-2^i\cdot A|}{|A|}
+ \le\frac{|A-2^{i-1}\cdot A|}{|A|}
+     \frac{|A-2\cdot A|}{|A|}\qquad(i\ge2).
+\]
+Iterating the single-doubling bound proves the lemma.
+\end{proof}
+
+\subsection{The count at large denominators}
+
+By Lemma~\ref{lem:classes} in $\Q_{>0}^{\times}$ and
+\eqref{eq:products}, the elements of $X$ occupy at most
+$(4N/M)^{3k}$ classes modulo rational $q$th powers when $q=2^k$.
+To bound the size of each class we choose $k$ in terms of
+$x=\log(N/w)$. Here $N$ is the length of the interval of indices
+and $w$ is the upper bound on $\log v$ in the denominator range.
+
+\begin{lemma}\label{lem:block}
+There are absolute constants $c,C,x_0>0$ such that,
+for $4<\nu\le5$, $1<\theta<\nu/4$, $N\in\DD$,
+and $w\ge1$ with $x=\log(N/w)\ge x_0$,
+\[
+ \frac{|\mathcal A(w)|}{N}
+ \le C\exp\left(-\frac{cx}{\log(2+x)}\right).
+\]
+\end{lemma}
+
+\begin{proof}
+We may suppose that $\mathcal A(w)$ is nonempty and $x\ge2$.
+Let $q=2^k$ be the least power of two with $q\ge x^2$, so that
+$x^2\le q<2x^2$. We shall show that within a class modulo $q$th
+powers the ratio of two exceptional fractions agrees with the ratio
+of the corresponding $R(b)$. The height of the first ratio will
+then bound the difference of the two indices.
+
+Take distinct $s_b,s_c$ in the same class and write $s_c/s_b=g^q$
+with $g\in\Q_{>0}$, $g\ne1$. For a positive rational $r/s$ in
+lowest terms, write $h(r/s)=\log\max(r,s)$. Each of $s_b,s_c$
+has denominator at most $H$ and numerator at most $2H$. Thus the
+numerator and denominator of their quotient in lowest terms are
+both at most $2H^2$. Taking the $q$th root gives
+\begin{equation}\label{eq:ratioheight}
+ qh(g)=h(s_c/s_b)\le 2w+\log2\le 3w .
+\end{equation}
+This gain of a factor $q$ in the height is the reason for working
+within one power class.
+
+Consider the difference of the logarithms of the two ratios,
+\[
+ \Lambda=(a(c)-a(b))\log2-(c-b)\log3-q\log g.
+\]
+The logarithm has derivative at most one on $[1,2]$. Comparing
+$\log s_b$ with $\log R(b)$, and likewise at $c$, we obtain
+from \eqref{eq:exception}
+\begin{equation}\label{eq:logupper}
+ |\Lambda|<\tfrac18 V^{-\nu}=\tfrac18\exp(-\nu w/\theta).
+\end{equation}
+
+Suppose $\Lambda\ne0$. We use the weighted coefficient parameter
+in Matveev's lower bound
+\cite[Corollary~2.3, (2.6), with (1.3)]{Matveev}.
+For positive rational bases $\gamma_i\ne1$ and integer coefficients
+$m_i$ $(1\le i\le3)$, take
+\[
+ A_i\ge\max\{h(\gamma_i),|\log\gamma_i|,0.16\},
+ \qquad B=\max\left\{1,\max_i\frac{|m_i|A_i}{A_3}\right\}.
+\]
+For a nonzero form in their real logarithms the bound over $\Q$ is
+\[
+ \log\left|\sum_{i=1}^3m_i\log\gamma_i\right|
+ >-C_0 A_1A_2A_3(1+\log B)
+\]
+with an absolute $C_0$. By \eqref{eq:ratioheight},
+the existence of distinct
+$s_b,s_c$ in the same class forces
+$3w/q\ge h(g)\ge\log2$. Thus we may take
+\[
+ A_1=\log2,\qquad A_2=\log3,\qquad A_3=3w/q,
+\]
+since $|\log g|\le h(g)$. The cited bound requires
+only that the linear form be nonzero; no multiplicative
+independence of $2,3$, and $g$ is assumed.
+
+Since $b,c\in[N,2N)$, we have
+$|c-b|<N$ and $|a(c)-a(b)|\le\alpha N+1$.
+Thus the coefficients of $\log2$ and $\log3$
+are $O(N)$, whereas that of $\log g$ is $q$.
+With $A_3=3w/q$, the weighted definition of $B$
+gives $B\ll qN/w$ and hence
+$1+\log B\ll1+\log q+x$. Substitution in Matveev's bound gives
+\[
+ -\log|\Lambda|\ll\frac{w}{q}(1+\log q+x)\ll\frac wx .
+\]
+This is where the choice $q\asymp x^2$ enters. On the other hand,
+\eqref{eq:logupper} gives $-\log|\Lambda|>(\nu/\theta)w>4w$.
+The two bounds are incompatible for $x$ larger than an absolute
+constant. It follows that $\Lambda=0$, as claimed.
+
+The vanishing of $\Lambda$ turns the rational-power
+relation into an exact identity between the prescribed
+fractions:
+\[
+ \frac{s_c}{s_b}=2^{a(c)-a(b)}3^{b-c}.
+\]
+Taking the valuation at $3$ and using \eqref{eq:ratioheight} gives
+$|b-c|\log3\le h(s_c/s_b)\le2w+\log2$. Once $s_b$ is fixed, all
+the representative indices in its class consequently lie in an
+interval of length $O(w)$. They are distinct integers, so the class
+has $O(w)$ elements, with an absolute constant.
+
+Multiplying by the bound for the number of classes gives
+\[
+ M\le C_1 w(4N/M)^{3k}.
+\]
+To read this as a bound for the proportion of exceptional indices,
+put $y=M/(4N)$. Since $w/N=e^{-x}$, the preceding inequality gives
+$y^{3k+1}\le(C_1/4)e^{-x}$. Although $q$ is of order $x^2$,
+only $k=\log_2 q\ll\log(2+x)$ enters this exponent. Taking the
+$(3k+1)$st root and applying \eqref{eq:multiplicity} proves the
+assertion, after increasing $x_0$ if necessary.
+\end{proof}
+
+\begin{proof}[Completion of the proof of Proposition~\ref{prop:count}]
+It remains to sum the estimates over the denominator
+ranges. Their number need not be bounded; what matters
+is that \eqref{eq:height} forces all nonempty ranges
+into the tail of a convergent series. Put
+\[
+ w_j=N\theta^{-j},\qquad x_j=\log(N/w_j)=j\log\theta
+ \qquad(j=0,1,2,\ldots).
+\]
+The intervals $(w_j/\theta,w_j]$ partition $(0,N]$. By
+\eqref{eq:height}, they contain the logarithms of all exceptional
+denominators exceeding $N^{1/3}$ once $N$ is sufficiently large.
+For any $j$ with $\mathcal A(w_j)\ne\varnothing$, an exceptional
+denominator in that range satisfies
+\[
+ \tfrac13\log N<\log v\le w_j<\theta\log v\le\theta W_N .
+\]
+Thus $w_j\ge1$ for large $N$. Moreover, if $W_N>0$, then
+$x_j>\log(N/(\theta W_N))$, which tends to infinity by
+\eqref{eq:height}. This places every nonempty range in the part of
+the estimate where Lemma~\ref{lem:block} applies.
+
+For fixed $\theta>1$, the series
+\[
+ \sum_{j\ge0}\exp\!\left(-\frac{c x_j}{\log(2+x_j)}\right)
+\]
+converges, since for large $j$ its terms are at most
+$\exp(-c_\theta\sqrt j)$ for some $c_\theta>0$. Given any tail
+of this series, the nonempty ranges all belong to that tail for
+sufficiently large $N$. Lemma~\ref{lem:block} therefore gives
+$\sum_j|\mathcal A(w_j)|=o(N)$. An index may occur in several
+ranges, but this sum bounds the number admitting any exceptional
+denominator above $N^{1/3}$.
+
+Combining with \eqref{eq:small} yields
+\[
+ E_N(D,\nu)\le C\bigl(ND^{2-\nu}+N^{2/3}\bigr)+o_\nu(N),
+\]
+where $C$ is absolute and $\theta$ has been fixed in terms of $\nu$.
+Only the last term uses convergence for this particular $\theta$.
+Dividing by $N$ and taking the upper limit along $\DD$ proves the
+proposition.
+\end{proof}
+
+\section*{AI use declaration}
+
+The author used ChatGPT and Codex in developing the counting
+argument of Section~3, including the reduction to twofold
+products and the use of rational-power classes, and in
+formulating the diagonal construction in Section~2.
+These tools were also used to review the exposition and
+check proofs and references. The author takes full
+responsibility for the mathematical arguments and citations.
+
+\begin{thebibliography}{99}
+
+\bibitem{Bugeaud}
+Y. Bugeaud, \emph{Approximation by Algebraic Numbers}, Cambridge
+Tracts in Mathematics \textbf{160}, Cambridge University Press,
+Cambridge, 2004.
+
+\bibitem{BN}
+Y. Bugeaud and K. D. Nguyen,
+\href{https://doi.org/10.2140/pjm.2023.326.17}{Some arithmetical
+properties of convergents to algebraic numbers},
+\emph{Pacific J. Math.} \textbf{326} (2023), no.~1, 17--36.
+
+\bibitem{EM}
+P. Erd\H{o}s and K. Mahler,
+\href{https://doi.org/10.1112/jlms/s1-14.1.12}{Some arithmetical
+properties of the convergents of a continued fraction},
+\emph{J. London Math. Soc.} \textbf{14} (1939), no.~1, 12--18.
+
+\bibitem{ErdosReminiscences}
+P. Erd\H{o}s,
+\href{https://old.renyi.hu/~p_erdos/1989-34.pdf}
+{Some personal and mathematical reminiscences
+of Kurt Mahler},
+\emph{Austral. Math. Soc. Gaz.}
+\textbf{16} (1989), no.~1, 1--2.
+
+\bibitem{Fraenkel62}
+A. S. Fraenkel,
+\href{https://doi.org/10.1090/S0002-9947-1962-0144852-2}{On a
+theorem of D. Ridout in the theory of Diophantine approximations},
+\emph{Trans. Amer. Math. Soc.} \textbf{105} (1962), 84--101.
+
+\bibitem{Fraenkel}
+\bysame,
+\href{https://doi.org/10.1112/jlms/s1-39.1.405}{Transcendental
+numbers and a conjecture of Erd\H{o}s and Mahler},
+\emph{J. London Math. Soc.} \textbf{39} (1964), 405--416.
+
+\bibitem{FraenkelBorosh}
+A. S. Fraenkel and I. Borosh,
+\href{https://doi.org/10.1112/plms/s3-15.1.458}{Fractional dimension
+of a set of transcendental numbers}, \emph{Proc. London Math. Soc.}
+(3) \textbf{15} (1965), 458--470. Corrigendum, \emph{ibid.}
+(3) \textbf{16} (1966), 192.
+
+\bibitem{LelisMarques}
+J. Lelis and D. Marques,
+\href{https://doi.org/10.1017/S0004972716000770}
+{On a problem of Erd\H{o}s and Mahler concerning
+continued fractions},
+\emph{Bull. Aust. Math. Soc.}
+\textbf{95} (2017), no.~2, 183--186.
+
+\bibitem{Matveev}
+E. M. Matveev,
+\href{https://doi.org/10.1070/IM2000v064n06ABEH000314}{An explicit
+lower bound for a homogeneous rational linear form in the logarithms
+of algebraic numbers. II}, \emph{Izv. Math.} \textbf{64} (2000),
+no.~6, 1217--1269.
+
+\bibitem{Petridis}
+G. Petridis,
+\href{https://doi.org/10.1007/s00493-012-2818-5}{New proofs of
+Pl\"unnecke-type estimates for product sets in groups},
+\emph{Combinatorica} \textbf{32} (2012), no.~6, 721--733,
+\href{https://arxiv.org/abs/1101.3507v3}{arXiv:1101.3507v3}.
+
+\bibitem{Ridout}
+D. Ridout,
+\href{https://doi.org/10.1112/S0025579300001182}{Rational
+approximations to algebraic numbers},
+\emph{Mathematika} \textbf{4} (1957), 125--131.
+
+\bibitem{Schlickewei}
+H. P. Schlickewei,
+\href{https://www.numdam.org/item/CM_1992__82_3_245_0/}{The
+quantitative Subspace Theorem for number fields},
+\emph{Compositio Math.} \textbf{82} (1992), no.~3, 245--273.
+
+\end{thebibliography}
+\end{document}
