@@ -1,0 +1,66 @@
+name: Annals 2026 | current-manuscript Lean verification
+
+on:
+  push:
+    branches:
+      - annals-short-2026-formalization
+    paths:
+      - "annals_2026/lean4/**"
+  pull_request:
+    paths:
+      - "annals_2026/lean4/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: annals-2026-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  kernel-build:
+    name: Current manuscript (pinned Lean/mathlib)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Verify current-manuscript project exists
+        run: |
+          test -f annals_2026/lean4/ErdosMahlerAudit/lean-toolchain
+          test -f annals_2026/lean4/ErdosMahlerAudit/lake-manifest.json
+          test -f annals_2026/lean4/ErdosMahlerAudit/lakefile.toml
+          test -f annals_2026/lean4/ErdosMahlerAudit/ErdosMahlerAudit.lean
+
+      - name: Kernel build and axiom audit
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: annals_2026/lean4/ErdosMahlerAudit
+          auto-config: false
+          build: true
+          use-mathlib-cache: true
+          axiom-audit: true
+          axiom-audit-root: ErdosMahlerAudit
+          axiom-audit-allow: propext,Classical.choice,Quot.sound
+
+      - name: Re-run declared theorem type and axiom checks
+        working-directory: annals_2026/lean4/ErdosMahlerAudit
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean ErdosMahlerAudit/Gate01Checks.lean
+          if test -f ErdosMahlerAudit/Gate02Checks.lean; then
+            lake env lean ErdosMahlerAudit/Gate02Checks.lean
+          fi
+
+      - name: Check frozen manuscript hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          PROJECT=annals_2026/lean4/ErdosMahlerAudit
+          printf '%s  %s\n' \
+            '5a55f32babc285ed9ad05fcb3bd6f8fe2bd3080d9eca7fd11e79ba23f7307116' "$PROJECT/source/Erdos_Mahler.tex" \
+            '9d9558f33236b6c1d7b276876153bf3d87f6fac2019c6e39db4d988e5022927f' "$PROJECT/source/Erdos_Mahler.pdf" \
+            | sha256sum --check --status
+          echo "Frozen manuscript hashes match recorded baseline."
