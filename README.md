@@ -1,84 +1,49 @@
-# A counterexample to the Erdős–Mahler conjecture
+# A counterexample to the Erdős–Mahler conjecture — current manuscript verification
 
-**Lean 4 verification of Proposition 2.1**  
-Diego Marques · Universidade de Brasília
+**Development branch:** `annals-short-2026-formalization`  
+**Status:** work in progress; **not a complete formal verification** of the current manuscript.  
+**Author:** Diego Marques (Universidade de Brasília).
 
-[![Lean CI](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml/badge.svg?branch=main)](https://github.com/DiegoMarquesMath/ErdosMahlerLean/actions/workflows/lean.yml)
+## Version boundary
 
-This repository accompanies the manuscript *A counterexample to the Erdős–Mahler conjecture*. It formalizes the proof of its central counting result, **Proposition 2.1**, in Lean 4, conditional on four explicitly stated published theorems. The formalization has undergone an independent source and proof audit.
+This branch is reserved for the **15-page 2026 manuscript** whose main theorem constructs, for every real `τ ≥ 4`, a Cantor set of numbers with irrationality exponent exactly `τ` and infinitely many regular convergents of the form `2^a/3^b`.
 
-The manuscript constructs a Cantor set of irrational numbers with irrationality exponent between 4 and 11 and infinitely many convergents of the form $2^a/3^b$. **That final construction is not formalized here.**
+Its counting Proposition 2.1 concerns the exceptional-index count `E_N(D, ν)`, where `4 < ν ≤ 5`, and states
 
-## The counting proposition
-
-Let
-
-$$
-\alpha=\frac{\log 3}{\log 2},\qquad
-R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},\qquad
-Q=3^t,\quad N=Q^{18},\quad B=Q^{14}.
-$$
-
-For $t\ge1$, let $\mathcal R_t$ consist of the integers $b$ satisfying $Q\le b<Q+N$ and
-
-$$
-R(t)+Q^{-4}<R(b)<R(t)+2Q^{-4}.
-$$
-
-A return $b$ is *inadmissible* if a reduced rational $u/v\in[1,2]$, different from $R(b)$, satisfies
-
-$$
-v>Q^3/6,\qquad
-\left|R(b)-\frac uv\right|<\frac{1}{16v^{11}}.
-$$
-
-Write $\mathcal R_t^{\mathrm{inad}}$ for the inadmissible returns and $\mathcal R_t^{\mathrm{adm}}$ for the remaining returns. **Proposition 2.1** states that, as $t\to\infty$,
-
-$$
-\lvert\mathcal R_t\rvert\asymp B,\qquad
-\lvert\mathcal R_t^{\mathrm{inad}}\rvert=o(B),\qquad
-\lvert\mathcal R_t^{\mathrm{adm}}\rvert\asymp B.
-$$
-
-In particular, admissible returns exist for all sufficiently large $t$.
-
-## Formal proof
-
-The final declaration is [`ErdosMahlerLean.proposition21`](ErdosMahlerLean/Proposition21.lean):
-
-```lean
-theorem proposition21
-    (hWW  : External.WuWang)
-    (hMR  : External.MatolcsiRuzsaThree)
-    (hST  : External.SubspaceTwoThree)
-    (hMat : External.MatveevRational) : Proposition21
+```text
+∃ C > 0, ∀ ν ∈ (4,5], ∀ D ≥ 2:
+    limsup_{N → ∞, N ∈ 𝒟} E_N(D,ν)/N ≤ C D^(2−ν),
 ```
 
-The hypotheses encode the published results of **Wu–Wang**, **Matolcsi–Ruzsa**, the **$p$-adic Subspace Theorem**, and **Matveev**. They are explicit theorem arguments, **not proved within Lean**. No new counting estimate from the manuscript is taken as an assumption. The exact interfaces and their reconciliation with the original sources are documented in [Verified statement](VERIFIED_STATEMENT.md) and [External theorem reconciliation](EXTERNAL_THEOREM_RECONCILIATION.md).
+where `𝒟` denotes convergent denominators of `log 3 / log 2`.
 
-The argument uses rotation discrepancy to count returns, and equalities among threefold index sums to obtain multiplicative identities. These identities pass to sufficiently close rational approximations. Congruence and short-arc estimates control small denominators; multiplicative rank and rational-power classes, together with the external theorems, control large denominators. The two estimates yield the negligible inadmissible count.
+**Do not conflate this with the older formalization in the repository root.** The existing `ErdosMahlerLean/` Lean modules, the root `VERIFIED_STATEMENT.md`, and the tag `prop21-conditional-2026-11-06` address an *earlier, mathematically different* counting proposition (return sets with parameters such as `N=Q^18`, `B=Q^14` and approximation exponent `11`). Those files are retained as historical research artifacts and **must not be cited as a verification of the current manuscript**.
 
-## Verification and reproduction
+## Current Lean development
 
-The proof is fixed at commit [`7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc), tag [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06).
+The new project is being developed locally under `Auditoria ERDOSMAHLER/lean4/ErdosMahlerAudit/`. Its sources are **not yet uploaded to this branch**. They will be added under `annals_2026/lean4/`, preserving their own `lakefile.toml`, `lake-manifest.json` and `lean-toolchain`.
 
-The [independent audit](AUDIT_REPORT.md) checked the formal statement against the frozen manuscript, the four published inputs, the proof dependencies, and kernel/axiom output. The reported foundational axioms are `propext`, `Classical.choice`, and `Quot.sound`; the four mathematical hypotheses remain visible in the theorem's type.
+Reported local progress, **pending independent GitHub CI reproduction**:
 
-To reproduce the conditional proof with the pinned Lean/mathlib dependencies:
+- Gate 01: foundational definitions and rational arithmetic (29 reported kernel-checked theorems).
+- Gate 02: counting-to-admissible-choices implication (28 reported additional kernel-checked theorems), **conditional on** the exceptional-counting estimate, the rotation estimate and, for actual successor selection, unboundedness of the convergent denominator set.
+- Gate 03: scheduled work on unboundedness and rotation discrepancy; no completion is claimed.
 
-```bash
-git clone https://github.com/DiegoMarquesMath/ErdosMahlerLean.git
-cd ErdosMahlerLean
-git checkout --detach prop21-conditional-2026-11-06
-lake exe cache get
-lake build
-bash scripts/audit.sh
-```
+The local report lists Lean `v4.36.0-rc2` and mathlib revision `9d581dfff2e41de989072ea63abf3daf69311520`. These values will be verified from the committed manifest, rather than assumed.
 
-See [Reproducibility](docs/REPRODUCIBILITY.md) for the complete verification commands and their scope.
+## Verification policy
 
-## Citation
+1. Preserve exact theorem statements, quantifier order, domains, and reduced rational denominators.
+2. Distinguish **Lean kernel-checked statements**, **conditional proofs with explicit theorem parameters**, **external published mathematics** and **unproved obligations**.
+3. No `sorry`, `admit`, `sorryAx`, custom `axiom`, `unsafe` or proof-by-evaluation shortcuts.
+4. Inspect `#check @...` and `#print axioms`; ordinary theorem assumptions are not reported by `#print axioms` as axioms.
+5. Reproduce builds in CI from pinned `lean-toolchain` and `lake-manifest.json`. A green build checks what was compiled, not an unstated stronger claim.
+6. Keep the original manuscript frozen and record SHA-256 and proof-to-TeX line mappings.
 
-D. Marques, *ErdosMahlerLean: Lean 4 formalization of Proposition 2.1 in A counterexample to the Erdős–Mahler conjecture*, GitHub repository, 2026. [Verified proof commit](https://github.com/DiegoMarquesMath/ErdosMahlerLean/commit/7bae31b5cb9f5a5e5402dc5760d7fdf162651ddc).
+See [version-specific proof status](annals_2026/PROOF_STATUS.md) for the current gate register.
 
-Citation metadata: [`CITATION.cff`](CITATION.cff). The source code is released under the [MIT License](LICENSE).
+## Release criteria
+
+This branch is **not ready for an unconditional verification claim, an archival release, or merging into `main`**. First commit the actual local Lean sources, reproduce them in CI, audit all elaborated theorem types and dependencies, and close or explicitly disclose remaining mathematical assumptions. Keep the older proof tag intact.
+
+The manuscript itself should be judged independently of whether its complete Lean formalization has finished.
