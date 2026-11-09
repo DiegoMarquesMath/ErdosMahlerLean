@@ -1,49 +1,61 @@
-# A counterexample to the Erdős–Mahler conjecture — current manuscript verification
+# A counterexample to the Erdős–Mahler conjecture
 
-**Development branch:** `annals-short-2026-formalization`  
-**Status:** work in progress; **not a complete formal verification** of the current manuscript.  
-**Author:** Diego Marques (Universidade de Brasília).
+**Lean 4 formalization of the revised manuscript**  
+Diego Marques · Universidade de Brasília
 
-## Version boundary
+This repository contains a formal verification project associated with the manuscript *A counterexample to the Erdős–Mahler conjecture*. The aim is to give a precise, reproducible Lean 4 account of its principal arguments, with the mathematical statements and their dependencies exposed at the level of the proof assistant.
 
-This branch is reserved for the **15-page 2026 manuscript** whose main theorem constructs, for every real `τ ≥ 4`, a Cantor set of numbers with irrationality exponent exactly `τ` and infinitely many regular convergents of the form `2^a/3^b`.
+The manuscript establishes that, for every real number \(\tau\ge4\), there is a Cantor set \(K_\tau\subset(1,2)\) such that every \(\xi\in K_\tau\) has irrationality exponent \(\mu(\xi)=\tau\) and infinitely many regular continued-fraction convergents of the form \(2^a/3^b\). In particular, these numbers furnish counterexamples to the Erdős–Mahler conjecture.
 
-Its counting Proposition 2.1 concerns the exceptional-index count `E_N(D, ν)`, where `4 < ν ≤ 5`, and states
+## The counting theorem
 
-```text
-∃ C > 0, ∀ ν ∈ (4,5], ∀ D ≥ 2:
-    limsup_{N → ∞, N ∈ 𝒟} E_N(D,ν)/N ≤ C D^(2−ν),
-```
+Set
+\[
+\alpha=\frac{\log3}{\log2},\qquad
+R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},
+\]
+and let \(\mathcal D\) denote the denominators of the regular continued-fraction convergents of \(\alpha\).
 
-where `𝒟` denotes convergent denominators of `log 3 / log 2`.
+For \(4<\nu\le5\), let \(E_N(D,\nu)\) count the integers \(b\in[N,2N)\) for which there is a reduced rational number \(u/v\in[1,2]\), distinct from \(R(b)\), such that
+\[
+v>D,\qquad
+\left|R(b)-\frac uv\right|<\frac1{16v^\nu}.
+\]
 
-**Do not conflate this with the older formalization in the repository root.** The existing `ErdosMahlerLean/` Lean modules, the root `VERIFIED_STATEMENT.md`, and the tag `prop21-conditional-2026-11-06` address an *earlier, mathematically different* counting proposition (return sets with parameters such as `N=Q^18`, `B=Q^14` and approximation exponent `11`). Those files are retained as historical research artifacts and **must not be cited as a verification of the current manuscript**.
+The central quantitative assertion (Proposition 2.1) is
+\[
+\boxed{
+\limsup_{\substack{N\to\infty\\N\in\mathcal D}}
+\frac{E_N(D,\nu)}{N}\le C D^{2-\nu}
+}
+\qquad(4<\nu\le5,\ D\ge2),
+\]
+where \(C>0\) is an **absolute constant**.
 
-## Current Lean development
+The proof draws on irrational rotations, the \(p\)-adic Subspace Theorem, product-set estimates, classes modulo rational powers, and lower bounds for linear forms in logarithms. The counting theorem is then used to obtain admissible successors in a nested Cantor construction.
 
-The new project is being developed locally under `Auditoria ERDOSMAHLER/lean4/ErdosMahlerAudit/`. Its sources are **not yet uploaded to this branch**. They will be added under `annals_2026/lean4/`, preserving their own `lakefile.toml`, `lake-manifest.json` and `lean-toolchain`.
+## Formalization status
 
-Reported local progress, **pending independent GitHub CI reproduction**:
+| Part of the argument | Status |
+| --- | --- |
+| Prescribed fractions and rational arithmetic | **Verified locally** — Gate 01 |
+| Admissible choices from the counting and rotation estimates | **Verified locally, conditional** — Gate 02 |
+| Convergent denominators and rotation discrepancy | In progress — Gate 03 |
+| Cantor construction and exact irrationality exponent | Not yet formalized |
+| Proof of Proposition 2.1 | Not yet formalized |
 
-- Gate 01: foundational definitions and rational arithmetic (29 reported kernel-checked theorems).
-- Gate 02: counting-to-admissible-choices implication (28 reported additional kernel-checked theorems), **conditional on** the exceptional-counting estimate, the rotation estimate and, for actual successor selection, unboundedness of the convergent denominator set.
-- Gate 03: scheduled work on unboundedness and rotation discrepancy; no completion is claimed.
+*Verified locally* means that a Lean build and declaration checks have been reported for the author's local project; the corresponding sources have **not yet been committed to this branch or reproduced by GitHub Actions**. *Conditional* means that the theorem retains its mathematical inputs as explicit parameters. Neither designation asserts a complete verification of the manuscript.
 
-The local report lists Lean `v4.36.0-rc2` and mathlib revision `9d581dfff2e41de989072ea63abf3daf69311520`. These values will be verified from the committed manifest, rather than assumed.
+This table will be updated as each stage is incorporated into the repository and independently built. Precise theorem signatures, outstanding assumptions, and verification evidence are maintained in the [formalization status and dependency record](annals_2026/PROOF_STATUS.md).
 
-## Verification policy
+## Verification and reproducibility
 
-1. Preserve exact theorem statements, quantifier order, domains, and reduced rational denominators.
-2. Distinguish **Lean kernel-checked statements**, **conditional proofs with explicit theorem parameters**, **external published mathematics** and **unproved obligations**.
-3. No `sorry`, `admit`, `sorryAx`, custom `axiom`, `unsafe` or proof-by-evaluation shortcuts.
-4. Inspect `#check @...` and `#print axioms`; ordinary theorem assumptions are not reported by `#print axioms` as axioms.
-5. Reproduce builds in CI from pinned `lean-toolchain` and `lake-manifest.json`. A green build checks what was compiled, not an unstated stronger claim.
-6. Keep the original manuscript frozen and record SHA-256 and proof-to-TeX line mappings.
+The project is developed with Lean 4 and mathlib. Verification requires more than successful compilation: the formal statement must match the manuscript, its hypotheses must be visible, and all claims of proof must be supported by kernel-checked declarations. The development does not accept `sorry`, `admit`, or newly declared axioms as substitutes for arguments.
 
-See [version-specific proof status](annals_2026/PROOF_STATUS.md) for the current gate register.
+The revised formalization will be committed under `annals_2026/lean4/` with pinned toolchain and dependency versions. A [separate GitHub Actions workflow](.github/workflows/annals-2026-lean.yml) is prepared to build that project and check its declared dependencies once its sources are available. Until then, no green CI status for the revised manuscript is claimed.
 
-## Release criteria
+## Version and citation
 
-This branch is **not ready for an unconditional verification claim, an archival release, or merging into `main`**. First commit the actual local Lean sources, reproduce them in CI, audit all elaborated theorem types and dependencies, and close or explicitly disclose remaining mathematical assumptions. Keep the older proof tag intact.
+This branch concerns the **revised 2026 manuscript**, with the counting proposition displayed above. The existing root-level formalization and the tag [`prop21-conditional-2026-11-06`](https://github.com/DiegoMarquesMath/ErdosMahlerLean/tree/prop21-conditional-2026-11-06) correspond to an earlier, different formulation and are preserved for the historical record. They should not be cited as verification of the revised theorem.
 
-The manuscript itself should be judged independently of whether its complete Lean formalization has finished.
+For the current work, cite the manuscript and, when a complete verified release becomes available, its corresponding immutable repository commit or release tag.
