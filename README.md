@@ -5,34 +5,34 @@ Diego Marques · Universidade de Brasília
 
 This repository contains a formal verification project associated with the manuscript *A counterexample to the Erdős–Mahler conjecture*. The aim is to give a precise, reproducible Lean 4 account of its principal arguments, with the mathematical statements and their dependencies exposed at the level of the proof assistant.
 
-The manuscript establishes that, for every real number \(\tau\ge4\), there is a Cantor set \(K_\tau\subset(1,2)\) such that every \(\xi\in K_\tau\) has irrationality exponent \(\mu(\xi)=\tau\) and infinitely many regular continued-fraction convergents of the form \(2^a/3^b\). In particular, these numbers furnish counterexamples to the Erdős–Mahler conjecture.
+The manuscript establishes that, for every real number $\tau\ge4$, there is a Cantor set $K_\tau\subset(1,2)$ such that every $\xi\in K_\tau$ has irrationality exponent $\mu(\xi)=\tau$ and infinitely many regular continued-fraction convergents of the form $2^a/3^b$. In particular, these numbers furnish counterexamples to the Erdős–Mahler conjecture.
 
 ## The counting theorem
 
 Set
-\[
+$
 \alpha=\frac{\log3}{\log2},\qquad
 R(b)=\frac{2^{\lceil b\alpha\rceil}}{3^b},
-\]
-and let \(\mathcal D\) denote the denominators of the regular continued-fraction convergents of \(\alpha\).
+$
+and let $\mathcal D$ denote the denominators of the regular continued-fraction convergents of $\alpha$.
 
-For \(4<\nu\le5\), let \(E_N(D,\nu)\) count the integers \(b\in[N,2N)\) for which there is a reduced rational number \(u/v\in[1,2]\), distinct from \(R(b)\), such that
-\[
+For $4<\nu\le5$, let $E_N(D,\nu)$ count the integers $b\in[N,2N)$ for which there is a reduced rational number $u/v\in[1,2]$, distinct from $R(b)$, such that
+$
 v>D,\qquad
 \left|R(b)-\frac uv\right|<\frac1{16v^\nu}.
-\]
+$
 
 The central quantitative assertion (Proposition 2.1) is
-\[
+$
 \boxed{
 \limsup_{\substack{N\to\infty\\N\in\mathcal D}}
 \frac{E_N(D,\nu)}{N}\le C D^{2-\nu}
 }
 \qquad(4<\nu\le5,\ D\ge2),
-\]
-where \(C>0\) is an **absolute constant**.
+$
+where $C>0$ is an **absolute constant**.
 
-The proof draws on irrational rotations, the \(p\)-adic Subspace Theorem, product-set estimates, classes modulo rational powers, and lower bounds for linear forms in logarithms. The counting theorem is then used to obtain admissible successors in a nested Cantor construction.
+The proof draws on irrational rotations, the $p$-adic Subspace Theorem, product-set estimates, classes modulo rational powers, and lower bounds for linear forms in logarithms. The counting theorem is then used to obtain admissible successors in a nested Cantor construction.
 
 ## Formalization status
 
